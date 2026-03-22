@@ -2,12 +2,13 @@
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
-  --clr-bg:       #0f0f0f;
-  --clr-surface:  #1a1a1a;
+  --clr-bg:       #e6d6a5;
+  --clr-surface:  #32260a;
   --clr-border:   #2a2a2a;
-  --clr-text:     #e8e0d5;
+  --clr-text:     #1b1a19;
   --clr-muted:    #8a8072;
   --clr-accent:   #c9a96e;
+  --clr-newhead: #000000;
   --clr-accent2:  #8fbc8f;
   --clr-veg:      #4caf7d;
   --clr-gf:       #e09b3d;
@@ -129,7 +130,7 @@ body {
   font-family: 'Playfair Display', 'Sarabun', serif;
   font-size: 1.9rem;
   font-weight: 500;
-  color: var(--clr-accent);
+  color: var(--clr-newhead);
   margin-bottom: 1.6rem;
   padding-bottom: .6rem;
   border-bottom: 1px solid var(--clr-border);
@@ -143,7 +144,7 @@ body {
   left: 0;
   width: 60px;
   height: 2px;
-  background: var(--clr-accent);
+  background: var(--clr-newhead);
   border-radius: 2px;
 }
 
