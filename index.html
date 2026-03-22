@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en"><!-- Thai content can use lang="th" on individual elements -->
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Iris — Menu</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;500&family=Sarabun:wght@300;400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Hero -->
+  <header class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <p class="hero-tagline">Fine Dining &amp; Good Vibes</p>
+      <h1 class="hero-title">Iris</h1>
+      <p class="hero-sub">Est. 2024 &nbsp;·&nbsp; Open Daily 11am – 10pm</p>
+    </div>
+  </header>
+
+  <!-- Category Nav -->
+  <nav class="category-nav" id="categoryNav">
+    <button class="cat-btn active" data-filter="all">All</button>
+    <button class="cat-btn" data-filter="starters">Starters</button>
+    <button class="cat-btn" data-filter="mains">Mains</button>
+    <button class="cat-btn" data-filter="pasta">Pasta &amp; Risotto</button>
+    <button class="cat-btn" data-filter="desserts">Desserts</button>
+    <button class="cat-btn" data-filter="drinks">Drinks</button>
+  </nav>
+
+  <!-- Menu -->
+  <main class="menu-container">
+
+    <!-- Starters -->
+    <section class="menu-section" data-category="starters">
+      <h2 class="section-title">Starters</h2>
+      <div class="menu-grid">
+
+        <div class="menu-card" data-tags="starters">
+          <div class="card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1572695157366-5e585ab2b69f?w=400&q=70" alt="Bruschetta" />
+            <span class="badge">Popular</span>
+          </div>
+          <div class="card-body">
+            <div class="card-header">
+              <h3>Bruschetta al Pomodoro</h3>
+              <span class="price">$9</span>
+            </div>
+            <p>Toasted sourdough, fresh heirloom tomatoes, basil oil, aged balsamic.</p>
+            <div class="tags"><span class="tag veg">Vegetarian</span></div>
+          </div>
+        </div>
+
+        <div class="menu-card" data-tags="starters">
+          <div class="card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1635329809024-70e3b4f9f7f4?w=400&q=70" alt="Soup" />
+          </div>
+          <div class="card-body">
+            <div class="card-header">
+              <h3>Roasted Tomato Soup</h3>
+              <span class="price">$11</span>
+            </div>
+            <p>Slow-roasted vine tomatoes, cream, fresh herbs, served with a gruyère crouton.</p>
+            <div class="tags"><span class="tag veg">Vegetarian</span><span class="tag gf">Gluten-Free</span></div>
+          </div>
+        </div>
+
+        <div class="menu-card" data-tags="starters">
+          <div class="card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1600891964092-4316c288032e?w=400&q=70" alt="Calamari" />
+          </div>
+          <div class="card-body">
+            <div class="card-header">
+              <h3>Crispy Calamari</h3>
+              <span class="price">$14</span>
+            </div>
+            <p>Lightly battered squid rings, lemon aioli, pickled jalapeño salsa.</p>
+          </div>
+        </div>
+
+        <div class="menu-card" data-tags="starters">
+          <div class="card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1482012792084-a0c3725f289f?w=400&q=70" alt="Charcuterie" />
+            <span class="badge">Chef's Pick</span>
+          </div>
+          <div class="card-body">
+            <div class="card-header">
+              <h3>Charcuterie Board</h3>
+              <span class="price">$22</span>
+            </div>
+            <p>Cured meats, artisan cheeses, honeycomb, seasonal fruit, house-made crackers.</p>
+            <div class="tags"><span class="tag gf">Gluten-Free</span></div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Mains -->
+    <section class="menu-section" data-category="mains">
+      <h2 class="section-title">Mains</h2>
+      <div class="menu-grid">
+
+        <div class="menu-card" data-tags="mains">
+          <div class="card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400&q=70" alt="Salmon" />
+            <span class="badge">Popular</span>
+          </div>
+          <div class="card-body">
+            <div class="card-header">
+              <h3>Pan-Seared Salmon</h3>
+              <span class="price">$28</span>
+            </div>
+            <p>Atlantic salmon fillet, lemon butter sauce, asparagus, wild rice.</p>
+            <div class="tags"><span class="tag gf">Gluten-Free</span></div>
+          </div>
+        </div>
+
+        <div class="menu-card" data-tags="mains">
+          <div class="card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1558030006-450675393462?w=400&q=70" alt="Steak" />
+            <span class="badge">Chef's Pick</span>
+          </div>
+          <div class="card-body">
+            <div class="card-header">
+              <h3>Ribeye Steak 300g</h3>
+              <span class="price">$45</span>
+            </div>
+            <p>Dry-aged ribeye, truffle butter, roasted garlic mash, red wine jus.</p>
+            <div class="tags"><span class="tag gf">Gluten-Free</span></div>
+          </div>
+        </div>
+
+        <div class="menu-card" data-tags="mains">
+          <div class="card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=400&q=70" alt="Veggie Bowl" />
+          </div>
+          <div class="card-body">
+            <div class="card-header">
+              <h3>Harvest Grain Bowl</h3>
+              <span class="price">$21</span>
+            </div>
+            <p>Quinoa, roasted seasonal vegetables, tahini dressing, toasted seeds, feta.</p>
+            <div class="tags"><span class="tag veg">Vegetarian</span><span class="tag gf">Gluten-Free</span></div>
+          </div>
+        </div>
+
+        <div class="menu-card" data-tags="mains">
+          <div class="card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&q=70" alt="Chicken" />
+          </div>
+          <div class="card-body">
+            <div class="card-header">
+              <h3>Herb Roast Chicken</h3>
+              <span class="price">$27</span>
+            </div>
+            <p>Free-range half chicken, rosemary jus, crushed potatoes, seasonal greens.</p>
+            <div class="tags"><span class="tag gf">Gluten-Free</span></div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Pasta & Risotto -->
+    <section class="menu-section" data-category="pasta">
+      <h2 class="section-title">Pasta &amp; Risotto</h2>
+      <div class="menu-grid">
+
+        <div class="menu-card" data-tags="pasta">
+          <div class="card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?w=400&q=70" alt="Pasta" />
+            <span class="badge">Popular</span>
+          </div>
+          <div class="card-body">
+            <div class="card-header">
+              <h3>Tagliatelle Bolognese</h3>
+              <span class="price">$24</span>
+            </div>
+            <p>Slow-braised beef &amp; pork ragù, fresh egg pasta, parmigiano reggiano.</p>
+          </div>
+        </div>
+
+        <div class="menu-card" data-tags="pasta">
+          <div class="card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1625944525533-473f1a3d54e7?w=400&q=70" alt="Risotto" />
+            <span class="badge">Chef's Pick</span>
+          </div>
+          <div class="card-body">
+            <div class="card-header">
+              <h3>Wild Mushroom Risotto</h3>
+              <span class="price">$23</span>
+            </div>
+            <p>Arborio rice, mixed wild mushrooms, white wine, truffle oil, aged parmesan.</p>
+            <div class="tags"><span class="tag veg">Vegetarian</span><span class="tag gf">Gluten-Free</span></div>
+          </div>
+        </div>
+
+        <div class="menu-card" data-tags="pasta">
+          <div class="card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1563379926898-05f4575a45d8?w=400&q=70" alt="Pesto Pasta" />
+          </div>
+          <div class="card-body">
+            <div class="card-header">
+              <h3>Trofie al Pesto</h3>
+              <span class="price">$20</span>
+            </div>
+            <p>Handmade trofie pasta, fresh basil pesto, green beans, cherry tomatoes.</p>
+            <div class="tags"><span class="tag veg">Vegetarian</span></div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Desserts -->
+    <section class="menu-section" data-category="desserts">
+      <h2 class="section-title">Desserts</h2>
+      <div class="menu-grid">
+
+        <div class="menu-card" data-tags="desserts">
+          <div class="card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?w=400&q=70" alt="Tiramisu" />
+            <span class="badge">Popular</span>
+          </div>
+          <div class="card-body">
+            <div class="card-header">
+              <h3>Classic Tiramisù</h3>
+              <span class="price">$12</span>
+            </div>
+            <p>Mascarpone cream, espresso-soaked ladyfingers, cocoa dusting.</p>
+            <div class="tags"><span class="tag veg">Vegetarian</span></div>
+          </div>
+        </div>
+
+        <div class="menu-card" data-tags="desserts">
+          <div class="card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?w=400&q=70" alt="Lava Cake" />
+            <span class="badge">Chef's Pick</span>
+          </div>
+          <div class="card-body">
+            <div class="card-header">
+              <h3>Chocolate Fondant</h3>
+              <span class="price">$13</span>
+            </div>
+            <p>Warm dark chocolate lava cake, vanilla bean ice cream, caramel sauce.</p>
+            <div class="tags"><span class="tag veg">Vegetarian</span></div>
+          </div>
+        </div>
+
+        <div class="menu-card" data-tags="desserts">
+          <div class="card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1470124182917-cc6e71b22ecc?w=400&q=70" alt="Panna Cotta" />
+          </div>
+          <div class="card-body">
+            <div class="card-header">
+              <h3>Panna Cotta</h3>
+              <span class="price">$10</span>
+            </div>
+            <p>Vanilla panna cotta, mixed berry coulis, crushed almond brittle.</p>
+            <div class="tags"><span class="tag veg">Vegetarian</span><span class="tag gf">Gluten-Free</span></div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Drinks -->
+    <section class="menu-section" data-category="drinks">
+      <h2 class="section-title">Drinks</h2>
+      <div class="menu-grid">
+
+        <div class="menu-card" data-tags="drinks">
+          <div class="card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1498429152472-9a433d9ddf3b?w=400&q=70" alt="Cocktails" />
+            <span class="badge">Popular</span>
+          </div>
+          <div class="card-body">
+            <div class="card-header">
+              <h3>Iris Signature Spritz</h3>
+              <span class="price">$16</span>
+            </div>
+            <p>Aperol, prosecco, soda, blood orange, fresh mint.</p>
+          </div>
+        </div>
+
+        <div class="menu-card" data-tags="drinks">
+          <div class="card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=400&q=70" alt="Coffee" />
+          </div>
+          <div class="card-body">
+            <div class="card-header">
+              <h3>Specialty Coffee</h3>
+              <span class="price">$5 – $7</span>
+            </div>
+            <p>Single-origin espresso, flat white, cold brew, oat/almond/full-cream milk options.</p>
+            <div class="tags"><span class="tag veg">Vegetarian</span><span class="tag gf">Gluten-Free</span></div>
+          </div>
+        </div>
+
+        <div class="menu-card" data-tags="drinks">
+          <div class="card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1544145945-f90425340c7e?w=400&q=70" alt="Wine" />
+          </div>
+          <div class="card-body">
+            <div class="card-header">
+              <h3>House Wine</h3>
+              <span class="price">$12 / glass</span>
+            </div>
+            <p>Curated selection of red, white, and rosé. Ask your server for today's pour.</p>
+            <div class="tags"><span class="tag gf">Gluten-Free</span></div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <p class="footer-name">Iris</p>
+    <p>123 Garden Lane, New York, NY 10001</p>
+    <p>&#x260E; (212) 555-0198 &nbsp;·&nbsp; ✉ hello@irisrestaurant.com</p>
+    <p class="footer-note">Prices include tax. Please inform staff of any allergies.</p>
+  </footer>
+
+  <script src="menu.js"></script>
+</body>
+</html>
