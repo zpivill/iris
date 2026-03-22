@@ -33,7 +33,7 @@ body {
   align-items: center;
   justify-content: center;
   text-align: center;
-  background: url('https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1400&q=80') center/cover no-repeat;
+  background: url('images/Backdrop.jpg') center/cover no-repeat;
   overflow: hidden;
 }
 
