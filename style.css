@@ -12,6 +12,11 @@
   --clr-accent2:  #8fbc8f;
   --clr-veg:      #4caf7d;
   --clr-gf:       #e09b3d;
+  --clr-crispypork: #dfad90;
+  --clr-bacon: #e74d9c;
+  --clr-shrimp: #de5325;
+  --clr-squid: #dbfaff;
+  --clr-gs: #ffd82d;
   --radius:       12px;
   --shadow:       0 4px 24px rgba(0,0,0,.45);
 }
@@ -265,6 +270,12 @@ body {
 
 .tag.veg  { background: rgba(76,175,125,.15); color: var(--clr-veg); border: 1px solid rgba(76,175,125,.3); }
 .tag.gf   { background: rgba(224,155,61,.15); color: var(--clr-gf);  border: 1px solid rgba(224,155,61,.3); }
+.tag.crispypork  { background: rgba(224,155,61,.15); color: var(--clr-crispypork); border: 1px solid rgba(224,155,61,.3); }
+.tag.bacon  { background: rgba(255,123,196,.15); color: var(--clr-bacon); border: 1px solid rgba(255,123,196,.3); }
+.tag.shrimp  { background: rgba(255, 156, 123, 0.15); color: var(--clr-shrimp); border: 1px solid rgba(255, 156, 123, 0.3); }
+.tag.squid  { background: rgba(219, 250, 255, 0.15); color: var(--clr-squid); border: 1px solid rgba(219, 250, 255, 0.3); }
+.tag.gs  { background: rgba(255, 216, 45, 0.15); color: var(--clr-gs); border: 1px solid rgba(255, 216, 45, 0.3); }
+
 
 /* ===== Footer ===== */
 .site-footer {
