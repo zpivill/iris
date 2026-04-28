@@ -10,6 +10,19 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <!-- Popup -->
+  <div id="popup" class="popup">
+    <div class="popup-content">
+      <span id="closeBtn">&times;</span>
+      <h1>Welcome!</h1>
+      <br />
+      
+      <p>This popup shows every time you enter the website.This is just a place holder it doesn't hav anything yet but
+        it will have some important information about the restaurant and the menu. You can close it by clicking the "X" button on the top right corner.
+        this is just a limit testing text to know how much information can be put inside this pop up 
+      </p>
+    </div>
+  </div>
 
   <!-- Hero -->
   <header class="hero">
@@ -26,9 +39,11 @@
   <!-- Category Nav -->
   <nav class="category-nav" id="categoryNav">
     <button class="cat-btn active" data-filter="all">รายการทั้งหมด</button>
+    <button class="cat-btn" data-filter="Placeholder">PLACEHOLDER</button>
     <button class="cat-btn" data-filter="Set">ชุดอาหาร</button>
     <button class="cat-btn" data-filter="mains">อาหารจานหลัก</button>
     <button class="cat-btn" data-filter="breakfast">อาหารเช้า</button>
+    <button class="cat-btn" data-filter="side">แกง / กับข้าว</button>
     <button class="cat-btn" data-filter="desserts">เบเกอรี่และอาหารทานเล่น</button>
     <button class="cat-btn" data-filter="coffee">กาแฟ</button>
     <button class="cat-btn" data-filter="tea">ชา</button>
@@ -40,6 +55,43 @@
 
   <!-- Menu -->
   <main class="menu-container">
+
+    <!-- Newest Additions -->
+    <section class="menu-section" data-category="Placeholder">
+      <h2 class="section-title">อาหารมาใหม่ / Newest editions</h2>
+      <div class="menu-grid">
+
+        <div class="menu-card" data-tags="pasta">
+          <div class="card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?w=400&q=70" alt="Pasta" />
+            <span class="badge">Popular</span>
+          </div>
+          <div class="card-body">
+            <div class="card-header">
+              <h3>ช้าวต้ม</h3>
+              <span class="price">55 บาท</span>
+            </div>
+            <p>Slow-braised beef &amp; pork ragù, fresh egg pasta, parmigiano reggiano.</p>
+          </div>
+        </div>
+
+        <div class="menu-card" data-tags="breakfast">
+          <div class="card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1625944525533-473f1a3d54e7?w=400&q=70" alt="Risotto" />
+            <span class="badge">Chef's Pick</span>
+          </div>
+          <div class="card-body">
+            <div class="card-header">
+              <h3>โจ็ก</h3>
+              <span class="price">50 บาท</span>
+            </div>
+            <p>Arborio rice, mixed wild mushrooms, white wine, truffle oil, aged parmesan.</p>
+            <div class="tags"><span class="tag veg">Vegetarian</span><span class="tag gf">Gluten-Free</span></div>
+          </div>
+        </div>
+
+      </div>
+    </section>
 
     <!-- Set -->
     <section class="menu-section" data-category="Set">
@@ -142,7 +194,7 @@
 
         <div class="menu-card" data-tags="Set">
           <div class="card-img-wrap">
-            <img src="https://images.unsplash.com/photo-1600891964092-4316c288032e?w=400&q=70" alt="Calamari" />
+            <img src="images\ชุดก๋วยจั๊บญวน.png" alt="Calamari" />
           </div>
           <div class="card-body">
             <div class="card-header">
@@ -184,7 +236,7 @@
           <div class="card-body">
             <div class="card-header">
               <h3>กะเพราเนื้อราดข้าว</h3>
-              <span class="price">$28</span>
+              <span class="price">65 บาท</span>
             </div>
             <p>Atlantic salmon fillet, lemon butter sauce, asparagus, wild rice.</p>
             <div class="tags"><span class="tag gf">Gluten-Free</span></div>
@@ -199,7 +251,7 @@
           <div class="card-body">
             <div class="card-header">
               <h3>กะเพราทะเลราดข้าว</h3>
-              <span class="price">$28</span>
+              <span class="price">80 บาท</span>
             </div>
             <p>Atlantic salmon fillet, lemon butter sauce, asparagus, wild rice.</p>
             <div class="tags"><span class="tag gf">Gluten-Free</span></div>
@@ -214,7 +266,7 @@
           <div class="card-body">
             <div class="card-header">
               <h3>กะเพราหมูกรอบราดข้าว</h3>
-              <span class="price">$28</span>
+              <span class="price">75 บาท</span>
             </div>
             <p>Atlantic salmon fillet, lemon butter sauce, asparagus, wild rice.</p>
             <div class="tags"><span class="tag gf">Gluten-Free</span></div>
@@ -229,7 +281,7 @@
           <div class="card-body">
             <div class="card-header">
               <h3>กะเพราไก่กรอบราดข้าว</h3>
-              <span class="price">$28</span>
+              <span class="price">75 บาท</span>
             </div>
             <p>Atlantic salmon fillet, lemon butter sauce, asparagus, wild rice.</p>
             <div class="tags"><span class="tag gf">Gluten-Free</span></div>
@@ -244,7 +296,7 @@
           <div class="card-body">
             <div class="card-header">
               <h3>ข้าวผัด</h3>
-              <span class="price">$45</span>
+              <span class="price">65 บาท</span>
             </div>
             <p>Dry-aged ribeye, truffle butter, roasted garlic mash, red wine jus.</p>
             <div class="tags"><span class="tag gf">Gluten-Free</span></div>
@@ -258,7 +310,7 @@
           <div class="card-body">
             <div class="card-header">
               <h3>ข้าวผัดปลาสลิด</h3>
-              <span class="price">$21</span>
+              <span class="price">75 บาท</span>
             </div>
             <p>Quinoa, roasted seasonal vegetables, tahini dressing, toasted seeds, feta.</p>
             <div class="tags"><span class="tag veg">Vegetarian</span><span class="tag gf">Gluten-Free</span></div>
@@ -272,7 +324,7 @@
           <div class="card-body">
             <div class="card-header">
               <h3>ข้าวผัดอเมริกัน</h3>
-              <span class="price">$21</span>
+              <span class="price">85 บาท</span>
             </div>
             <p>Quinoa, roasted seasonal vegetables, tahini dressing, toasted seeds, feta.</p>
             <div class="tags"><span class="tag veg">Vegetarian</span><span class="tag gf">Gluten-Free</span></div>
@@ -286,7 +338,7 @@
           <div class="card-body">
             <div class="card-header">
               <h3>ข้าวผัดไข่</h3>
-              <span class="price">$27</span>
+              <span class="price">55 บาท</span>
             </div>
             <p>Free-range half chicken, rosemary jus, crushed potatoes, seasonal greens.</p>
             <div class="tags"><span class="tag gf">Gluten-Free</span></div>
@@ -300,7 +352,7 @@
           <div class="card-body">
             <div class="card-header">
               <h3>ข้าวผัดไส้กรอกเยอรมัน</h3>
-              <span class="price">$27</span>
+              <span class="price">75 บาท</span>
             </div>
             <p>Free-range half chicken, rosemary jus, crushed potatoes, seasonal greens.</p>
             <div class="tags"><span class="tag gf">Gluten-Free</span></div>
@@ -314,7 +366,7 @@
           <div class="card-body">
             <div class="card-header">
               <h3>ข้าวผัดแหนม</h3>
-              <span class="price">$27</span>
+              <span class="price">75 บาท</span>
             </div>
             <p>Free-range half chicken, rosemary jus, crushed potatoes, seasonal greens.</p>
             <div class="tags"><span class="tag gf">Gluten-Free</span></div>
@@ -328,7 +380,7 @@
           <div class="card-body">
             <div class="card-header">
               <h3>ผัดผงกะหรี่ราดข้าว</h3>
-              <span class="price">$27</span>
+              <span class="price">65 บาท</span>
             </div>
             <p>Free-range half chicken, rosemary jus, crushed potatoes, seasonal greens.</p>
             <div class="tags"><span class="tag gf">Gluten-Free</span></div>
@@ -342,7 +394,7 @@
           <div class="card-body">
             <div class="card-header">
               <h3>ผัดพริกแกงราดข้าว</h3>
-              <span class="price">$27</span>
+              <span class="price">65 บาท</span>
             </div>
             <p>Free-range half chicken, rosemary jus, crushed potatoes, seasonal greens.</p>
             <div class="tags"><span class="tag gf">Gluten-Free</span></div>
@@ -356,7 +408,7 @@
           <div class="card-body">
             <div class="card-header">
               <h3>คั่วพริกเกลือ</h3>
-              <span class="price">$27</span>
+              <span class="price">65 บาท</span>
             </div>
             <p>Free-range half chicken, rosemary jus, crushed potatoes, seasonal greens.</p>
             <div class="tags"><span class="tag gf">Gluten-Free</span></div>
@@ -370,7 +422,7 @@
           <div class="card-body">
             <div class="card-header">
               <h3>ข้าวกระเทียม</h3>
-              <span class="price">$27</span>
+              <span class="price">65 บาท</span>
             </div>
             <p>Free-range half chicken, rosemary jus, crushed potatoes, seasonal greens.</p>
             <div class="tags"><span class="tag gf">Gluten-Free</span></div>
@@ -384,7 +436,7 @@
           <div class="card-body">
             <div class="card-header">
               <h3>ข้าวไข่เจียวฟู</h3>
-              <span class="price">$27</span>
+              <span class="price">45 บาท</span>
             </div>
             <p>Free-range half chicken, rosemary jus, crushed potatoes, seasonal greens.</p>
             <div class="tags"><span class="tag gf">Gluten-Free</span></div>
@@ -398,7 +450,7 @@
           <div class="card-body">
             <div class="card-header">
               <h3>ข้าวไข่เจียวหมูสับ</h3>
-              <span class="price">$27</span>
+              <span class="price">59 บาท</span>
             </div>
             <p>Free-range half chicken, rosemary jus, crushed potatoes, seasonal greens.</p>
             <div class="tags"><span class="tag gf">Gluten-Free</span></div>
@@ -412,7 +464,63 @@
           <div class="card-body">
             <div class="card-header">
               <h3>ข้าวไข่เจียวกุ้งสับ</h3>
-              <span class="price">$27</span>
+              <span class="price">65 บาท</span>
+            </div>
+            <p>Free-range half chicken, rosemary jus, crushed potatoes, seasonal greens.</p>
+            <div class="tags"><span class="tag gf">Gluten-Free</span></div>
+          </div>
+        </div>
+
+        <div class="menu-card" data-tags="mains">
+          <div class="card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&q=70" alt="Chicken" />
+          </div>
+          <div class="card-body">
+            <div class="card-header">
+              <h3>ข้าวหมูแดง</h3>
+              <span class="price">55 บาท</span>
+            </div>
+            <p>Free-range half chicken, rosemary jus, crushed potatoes, seasonal greens.</p>
+            <div class="tags"><span class="tag gf">Gluten-Free</span></div>
+          </div>
+        </div>
+
+        <div class="menu-card" data-tags="mains">
+          <div class="card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&q=70" alt="Chicken" />
+          </div>
+          <div class="card-body">
+            <div class="card-header">
+              <h3>ข้าวมันไก่</h3>
+              <span class="price">55 บาท</span>
+            </div>
+            <p>Free-range half chicken, rosemary jus, crushed potatoes, seasonal greens.</p>
+            <div class="tags"><span class="tag gf">Gluten-Free</span></div>
+          </div>
+        </div>
+
+        <div class="menu-card" data-tags="mains">
+          <div class="card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&q=70" alt="Chicken" />
+          </div>
+          <div class="card-body">
+            <div class="card-header">
+              <h3>ข้าวชาหมู</h3>
+              <span class="price">65 บาท</span>
+            </div>
+            <p>Free-range half chicken, rosemary jus, crushed potatoes, seasonal greens.</p>
+            <div class="tags"><span class="tag gf">Gluten-Free</span></div>
+          </div>
+        </div>
+
+        <div class="menu-card" data-tags="mains">
+          <div class="card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&q=70" alt="Chicken" />
+          </div>
+          <div class="card-body">
+            <div class="card-header">
+              <h3>บะหมี่ขาหมู</h3>
+              <span class="price">65 บาท</span>
             </div>
             <p>Free-range half chicken, rosemary jus, crushed potatoes, seasonal greens.</p>
             <div class="tags"><span class="tag gf">Gluten-Free</span></div>
@@ -426,7 +534,7 @@
           <div class="card-body">
             <div class="card-header">
               <h3>สปาเกตตีคาโบนาร่า</h3>
-              <span class="price">$27</span>
+              <span class="price">65 บาท</span>
             </div>
             <p>Free-range half chicken, rosemary jus, crushed potatoes, seasonal greens.</p>
             <div class="tags"><span class="tag gf">Gluten-Free</span></div>
@@ -440,7 +548,7 @@
           <div class="card-body">
             <div class="card-header">
               <h3>สปาเกตตีคาโบนาร่ากุ้ง</h3>
-              <span class="price">$27</span>
+              <span class="price">75 บาท</span>
             </div>
             <p>Free-range half chicken, rosemary jus, crushed potatoes, seasonal greens.</p>
             <div class="tags"><span class="tag gf">Gluten-Free</span></div>
@@ -449,12 +557,12 @@
 
         <div class="menu-card" data-tags="mains">
           <div class="card-img-wrap">
-            <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&q=70" alt="Chicken" />
+            <img src="images\drunkspa.png" alt="Chicken" />
           </div>
           <div class="card-body">
             <div class="card-header">
               <h3>สปาเกตตีขี้เมา</h3>
-              <span class="price">$27</span>
+              <span class="price">65 บาท</span>
             </div>
             <p>Free-range half chicken, rosemary jus, crushed potatoes, seasonal greens.</p>
             <div class="tags"><span class="tag gf">Gluten-Free</span></div>
@@ -468,7 +576,7 @@
           <div class="card-body">
             <div class="card-header">
               <h3>สปาเกตตีไส้กรอกขี้เมา</h3>
-              <span class="price">$27</span>
+              <span class="price">75 บาท</span>
             </div>
             <p>Free-range half chicken, rosemary jus, crushed potatoes, seasonal greens.</p>
             <div class="tags"><span class="tag gf">Gluten-Free</span></div>
@@ -482,7 +590,7 @@
           <div class="card-body">
             <div class="card-header">
               <h3>มาม่าผัดขี้เมา</h3>
-              <span class="price">$27</span>
+              <span class="price">65 บาท</span>
             </div>
             <p>Free-range half chicken, rosemary jus, crushed potatoes, seasonal greens.</p>
             <div class="tags"><span class="tag gf">Gluten-Free</span></div>
@@ -496,10 +604,164 @@
           <div class="card-body">
             <div class="card-header">
               <h3>ก๋วยจั๊บญวน</h3>
-              <span class="price">$27</span>
+              <span class="price">65 บาท</span>
             </div>
             <p>Free-range half chicken, rosemary jus, crushed potatoes, seasonal greens.</p>
             <div class="tags"><span class="tag gf">Gluten-Free</span></div>
+          </div>
+        </div>
+
+        <div class="menu-card" data-tags="mains">
+          <div class="card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&q=70" alt="Chicken" />
+          </div>
+          <div class="card-body">
+            <div class="card-header">
+              <h3>สุกี้น้ำ</h3>
+              <span class="price">65 บาท</span>
+            </div>
+            <p>Free-range half chicken, rosemary jus, crushed potatoes, seasonal greens.</p>
+            <div class="tags"><span class="tag gf">Gluten-Free</span></div>
+          </div>
+        </div>
+
+        <div class="menu-card" data-tags="mains">
+          <div class="card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&q=70" alt="Chicken" />
+          </div>
+          <div class="card-body">
+            <div class="card-header">
+              <h3>สุกี้แห้ง</h3>
+              <span class="price">65 บาท</span>
+            </div>
+            <p>Free-range half chicken, rosemary jus, crushed potatoes, seasonal greens.</p>
+            <div class="tags"><span class="tag gf">Gluten-Free</span></div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Newest Additions -->
+    <section class="menu-section" data-category="side">
+      <h2 class="section-title">แกงและกับข้าว / Soup & Dishes</h2>
+      <div class="menu-grid">
+
+        <div class="menu-card" data-tags="pasta">
+          <div class="card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?w=400&q=70" alt="Pasta" />
+            <span class="badge">Popular</span>
+          </div>
+          <div class="card-body">
+            <div class="card-header">
+              <h3>แกงจืดเต้าหู้หมูสับ + สาหร่าย</h3>
+              <span class="price">65 บาท</span>
+            </div>
+            <p>Slow-braised beef &amp; pork ragù, fresh egg pasta, parmigiano reggiano.</p>
+          </div>
+        </div>
+
+        <div class="menu-card" data-tags="pasta">
+          <div class="card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?w=400&q=70" alt="Pasta" />
+            <span class="badge">Popular</span>
+          </div>
+          <div class="card-body">
+            <div class="card-header">
+              <h3>แกงจืดไข่น้ำเต้าหู้หมูสับสาหร่าย</h3>
+              <span class="price">80 บาท</span>
+            </div>
+            <p>Slow-braised beef &amp; pork ragù, fresh egg pasta, parmigiano reggiano.</p>
+          </div>
+        </div>
+
+        <div class="menu-card" data-tags="breakfast">
+          <div class="card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1625944525533-473f1a3d54e7?w=400&q=70" alt="Risotto" />
+            <span class="badge">Chef's Pick</span>
+          </div>
+          <div class="card-body">
+            <div class="card-header">
+              <h3>ต้มยำกุ้ง</h3>
+              <span class="price">105 บาท</span>
+            </div>
+            <p>Arborio rice, mixed wild mushrooms, white wine, truffle oil, aged parmesan.</p>
+            <div class="tags"><span class="tag veg">Vegetarian</span><span class="tag gf">Gluten-Free</span></div>
+          </div>
+        </div>
+
+        <div class="menu-card" data-tags="breakfast">
+          <div class="card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1625944525533-473f1a3d54e7?w=400&q=70" alt="Risotto" />
+            <span class="badge">Chef's Pick</span>
+          </div>
+          <div class="card-body">
+            <div class="card-header">
+              <h3>ต้มยำรวมมิตร</h3>
+              <span class="price">105 บาท</span>
+            </div>
+            <p>Arborio rice, mixed wild mushrooms, white wine, truffle oil, aged parmesan.</p>
+            <div class="tags"><span class="tag veg">Vegetarian</span><span class="tag gf">Gluten-Free</span></div>
+          </div>
+        </div>
+
+        <div class="menu-card" data-tags="breakfast">
+          <div class="card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1625944525533-473f1a3d54e7?w=400&q=70" alt="Risotto" />
+            <span class="badge">Chef's Pick</span>
+          </div>
+          <div class="card-body">
+            <div class="card-header">
+              <h3>กะเพรากับข้าว</h3>
+              <span class="price">105 บาท</span>
+            </div>
+            <p>Arborio rice, mixed wild mushrooms, white wine, truffle oil, aged parmesan.</p>
+            <div class="tags"><span class="tag veg">Vegetarian</span><span class="tag gf">Gluten-Free</span></div>
+          </div>
+        </div>
+
+        <div class="menu-card" data-tags="breakfast">
+          <div class="card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1625944525533-473f1a3d54e7?w=400&q=70" alt="Risotto" />
+            <span class="badge">Chef's Pick</span>
+          </div>
+          <div class="card-body">
+            <div class="card-header">
+              <h3>ผัดพริกแกงกับข้าว</h3>
+              <span class="price">105 บาท</span>
+            </div>
+            <p>Arborio rice, mixed wild mushrooms, white wine, truffle oil, aged parmesan.</p>
+            <div class="tags"><span class="tag veg">Vegetarian</span><span class="tag gf">Gluten-Free</span></div>
+          </div>
+        </div>
+
+        <div class="menu-card" data-tags="breakfast">
+          <div class="card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1625944525533-473f1a3d54e7?w=400&q=70" alt="Risotto" />
+            <span class="badge">Chef's Pick</span>
+          </div>
+          <div class="card-body">
+            <div class="card-header">
+              <h3>ผัดผงกะหรี่กับข้าว</h3>
+              <span class="price">105 บาท</span>
+            </div>
+            <p>Arborio rice, mixed wild mushrooms, white wine, truffle oil, aged parmesan.</p>
+            <div class="tags"><span class="tag veg">Vegetarian</span><span class="tag gf">Gluten-Free</span></div>
+          </div>
+        </div>
+
+        <div class="menu-card" data-tags="breakfast">
+          <div class="card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1625944525533-473f1a3d54e7?w=400&q=70" alt="Risotto" />
+            <span class="badge">Chef's Pick</span>
+          </div>
+          <div class="card-body">
+            <div class="card-header">
+              <h3>คั่วพริกเกลือกับข้าว</h3>
+              <span class="price">105 บาท</span>
+            </div>
+            <p>Arborio rice, mixed wild mushrooms, white wine, truffle oil, aged parmesan.</p>
+            <div class="tags"><span class="tag veg">Vegetarian</span><span class="tag gf">Gluten-Free</span></div>
           </div>
         </div>
 
@@ -519,7 +781,7 @@
           <div class="card-body">
             <div class="card-header">
               <h3>ช้าวต้ม</h3>
-              <span class="price">$24</span>
+              <span class="price">55 บาท</span>
             </div>
             <p>Slow-braised beef &amp; pork ragù, fresh egg pasta, parmigiano reggiano.</p>
           </div>
@@ -533,7 +795,7 @@
           <div class="card-body">
             <div class="card-header">
               <h3>โจ็ก</h3>
-              <span class="price">$23</span>
+              <span class="price">50 บาท</span>
             </div>
             <p>Arborio rice, mixed wild mushrooms, white wine, truffle oil, aged parmesan.</p>
             <div class="tags"><span class="tag veg">Vegetarian</span><span class="tag gf">Gluten-Free</span></div>
@@ -555,8 +817,23 @@
           </div>
           <div class="card-body">
             <div class="card-header">
+              <h3>โทสต์ญี่ปุ่น โชกุปัง</h3>
+              <span class="price">69 บาท</span>
+            </div>
+            <p>Mascarpone cream, espresso-soaked ladyfingers, cocoa dusting.</p>
+            <div class="tags"><span class="tag veg">Vegetarian</span></div>
+          </div>
+        </div>
+
+        <div class="menu-card" data-tags="desserts">
+          <div class="card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?w=400&q=70" alt="Tiramisu" />
+            <span class="badge">Popular</span>
+          </div>
+          <div class="card-body">
+            <div class="card-header">
               <h3>ฮันนี่โทส์ต</h3>
-              <span class="price">$12</span>
+              <span class="price">59 บาท</span>
             </div>
             <p>Mascarpone cream, espresso-soaked ladyfingers, cocoa dusting.</p>
             <div class="tags"><span class="tag veg">Vegetarian</span></div>
@@ -571,7 +848,7 @@
           <div class="card-body">
             <div class="card-header">
               <h3>โทสต์เนยน้ำตาล</h3>
-              <span class="price">$13</span>
+              <span class="price">59 บาท</span>
             </div>
             <p>Warm dark chocolate lava cake, vanilla bean ice cream, caramel sauce.</p>
             <div class="tags"><span class="tag veg">Vegetarian</span></div>
@@ -585,7 +862,7 @@
           <div class="card-body">
             <div class="card-header">
               <h3>ขนมปังสังขยา</h3>
-              <span class="price">$10</span>
+              <span class="price">45 บาท</span>
             </div>
             <p>Vanilla panna cotta, mixed berry coulis, crushed almond brittle.</p>
             <div class="tags"><span class="tag veg">Vegetarian</span><span class="tag gf">Gluten-Free</span></div>
@@ -599,7 +876,7 @@
           <div class="card-body">
             <div class="card-header">
               <h3>คาราเกะเฟรนช์ฟรายส์</h3>
-              <span class="price">$10</span>
+              <span class="price">65 บาท</span>
             </div>
             <p>Vanilla panna cotta, mixed berry coulis, crushed almond brittle.</p>
             <div class="tags"><span class="tag veg">Vegetarian</span><span class="tag gf">Gluten-Free</span></div>
@@ -611,7 +888,7 @@
 
     <!-- Coffee -->
     <section class="menu-section" data-category="coffee">
-      <h2 class="section-title">Coffee</h2>
+      <h2 class="section-title">กาแฟ / Coffee</h2>
       <div class="menu-grid">
 
         <div class="menu-card" data-tags="coffee">
@@ -621,7 +898,7 @@
           <div class="card-body">
             <div class="card-header">
               <h3>อะเมริกาโน่</h3>
-              <span class="price">$5 – $7</span>
+              <span class="price">50 บาท</span>
             </div>
             <p>Single-origin espresso, flat white, cold brew, oat/almond/full-cream milk options.</p>
             <div class="tags"><span class="tag veg">Vegetarian</span><span class="tag gf">Gluten-Free</span></div>
@@ -635,7 +912,7 @@
           <div class="card-body">
             <div class="card-header">
               <h3>อะเมริกาโน่ร้อน</h3>
-              <span class="price">$5 – $7</span>
+              <span class="price">45 บาท</span>
             </div>
             <p>Single-origin espresso, flat white, cold brew, oat/almond/full-cream milk options.</p>
             <div class="tags"><span class="tag veg">Vegetarian</span><span class="tag gf">Gluten-Free</span></div>
@@ -649,7 +926,7 @@
           <div class="card-body">
             <div class="card-header">
               <h3>อะเมริกาโน่ส้ม</h3>
-              <span class="price">$5 – $7</span>
+              <span class="price">55 บาท</span>
             </div>
             <p>Single-origin espresso, flat white, cold brew, oat/almond/full-cream milk options.</p>
             <div class="tags"><span class="tag veg">Vegetarian</span><span class="tag gf">Gluten-Free</span></div>
@@ -664,7 +941,7 @@
           <div class="card-body">
             <div class="card-header">
               <h3>อเมริกาโน่น้ำผึ้ง</h3>
-              <span class="price">55 บาท</span>
+              <span class="price">60 บาท</span>
             </div>
             <p>Aperol, prosecco, soda, blood orange, fresh mint.</p>
           </div>
@@ -677,7 +954,7 @@
           <div class="card-body">
             <div class="card-header">
               <h3>เอสเปรสโซ่</h3>
-              <span class="price">$5 – $7</span>
+              <span class="price">55 บาท</span>
             </div>
             <p>Single-origin espresso, flat white, cold brew, oat/almond/full-cream milk options.</p>
             <div class="tags"><span class="tag veg">Vegetarian</span><span class="tag gf">Gluten-Free</span></div>
@@ -691,7 +968,7 @@
           <div class="card-body">
             <div class="card-header">
               <h3>เอสเปรสโซ่ร้อน</h3>
-              <span class="price">$12 / glass</span>
+              <span class="price">50 บาท</span>
             </div>
             <p>Curated selection of red, white, and rosé. Ask your server for today's pour.</p>
             <div class="tags"><span class="tag gf">Gluten-Free</span></div>
@@ -705,7 +982,7 @@
           <div class="card-body">
             <div class="card-header">
               <h3>เอสเปรสโซ่นมโอ๊ต</h3>
-              <span class="price">$5 – $7</span>
+              <span class="price">55 บาท</span>
             </div>
             <p>Single-origin espresso, flat white, cold brew, oat/almond/full-cream milk options.</p>
             <div class="tags"><span class="tag veg">Vegetarian</span><span class="tag gf">Gluten-Free</span></div>
@@ -719,7 +996,7 @@
           <div class="card-body">
             <div class="card-header">
               <h3>คาปูชิโน่</h3>
-              <span class="price">$5 – $7</span>
+              <span class="price">55 บาท</span>
             </div>
             <p>Single-origin espresso, flat white, cold brew, oat/almond/full-cream milk options.</p>
             <div class="tags"><span class="tag veg">Vegetarian</span><span class="tag gf">Gluten-Free</span></div>
@@ -733,7 +1010,7 @@
           <div class="card-body">
             <div class="card-header">
               <h3>คาปูชิโน่ร้อน</h3>
-              <span class="price">$5 – $7</span>
+              <span class="price">50 บาท</span>
             </div>
             <p>Single-origin espresso, flat white, cold brew, oat/almond/full-cream milk options.</p>
             <div class="tags"><span class="tag veg">Vegetarian</span><span class="tag gf">Gluten-Free</span></div>
@@ -747,7 +1024,7 @@
           <div class="card-body">
             <div class="card-header">
               <h3>ลาเต้</h3>
-              <span class="price">$5 – $7</span>
+              <span class="price">55 บาท</span>
             </div>
             <p>Single-origin espresso, flat white, cold brew, oat/almond/full-cream milk options.</p>
             <div class="tags"><span class="tag veg">Vegetarian</span><span class="tag gf">Gluten-Free</span></div>
@@ -761,7 +1038,7 @@
           <div class="card-body">
             <div class="card-header">
               <h3>ลาเต้ร้อน</h3>
-              <span class="price">$5 – $7</span>
+              <span class="price">50 บาท</span>
             </div>
             <p>Single-origin espresso, flat white, cold brew, oat/almond/full-cream milk options.</p>
             <div class="tags"><span class="tag veg">Vegetarian</span><span class="tag gf">Gluten-Free</span></div>
@@ -775,7 +1052,7 @@
           <div class="card-body">
             <div class="card-header">
               <h3>มอคค่า</h3>
-              <span class="price">$5 – $7</span>
+              <span class="price">55 บาท</span>
             </div>
             <p>Single-origin espresso, flat white, cold brew, oat/almond/full-cream milk options.</p>
             <div class="tags"><span class="tag veg">Vegetarian</span><span class="tag gf">Gluten-Free</span></div>
@@ -789,7 +1066,7 @@
           <div class="card-body">
             <div class="card-header">
               <h3>มอคค่าร้อน</h3>
-              <span class="price">$5 – $7</span>
+              <span class="price">50 บาท</span>
             </div>
             <p>Single-origin espresso, flat white, cold brew, oat/almond/full-cream milk options.</p>
             <div class="tags"><span class="tag veg">Vegetarian</span><span class="tag gf">Gluten-Free</span></div>
@@ -803,7 +1080,7 @@
           <div class="card-body">
             <div class="card-header">
               <h3>มอคค่านมโอ๊ต</h3>
-              <span class="price">$5 – $7</span>
+              <span class="price">55 บาท</span>
             </div>
             <p>Single-origin espresso, flat white, cold brew, oat/almond/full-cream milk options.</p>
             <div class="tags"><span class="tag veg">Vegetarian</span><span class="tag gf">Gluten-Free</span></div>
@@ -817,26 +1094,13 @@
           <div class="card-body">
             <div class="card-header">
               <h3>คาราเมล แมคคิอาโต</h3>
-              <span class="price">$5 – $7</span>
+              <span class="price">60 บาท</span>
             </div>
             <p>Single-origin espresso, flat white, cold brew, oat/almond/full-cream milk options.</p>
             <div class="tags"><span class="tag veg">Vegetarian</span><span class="tag gf">Gluten-Free</span></div>
           </div>
         </div>
 
-        <div class="menu-card" data-tags="coffee">
-          <div class="card-img-wrap">
-            <img src="images\อเมริกาโน่ส้มเว็บ.png" alt="Coffee" />
-          </div>
-          <div class="card-body">
-            <div class="card-header">
-              <h3>คาราเมล แมคคิอาโต ร้อน</h3>
-              <span class="price">$5 – $7</span>
-            </div>
-            <p>Single-origin espresso, flat white, cold brew, oat/almond/full-cream milk options.</p>
-            <div class="tags"><span class="tag veg">Vegetarian</span><span class="tag gf">Gluten-Free</span></div>
-          </div>
-        </div>
 
       </div>
     </section>
@@ -853,7 +1117,7 @@
           <div class="card-body">
             <div class="card-header">
               <h3>ชาเขียวนม</h3>
-              <span class="price">$8</span>
+              <span class="price">55 บาท</span>
             </div>
             <p>Crispy fries tossed in truffle oil and parmesan.</p>
           </div>
@@ -866,7 +1130,7 @@
         <div class="card-body">
             <div class="card-header">
               <h3>มัทฉะลาเต้</h3>
-              <span class="price">$8</span>
+              <span class="price">65 บาท</span>
             </div>
             <p>Crispy fries tossed in truffle oil and parmesan.</p>
           </div>
@@ -879,7 +1143,7 @@
         <div class="card-body">
             <div class="card-header">
               <h3>เพียวมัทฉะ</h3>
-              <span class="price">$8</span>
+              <span class="price">65 บาท</span>
             </div>
             <p>Crispy fries tossed in truffle oil and parmesan.</p>
           </div>
@@ -892,7 +1156,7 @@
         <div class="card-body">
             <div class="card-header">
               <h3>ชาไทย</h3>
-              <span class="price">$8</span>
+              <span class="price">55 บาท</span>
             </div>
             <p>Crispy fries tossed in truffle oil and parmesan.</p>
           </div>
@@ -905,7 +1169,7 @@
         <div class="card-body">
             <div class="card-header">
               <h3>ชามะนาว</h3>
-              <span class="price">$8</span>
+              <span class="price">55 บาท</span>
             </div>
             <p>Crispy fries tossed in truffle oil and parmesan.</p>
           </div>
@@ -918,7 +1182,7 @@
         <div class="card-body">
             <div class="card-header">
               <h3>ชานมมะลิ</h3>
-              <span class="price">$8</span>
+              <span class="price">55 บาท</span>
             </div>
             <p>Crispy fries tossed in truffle oil and parmesan.</p>
           </div>
@@ -931,7 +1195,7 @@
         <div class="card-body">
             <div class="card-header">
               <h3>ชานมพีช</h3>
-              <span class="price">$8</span>
+              <span class="price">55 บาท</span>
             </div>
             <p>Crispy fries tossed in truffle oil and parmesan.</p>
           </div>
@@ -944,7 +1208,7 @@
         <div class="card-body">
             <div class="card-header">
               <h3>ชานมต้าหงเผา</h3>
-              <span class="price">$8</span>
+              <span class="price">55 บาท</span>
             </div>
             <p>Crispy fries tossed in truffle oil and parmesan.</p>
           </div>
@@ -957,7 +1221,7 @@
         <div class="card-body">
             <div class="card-header">
               <h3>ชานมมะลิสตอเบอร์รี่</h3>
-              <span class="price">$8</span>
+              <span class="price">60 บาท</span>
             </div>
             <p>Crispy fries tossed in truffle oil and parmesan.</p>
           </div>
@@ -970,7 +1234,7 @@
         <div class="card-body">
             <div class="card-header">
               <h3>ชาลิ้นจี่ใส</h3>
-              <span class="price">$8</span>
+              <span class="price">50 บาท</span>
             </div>
             <p>Crispy fries tossed in truffle oil and parmesan.</p>
           </div>
@@ -983,7 +1247,7 @@
         <div class="card-body">
             <div class="card-header">
               <h3>ชาพีชใส</h3>
-              <span class="price">$8</span>
+              <span class="price">50 บาท</span>
             </div>
             <p>Crispy fries tossed in truffle oil and parmesan.</p>
           </div>
@@ -996,7 +1260,7 @@
         <div class="card-body">
             <div class="card-header">
               <h3>ชามะลิใส</h3>
-              <span class="price">$8</span>
+              <span class="price">50 บาท</span>
             </div>
             <p>Crispy fries tossed in truffle oil and parmesan.</p>
           </div>
@@ -1009,7 +1273,7 @@
         <div class="card-body">
             <div class="card-header">
               <h3>ชามะลิใสสตอเบอรรี่ใส</h3>
-              <span class="price">$8</span>
+              <span class="price">55 บาท</span>
             </div>
             <p>Crispy fries tossed in truffle oil and parmesan.</p>
           </div>
@@ -1020,7 +1284,7 @@
     </section>
 
     <section class="menu-section" data-category="frappes">
-      <h2 class="section-title">เครื่องดื่มปั่น</h2>
+      <h2 class="section-title">เครื่องดื่มปั่น / Frappes</h2>
       <div class="menu-grid">
 
         <div class="menu-card" data-tags="frappes">
@@ -1030,7 +1294,20 @@
           <div class="card-body">
             <div class="card-header">
               <h3>สมูทตี้โยเกร์ต</h3>
-              <span class="price">$8</span>
+              <span class="price">65 บาท</span>
+            </div>
+            <p>Crispy fries tossed in truffle oil and parmesan.</p>
+          </div>
+        </div>
+
+        <div class="menu-card" data-tags="frappes">
+          <div class="card-img-wrap">
+            <img src="your-image.jpg" alt="Fries" />
+          </div>
+          <div class="card-body">
+            <div class="card-header">
+              <h3>โอริโอ้นมสดปั่น</h3>
+              <span class="price">60 บาท</span>
             </div>
             <p>Crispy fries tossed in truffle oil and parmesan.</p>
           </div>
@@ -1043,7 +1320,7 @@
           <div class="card-body">
             <div class="card-header">
               <h3>ลาเต้ปั่น</h3>
-              <span class="price">$8</span>
+              <span class="price">60 บาท</span>
             </div>
             <p>Crispy fries tossed in truffle oil and parmesan.</p>
           </div>
@@ -1056,7 +1333,7 @@
           <div class="card-body">
             <div class="card-header">
               <h3>คาปูชิโน่ปั้น</h3>
-              <span class="price">$8</span>
+              <span class="price">60 บาท</span>
             </div>
             <p>Crispy fries tossed in truffle oil and parmesan.</p>
           </div>
@@ -1069,7 +1346,7 @@
           <div class="card-body">
             <div class="card-header">
               <h3>มอคค่าปั่น</h3>
-              <span class="price">$8</span>
+              <span class="price">60 บาท</span>
             </div>
             <p>Crispy fries tossed in truffle oil and parmesan.</p>
           </div>
@@ -1082,7 +1359,7 @@
           <div class="card-body">
             <div class="card-header">
               <h3>ชาไทยปั่น</h3>
-              <span class="price">$8</span>
+              <span class="price">55 บาท</span>
             </div>
             <p>Crispy fries tossed in truffle oil and parmesan.</p>
           </div>
@@ -1095,7 +1372,7 @@
           <div class="card-body">
             <div class="card-header">
               <h3>ชามะนาวปั่น</h3>
-              <span class="price">$8</span>
+              <span class="price">60 บาท</span>
             </div>
             <p>Crispy fries tossed in truffle oil and parmesan.</p>
           </div>
@@ -1105,7 +1382,7 @@
     </section>
 
     <section class="menu-section" data-category="others">
-      <h2 class="section-title">เครื่องดื่มชง / นม</h2>
+      <h2 class="section-title">เครื่องดื่มชงและนม / Mixed Drinks & Milk</h2>
       <div class="menu-grid">
 
         <div class="menu-card" data-tags="others">
@@ -1115,7 +1392,7 @@
           <div class="card-body">
             <div class="card-header">
               <h3>โกโก้</h3>
-              <span class="price">$8</span>
+              <span class="price">55 บาท</span>
             </div>
             <p>Crispy fries tossed in truffle oil and parmesan.</p>
           </div>
@@ -1128,7 +1405,7 @@
           <div class="card-body">
             <div class="card-header">
               <h3>นมชมพู</h3>
-              <span class="price">$8</span>
+              <span class="price">50 บาท</span>
             </div>
             <p>Crispy fries tossed in truffle oil and parmesan.</p>
           </div>
@@ -1141,7 +1418,7 @@
           <div class="card-body">
             <div class="card-header">
               <h3>โกโก้มิ้นต์</h3>
-              <span class="price">$8</span>
+              <span class="price">60 บาท</span>
             </div>
             <p>Crispy fries tossed in truffle oil and parmesan.</p>
           </div>
@@ -1155,7 +1432,7 @@
 
 
     <section class="menu-section" data-category="soda">
-      <h2 class="section-title">โซดา</h2>
+      <h2 class="section-title">โซดา / Soda</h2>
       <div class="menu-grid">
 
         <div class="menu-card" data-tags="soda">
@@ -1164,8 +1441,8 @@
           </div>
           <div class="card-body">
             <div class="card-header">
-              <h3>นมชมพู</h3>
-              <span class="price">$8</span>
+              <h3>พั้นโซดา</h3>
+              <span class="price">45 บาท</span>
             </div>
             <p>Crispy fries tossed in truffle oil and parmesan.</p>
           </div>
@@ -1178,7 +1455,7 @@
           <div class="card-body">
             <div class="card-header">
               <h3>บลูฮาวายโซดา</h3>
-              <span class="price">$8</span>
+              <span class="price">45 บาท</span>
             </div>
             <p>Crispy fries tossed in truffle oil and parmesan.</p>
           </div>
@@ -1191,7 +1468,7 @@
           <div class="card-body">
             <div class="card-header">
               <h3>สตอเบอรรี่โซดา</h3>
-              <span class="price">$8</span>
+              <span class="price">45 บาท</span>
             </div>
             <p>Crispy fries tossed in truffle oil and parmesan.</p>
           </div>
@@ -1204,7 +1481,7 @@
           <div class="card-body">
             <div class="card-header">
               <h3>มะม่วงโซดา</h3>
-              <span class="price">$8</span>
+              <span class="price">45 บาท</span>
             </div>
             <p>Crispy fries tossed in truffle oil and parmesan.</p>
           </div>
@@ -1217,7 +1494,7 @@
           <div class="card-body">
             <div class="card-header">
               <h3>แดงมะนาวโซดา</h3>
-              <span class="price">$8</span>
+              <span class="price">45 บาท</span>
             </div>
             <p>Crispy fries tossed in truffle oil and parmesan.</p>
           </div>

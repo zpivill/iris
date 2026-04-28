@@ -19,3 +19,11 @@ buttons.forEach(btn => {
     });
   });
 });
+
+window.onload = function() {
+  document.getElementById("popup").style.display = "flex";
+};
+
+document.getElementById("closeBtn").onclick = function() {
+  document.getElementById("popup").style.display = "none";
+};
