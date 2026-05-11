@@ -77,6 +77,9 @@
   --clr-shrimp: #de5325;
   --clr-squid: #dbfaff;
   --clr-gs: #ffd82d;
+  --clr-mp: #e3ca92;
+  --clr-chicken: #e39292;
+  --clr-pork: #8e786b;
   --radius:       12px;
   --shadow:       0 4px 24px rgba(0,0,0,.45);
 }
@@ -335,6 +338,9 @@ body {
 .tag.shrimp  { background: rgba(255, 156, 123, 0.15); color: var(--clr-shrimp); border: 1px solid rgba(255, 156, 123, 0.3); }
 .tag.squid  { background: rgba(219, 250, 255, 0.15); color: var(--clr-squid); border: 1px solid rgba(219, 250, 255, 0.3); }
 .tag.gs  { background: rgba(255, 216, 45, 0.15); color: var(--clr-gs); border: 1px solid rgba(255, 216, 45, 0.3); }
+.tag.mp  { background: rgba(232, 207, 106, 0.15); color: var(--clr-mp); border: 1px solid rgba(255, 249, 224, 0.3); }
+.tag.chicken  { background: rgba(255, 52, 52, 0.15); color: var(--clr-chicken); border: 1px solid rgba(227, 146, 146, 0.3); }
+.tag.pork  { background: rgba(142, 65, 20, 0.15); color: var(--clr-pork); border: 1px solid rgba(142, 120, 107, 0.3); }
 
 
 /* ===== Footer ===== */
