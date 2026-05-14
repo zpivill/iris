@@ -1,9 +1,34 @@
 ﻿<!DOCTYPE html>
-<html lang="en"><!-- Thai content can use lang="th" on individual elements -->
+<html lang="th">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Iris — Menu</title>
+  <title>Iris Lé Bian — เมนูอาหาร | Thai Café & Restaurant</title>
+
+  <!-- SEO & Social -->
+  <meta name="description" content="Iris Lé Bian — ร้านอาหารและคาเฟ่ เมนูหลากหลาย ทั้งอาหารไทย สปาเกตตี้ กาแฟ ชา และเครื่องดื่มปั่น เปิดทุกวัน (ยกเว้นวันจันทร์)" />
+  <meta name="keywords" content="Iris Le Bian, ร้านอาหาร, คาเฟ่, เมนูอาหาร, กาแฟ, ชา, กะเพรา, สปาเกตตี้, ข้าวผัด, เครื่องดื่ม" />
+  <link rel="canonical" href="https://zpivill.github.io/iris/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="restaurant.restaurant" />
+  <meta property="og:title" content="Iris Lé Bian — Thai Café & Restaurant" />
+  <meta property="og:description" content="ร้านอาหารและคาเฟ่ เมนูหลากหลาย ทั้งอาหารไทย สปาเกตตี้ กาแฟ ชา และเครื่องดื่มปั่น" />
+  <meta property="og:image" content="https://zpivill.github.io/iris/images/Env.jpg" />
+  <meta property="og:url" content="https://zpivill.github.io/iris/" />
+  <meta property="og:locale" content="th_TH" />
+  <meta property="og:locale:alternate" content="en_GB" />
+  <meta property="og:locale:alternate" content="zh_CN" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Iris Lé Bian — Thai Café & Restaurant" />
+  <meta name="twitter:description" content="ร้านอาหารและคาเฟ่ เมนูหลากหลาย ทั้งอาหารไทย สปาเกตตี้ กาแฟ ชา และเครื่องดื่มปั่น" />
+  <meta name="twitter:image" content="https://zpivill.github.io/iris/images/Env.jpg" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%2332260a'/><text y='.9em' font-size='80' font-family='serif' fill='%23c9a96e' x='18'>I</text></svg>" />
+  <link rel="apple-touch-icon" href="images/Env.jpg" />
 
   <!-- Google Analytics 4 (Measurement ID: G-TFPM806FEH) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-TFPM806FEH"></script>
@@ -22,11 +47,11 @@
 </head>
 <body>
   <!-- Popup -->
-  <div id="popup" class="popup">
+  <div id="popup" class="popup" role="dialog" aria-modal="true" aria-labelledby="popupHeading" hidden>
     <div class="popup-content">
-      <span id="closeBtn">&times;</span>
+      <button id="closeBtn" aria-label="Close">&times;</button>
 
-      <div class="popup-lang" data-lang="th"><h1>ยินดีต้อนรับ</h1>
+      <div class="popup-lang" data-lang="th"><h1 id="popupHeading">ยินดีต้อนรับ</h1>
       <p>ยินดีต้อนรับเข้าสู่เว็บไซต์ของร้าน Iris Lé Bian ร้านกาแฟและอาหารตามสั่ง</p>
       <p>เว็บไซต์นี้จะให้ข้อมูลเกี่ยวกับเมนูอาหารและเครื่องดื่มของร้าน และจะมีการอัปเดตข้อมูลอย่างสม่ำเสมอ</p>
       <p>สำหรับลูกค้าที่เข้ามารับประทานอาหารที่ร้านสามารถสั่งอาหารและเครื่องดื่มได้จาก QR Code ที่อยู่บนโต๊ะของท่าน</p>
@@ -87,41 +112,7 @@
   <main class="menu-container">
 
     <!-- Newest Additions -->
-    <!--<section class="menu-section" data-category="Placeholder">
-      <h2 class="section-title">อาหารมาใหม่ / Newest editions</h2>
-      <div class="menu-grid">
-
-        <div class="menu-card" data-tags="pasta">
-          <div class="card-img-wrap">
-            <img src="https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?w=400&q=70" alt="Pasta" loading="lazy" decoding="async" />
-            <span class="badge">Popular</span>
-          </div>
-          <div class="card-body">
-            <div class="card-header">
-              <h3>ช้าวต้ม</h3>
-              <span class="price">55 บาท</span>
-            </div>
-             Slow-braised beef &amp; pork ragù, fresh egg pasta, parmigiano reggiano. 
-          </div>
-        </div>
-
-        <div class="menu-card" data-tags="breakfast">
-          <div class="card-img-wrap">
-            <img src="https://images.unsplash.com/photo-1625944525533-473f1a3d54e7?w=400&q=70" alt="Risotto" loading="lazy" decoding="async" />
-            <span class="badge">Chef's Pick</span>
-          </div>
-          <div class="card-body">
-            <div class="card-header">
-              <h3>โจ็ก</h3>
-              <span class="price">50 บาท</span>
-            </div>
-            Arborio rice, mixed wild mushrooms, white wine, truffle oil, aged parmesan. 
-            <div class="tags"><span class="tag veg" data-en="Vegetarian" data-zh="素食">Vegetarian</span><span class="tag gf" data-en="Gluten-Free" data-zh="无麸质">Gluten-Free</span></div>
-          </div>
-        </div>
-
-      </div>
-    </section>-->
+    
 
     <!-- Set -->
     <section class="menu-section" data-category="Set">
@@ -130,7 +121,7 @@
 
         <div class="menu-card" data-tags="Set">
           <div class="card-img-wrap">
-            <img src="images\ชุดกระเพรา2.jpg" alt="Calamari" loading="lazy" decoding="async" />
+            <img src="images/ชุดกระเพรา2.jpg" alt="ชุดกระเพราราดข้าว" loading="lazy" decoding="async" />
             <span class="badge" data-en="Best Seller" data-zh="热销">ขายดี</span>
           </div>
           <div class="card-body">
@@ -154,7 +145,7 @@
 
         <div class="menu-card" data-tags="Set">
           <div class="card-img-wrap">
-            <img src="images\ชุดพริกแกง.jpg" alt="Calamari" loading="lazy" decoding="async" />
+            <img src="images/ชุดพริกแกง.jpg" alt="ชุดผัดพริกแกงราดข้าว" loading="lazy" decoding="async" />
           </div>
           <div class="card-body">
             <div class="card-header">
@@ -175,7 +166,7 @@
 
         <div class="menu-card" data-tags="Set">
           <div class="card-img-wrap">
-            <img src="images\teafood\guaykubyuan.jpg" alt="Calamari" loading="lazy" decoding="async" />
+            <img src="images/teafood/guaykubyuan.jpg" alt="ชุดข้าวผัด" loading="lazy" decoding="async" />
           </div>
           <div class="card-body">
             <div class="card-header">
@@ -197,7 +188,7 @@
 
         <div class="menu-card" data-tags="Set">
           <div class="card-img-wrap">
-            <img src="images\ชุดสปาขี้เมา (1448 x 950 px) (2).jpg" alt="ชุดสปาเกตตี้ขี้เมา + ชา/กาแฟ" loading="lazy" decoding="async" />
+            <img src="images/ชุดสปาขี้เมา (1448 x 950 px) (2).jpg" alt="ชุดสปาเกตตี้ขี้เมา + ชา/กาแฟ" loading="lazy" decoding="async" />
             
           </div>
           <div class="card-body">
@@ -221,7 +212,7 @@
 
         <div class="menu-card" data-tags="Set">
           <div class="card-img-wrap">
-            <img src="images\final1\carbo set.jpg" alt="Soup" loading="lazy" decoding="async" />
+            <img src="images/final1/carbo set.jpg" alt="ชุดสปาเกตตี้คาโบนาร่า" loading="lazy" decoding="async" />
           </div>
           <div class="card-body">
             <div class="card-header">
@@ -238,7 +229,7 @@
 
         <div class="menu-card" data-tags="Set">
           <div class="card-img-wrap">
-            <img src="images\ชุดก๋วยจั๊บญวน.jpg" alt="Calamari" loading="lazy" decoding="async" />
+            <img src="images/ชุดก๋วยจั๊บญวน.jpg" alt="ชุดก๋วยจั๊บญวน" loading="lazy" decoding="async" />
           </div>
           <div class="card-body">
             <div class="card-header">
@@ -249,24 +240,7 @@
           </div>
         </div>
 
-        <!--
-
-        <div class="menu-card" data-tags="Set">
-          <div class="card-img-wrap">
-            <img src="https://images.unsplash.com/photo-1482012792084-a0c3725f289f?w=400&q=70" alt="Charcuterie" loading="lazy" decoding="async" />
-            <span class="badge">Chef's Pick</span>
-          </div>
-          <div class="card-body">
-            <div class="card-header">
-              <h3>ชุดออมเล็ต (อาหารเช้า) + ชา/กาแฟ</h3>
-              <span class="price">99 บาท</span>
-            </div>
-             Cured meats, artisan cheeses, honeycomb, seasonal fruit, house-made crackers. 
-            <div class="tags"><span class="tag gf" data-en="Gluten-Free" data-zh="无麸质">Gluten-Free</span></div>
-          </div>
-        </div>
-
-      -->
+        
 
       </div>
     </section>
@@ -278,7 +252,7 @@
 
         <div class="menu-card" data-tags="mains">
           <div class="card-img-wrap">
-            <img src="images\food1\kaprao.jpg" alt="Salmon" loading="lazy" decoding="async" />
+            <img src="images/food1/kaprao.jpg" alt="กะเพราเนื้อราดข้าว" loading="lazy" decoding="async" />
             <span class="badge" data-en="Best Seller" data-zh="热销">ขายดี</span>
           </div>
           <div class="card-body">
@@ -298,58 +272,11 @@
           </div>
         </div>
 
-        <!--
+        
 
         <div class="menu-card" data-tags="mains">
           <div class="card-img-wrap">
-            <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400&q=70" alt="Salmon" loading="lazy" decoding="async" />
-            <span class="badge">Popular</span>
-          </div>
-          <div class="card-body">
-            <div class="card-header">
-              <h3>กะเพราทะเลราดข้าว</h3>
-              <span class="price">80 บาท</span>
-            </div>
-             Atlantic salmon fillet, lemon butter sauce, asparagus, wild rice. 
-            <div class="tags"><span class="tag gf" data-en="Gluten-Free" data-zh="无麸质">Gluten-Free</span></div>
-          </div>
-        </div>
-
-        <div class="menu-card" data-tags="mains">
-          <div class="card-img-wrap">
-            <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400&q=70" alt="Salmon" loading="lazy" decoding="async" />
-            <span class="badge">Popular</span>
-          </div>
-          <div class="card-body">
-            <div class="card-header">
-              <h3>กะเพราหมูกรอบราดข้าว</h3>
-              <span class="price">75 บาท</span>
-            </div>
-             Atlantic salmon fillet, lemon butter sauce, asparagus, wild rice. 
-            <div class="tags"><span class="tag gf" data-en="Gluten-Free" data-zh="无麸质">Gluten-Free</span></div>
-          </div>
-        </div>
-
-        <div class="menu-card" data-tags="mains">
-          <div class="card-img-wrap">
-            <img src="images\food1\chickenkrisp.jpg" alt="Salmon" loading="lazy" decoding="async" />
-            <span class="badge">Popular</span>
-          </div>
-          <div class="card-body">
-            <div class="card-header">
-              <h3>กะเพราไก่กรอบราดข้าว</h3>
-              <span class="price">75 บาท</span>
-            </div>
-             Atlantic salmon fillet, lemon butter sauce, asparagus, wild rice. 
-            <div class="tags"><span class="tag gf" data-en="Gluten-Free" data-zh="无麸质">Gluten-Free</span></div>
-          </div>
-        </div>
-
-      -->
-
-        <div class="menu-card" data-tags="mains">
-          <div class="card-img-wrap">
-            <img src="images\teafood\friedrice.jpg" alt="Steak" loading="lazy" decoding="async" />
+            <img src="images/teafood/friedrice.jpg" alt="ข้าวผัด" loading="lazy" decoding="async" />
             
           </div>
           <div class="card-body">
@@ -371,7 +298,7 @@
 
         <div class="menu-card" data-tags="mains">
           <div class="card-img-wrap">
-            <img src="images\final1\fishpad (2).jpg" alt="Veggie Bowl" loading="lazy" decoding="async" />
+            <img src="images/final1/fishpad (2).jpg" alt="ข้าวผัดปลาสลิด" loading="lazy" decoding="async" />
           </div>
           <div class="card-body">
             <div class="card-header">
@@ -385,7 +312,7 @@
 
         <div class="menu-card" data-tags="mains">
           <div class="card-img-wrap">
-            <img src="images\food2\american.jpg" alt="Veggie Bowl" loading="lazy" decoding="async" />
+            <img src="images/food2/american.jpg" alt="ข้าวผัดอเมริกัน" loading="lazy" decoding="async" />
           </div>
           <div class="card-body">
             <div class="card-header">
@@ -399,7 +326,7 @@
 
         <div class="menu-card" data-tags="mains">
           <div class="card-img-wrap">
-            <img src="images\final1\pad egg.jpg" alt="Chicken" loading="lazy" decoding="async" />
+            <img src="images/final1/pad egg.jpg" alt="ข้าวผัดไข่" loading="lazy" decoding="async" />
           </div>
           <div class="card-body">
             <div class="card-header">
@@ -413,7 +340,7 @@
 
         <div class="menu-card" data-tags="mains">
           <div class="card-img-wrap">
-            <img src="images\final1\germany pad.jpg" alt="Chicken" loading="lazy" decoding="async" />
+            <img src="images/final1/germany pad.jpg" alt="ข้าวผัดไส้กรอกเยอรมัน" loading="lazy" decoding="async" />
           </div>
           <div class="card-body">
             <div class="card-header">
@@ -427,7 +354,7 @@
 
         <div class="menu-card" data-tags="mains">
           <div class="card-img-wrap">
-            <img src="images\teafood\pad nhaem2.jpg" alt="Chicken" loading="lazy" decoding="async" />
+            <img src="images/teafood/pad nhaem2.jpg" alt="ข้าวผัดแหนม" loading="lazy" decoding="async" />
           </div>
           <div class="card-body">
             <div class="card-header">
@@ -441,7 +368,7 @@
 
         <div class="menu-card" data-tags="mains">
           <div class="card-img-wrap">
-            <img src="images\food1\curry.jpg" alt="Chicken" loading="lazy" decoding="async" />
+            <img src="images/food1/curry.jpg" alt="ผัดผงกะหรี่ราดข้าว" loading="lazy" decoding="async" />
             <span class="badge" data-en="Recommended" data-zh="推荐">แนะนำ</span>
           </div>
           <div class="card-body">
@@ -463,7 +390,7 @@
 
         <div class="menu-card" data-tags="mains">
           <div class="card-img-wrap">
-            <img src="images\food1\prikkang.jpg" alt="Chicken" loading="lazy" decoding="async" />
+            <img src="images/food1/prikkang.jpg" alt="ผัดพริกแกงราดข้าว" loading="lazy" decoding="async" />
           </div>
           <div class="card-body">
             <div class="card-header">
@@ -484,7 +411,7 @@
 
         <div class="menu-card" data-tags="mains">
           <div class="card-img-wrap">
-            <img src="images\food1\kuapigkua.jpg" alt="Chicken" loading="lazy" decoding="async" />
+            <img src="images/food1/kuapigkua.jpg" alt="คั่วพริกเกลือ" loading="lazy" decoding="async" />
             <span class="badge" data-en="Recommended" data-zh="推荐">แนะนำ</span>
           </div>
           <div class="card-body">
@@ -506,7 +433,7 @@
 
         <div class="menu-card" data-tags="mains">
           <div class="card-img-wrap">
-            <img src="images\food1\kratiamcabonara.jpg" alt="Chicken" loading="lazy" decoding="async" />
+            <img src="images/food1/kratiamcabonara.jpg" alt="ข้าวกระเทียม" loading="lazy" decoding="async" />
           </div>
           <div class="card-body">
             <div class="card-header">
@@ -527,7 +454,7 @@
 
         <div class="menu-card" data-tags="mains">
           <div class="card-img-wrap">
-            <img src="images\food2\egg.jpg" alt="Chicken" loading="lazy" decoding="async" />
+            <img src="images/food2/egg.jpg" alt="ข้าวไข่เจียวฟู" loading="lazy" decoding="async" />
           </div>
           <div class="card-body">
             <div class="card-header">
@@ -541,7 +468,7 @@
 
         <div class="menu-card" data-tags="mains">
           <div class="card-img-wrap">
-            <img src="images\food2\pork eg.jpg" alt="Chicken" loading="lazy" decoding="async" />
+            <img src="images/food2/pork eg.jpg" alt="ข้าวไข่เจียวหมูสับ" loading="lazy" decoding="async" />
           </div>
           <div class="card-body">
             <div class="card-header">
@@ -555,7 +482,7 @@
 
         <div class="menu-card" data-tags="mains">
           <div class="card-img-wrap">
-            <img src="images\food2\shrimp eg.jpg" alt="Chicken" loading="lazy" decoding="async" />
+            <img src="images/food2/shrimp eg.jpg" alt="ข้าวไข่เจียวกุ้งสับ" loading="lazy" decoding="async" />
           </div>
           <div class="card-body">
             <div class="card-header">
@@ -567,27 +494,11 @@
           </div>
         </div>
 
-        <!--
+        
 
         <div class="menu-card" data-tags="mains">
           <div class="card-img-wrap">
-            <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&q=70" alt="Chicken" loading="lazy" decoding="async" />
-          </div>
-          <div class="card-body">
-            <div class="card-header">
-              <h3>ข้าวหมูแดง</h3>
-              <span class="price">55 บาท</span>
-            </div>
-             Free-range half chicken, rosemary jus, crushed potatoes, seasonal greens. 
-            <div class="tags"><span class="tag gf" data-en="Gluten-Free" data-zh="无麸质">Gluten-Free</span></div>
-          </div>
-        </div>
-
-      -->
-
-        <div class="menu-card" data-tags="mains">
-          <div class="card-img-wrap">
-            <img src="images\final1\fishpad.jpg" alt="Chicken" loading="lazy" decoding="async" />
+            <img src="images/final1/fishpad.jpg" alt="ข้าวมันไก่" loading="lazy" decoding="async" />
           </div>
           <div class="card-body">
             <div class="card-header">
@@ -599,27 +510,11 @@
           </div>
         </div>
 
-        <!--
+        
 
         <div class="menu-card" data-tags="mains">
           <div class="card-img-wrap">
-            <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&q=70" alt="Chicken" loading="lazy" decoding="async" />
-          </div>
-          <div class="card-body">
-            <div class="card-header">
-              <h3>ข้าวชาหมู</h3>
-              <span class="price">65 บาท</span>
-            </div>
-             Free-range half chicken, rosemary jus, crushed potatoes, seasonal greens. 
-            <div class="tags"><span class="tag gf" data-en="Gluten-Free" data-zh="无麸质">Gluten-Free</span></div>
-          </div>
-        </div>
-
-      -->
-
-        <div class="menu-card" data-tags="mains">
-          <div class="card-img-wrap">
-            <img src="images\food2\mhee kamoo.jpg" alt="Chicken" loading="lazy" decoding="async" />
+            <img src="images/food2/mhee kamoo.jpg" alt="บะหมี่ขาหมู" loading="lazy" decoding="async" />
           </div>
           <div class="card-body">
             <div class="card-header">
@@ -633,7 +528,7 @@
 
         <div class="menu-card" data-tags="mains">
           <div class="card-img-wrap">
-            <img src="images\food1\cabonara.jpg" alt="Chicken" loading="lazy" decoding="async" />
+            <img src="images/food1/cabonara.jpg" alt="สปาเกตตีคาโบนาร่า" loading="lazy" decoding="async" />
           </div>
           <div class="card-body">
             <div class="card-header">
@@ -647,7 +542,7 @@
 
         <div class="menu-card" data-tags="mains">
           <div class="card-img-wrap">
-            <img src="images\food1\shrimp cabonara.jpg" alt="Chicken" loading="lazy" decoding="async" />
+            <img src="images/food1/shrimp cabonara.jpg" alt="สปาเกตตีคาโบนาร่ากุ้ง" loading="lazy" decoding="async" />
           </div>
           <div class="card-body">
             <div class="card-header">
@@ -661,7 +556,7 @@
 
         <div class="menu-card" data-tags="mains">
           <div class="card-img-wrap">
-            <img src="images\final1\drunkspa.jpg" alt="Chicken" loading="lazy" decoding="async" />
+            <img src="images/final1/drunkspa.jpg" alt="สปาเกตตีขี้เมา" loading="lazy" decoding="async" />
             <span class="badge" data-en="Best Seller" data-zh="热销">ขายดี</span>
           </div>
           <div class="card-body">
@@ -683,7 +578,7 @@
 
         <div class="menu-card" data-tags="mains">
           <div class="card-img-wrap">
-            <img src="images\food2\german sparg.jpg" alt="Chicken" loading="lazy" decoding="async" />
+            <img src="images/food2/german sparg.jpg" alt="สปาเกตตีไส้กรอกขี้เมา" loading="lazy" decoding="async" />
           </div>
           <div class="card-body">
             <div class="card-header">
@@ -697,7 +592,7 @@
 
         <div class="menu-card" data-tags="mains">
           <div class="card-img-wrap">
-            <img src="images\teafood\mama.jpg" alt="Chicken" loading="lazy" decoding="async" />
+            <img src="images/teafood/mama.jpg" alt="มาม่าผัดขี้เมา" loading="lazy" decoding="async" />
           </div>
           <div class="card-body">
             <div class="card-header">
@@ -719,7 +614,7 @@
 
         <div class="menu-card" data-tags="mains">
           <div class="card-img-wrap">
-            <img src="images\food1\noodles.jpg" alt="Chicken" loading="lazy" decoding="async" />
+            <img src="images/food1/noodles.jpg" alt="ก๋วยจั๊บญวน" loading="lazy" decoding="async" />
             <span class="badge" data-en="Best Seller" data-zh="热销">ขายดี</span>
           </div>
           <div class="card-body">
@@ -734,7 +629,7 @@
 
         <div class="menu-card" data-tags="mains">
           <div class="card-img-wrap">
-            <img src="images\food2\mk.jpg" alt="Chicken" loading="lazy" decoding="async" />
+            <img src="images/food2/mk.jpg" alt="สุกี้น้ำ" loading="lazy" decoding="async" />
           </div>
           <div class="card-body">
             <div class="card-header">
@@ -755,7 +650,7 @@
 
         <div class="menu-card" data-tags="mains">
           <div class="card-img-wrap">
-            <img src="images\final1\mk2.jpg" alt="Chicken" loading="lazy" decoding="async" />
+            <img src="images/final1/mk2.jpg" alt="สุกี้แห้ง" loading="lazy" decoding="async" />
             <span class="badge" data-en="Recommended" data-zh="推荐">แนะนำ</span> 
           </div>
           <div class="card-body">
@@ -783,9 +678,9 @@
       <h2 class="section-title" data-en="Soups &amp; Sides" data-zh="汤品与配菜">แกงและกับข้าว / Soup & Dishes</h2>
       <div class="menu-grid">
 
-        <div class="menu-card" data-tags="pasta">
+        <div class="menu-card" data-tags="side">
           <div class="card-img-wrap">
-            <img src="images\teafood\kaengjud.jpg" alt="Pasta" loading="lazy" decoding="async" />
+            <img src="images/teafood/kaengjud.jpg" alt="แกงจืดเต้าหู้หมูสับ" loading="lazy" decoding="async" />
             <span class="badge" data-en="Recommended" data-zh="推荐">แนะนำ</span>
           </div>
           <div class="card-body">
@@ -797,9 +692,9 @@
           </div>
         </div>
 
-        <div class="menu-card" data-tags="pasta">
+        <div class="menu-card" data-tags="side">
           <div class="card-img-wrap">
-            <img src="images\fix\kaengjud.jpg" alt="Pasta" loading="lazy" decoding="async" />
+            <img src="images/fix/kaengjud.jpg" alt="แกงจืดไข่น้ำเต้าหู้" loading="lazy" decoding="async" />
             
           </div>
           <div class="card-body">
@@ -811,9 +706,9 @@
           </div>
         </div>
 
-        <div class="menu-card" data-tags="breakfast">
+        <div class="menu-card" data-tags="side">
           <div class="card-img-wrap">
-            <img src="images\food2\tyk.jpg" alt="Risotto" loading="lazy" decoding="async" />
+            <img src="images/food2/tyk.jpg" alt="ต้มยำกุ้ง" loading="lazy" decoding="async" />
             <span class="badge" data-en="Best Seller" data-zh="热销">ขายดี</span>
           </div>
           <div class="card-body">
@@ -826,9 +721,9 @@
           </div>
         </div>
 
-        <div class="menu-card" data-tags="breakfast">
+        <div class="menu-card" data-tags="side">
           <div class="card-img-wrap">
-            <img src="images\fix\tyk.jpg" alt="Risotto" loading="lazy" decoding="async" />
+            <img src="images/fix/tyk.jpg" alt="ต้มยำรวมมิตร" loading="lazy" decoding="async" />
             
           </div>
           <div class="card-body">
@@ -841,69 +736,7 @@
           </div>
         </div>
 
-        <!--
-
-        <div class="menu-card" data-tags="breakfast">
-          <div class="card-img-wrap">
-            <img src="https://images.unsplash.com/photo-1625944525533-473f1a3d54e7?w=400&q=70" alt="Risotto" loading="lazy" decoding="async" />
-            <span class="badge">Chef's Pick</span>
-          </div>
-          <div class="card-body">
-            <div class="card-header">
-              <h3>กะเพรากับข้าว</h3>
-              <span class="price">105 บาท</span>
-            </div>
-             Arborio rice, mixed wild mushrooms, white wine, truffle oil, aged parmesan. 
-            <div class="tags"><span class="tag veg" data-en="Vegetarian" data-zh="素食">Vegetarian</span><span class="tag gf" data-en="Gluten-Free" data-zh="无麸质">Gluten-Free</span></div>
-          </div>
-        </div>
-
-        <div class="menu-card" data-tags="breakfast">
-          <div class="card-img-wrap">
-            <img src="https://images.unsplash.com/photo-1625944525533-473f1a3d54e7?w=400&q=70" alt="Risotto" loading="lazy" decoding="async" />
-            <span class="badge">Chef's Pick</span>
-          </div>
-          <div class="card-body">
-            <div class="card-header">
-              <h3>ผัดพริกแกงกับข้าว</h3>
-              <span class="price">105 บาท</span>
-            </div>
-             Arborio rice, mixed wild mushrooms, white wine, truffle oil, aged parmesan. 
-            <div class="tags"><span class="tag veg" data-en="Vegetarian" data-zh="素食">Vegetarian</span><span class="tag gf" data-en="Gluten-Free" data-zh="无麸质">Gluten-Free</span></div>
-          </div>
-        </div>
-
-        <div class="menu-card" data-tags="breakfast">
-          <div class="card-img-wrap">
-            <img src="https://images.unsplash.com/photo-1625944525533-473f1a3d54e7?w=400&q=70" alt="Risotto" loading="lazy" decoding="async" />
-            <span class="badge">Chef's Pick</span>
-          </div>
-          <div class="card-body">
-            <div class="card-header">
-              <h3>ผัดผงกะหรี่กับข้าว</h3>
-              <span class="price">105 บาท</span>
-            </div>
-            - Arborio rice, mixed wild mushrooms, white wine, truffle oil, aged parmesan. 
-            <div class="tags"><span class="tag veg" data-en="Vegetarian" data-zh="素食">Vegetarian</span><span class="tag gf" data-en="Gluten-Free" data-zh="无麸质">Gluten-Free</span></div>
-          </div>
-        </div>
-
-        <div class="menu-card" data-tags="breakfast">
-          <div class="card-img-wrap">
-            <img src="https://images.unsplash.com/photo-1625944525533-473f1a3d54e7?w=400&q=70" alt="Risotto" loading="lazy" decoding="async" />
-            <span class="badge">Chef's Pick</span>
-          </div>
-          <div class="card-body">
-            <div class="card-header">
-              <h3>คั่วพริกเกลือกับข้าว</h3>
-              <span class="price">105 บาท</span>
-            </div>
-             Arborio rice, mixed wild mushrooms, white wine, truffle oil, aged parmesan. 
-            <div class="tags"><span class="tag veg" data-en="Vegetarian" data-zh="素食">Vegetarian</span><span class="tag gf" data-en="Gluten-Free" data-zh="无麸质">Gluten-Free</span></div>
-          </div>
-        </div>
-
-      -->
+        
 
       </div>
     </section>
@@ -911,44 +744,7 @@
     
 
     <!-- Pasta & Risotto -->
-    <!--
-    <section class="menu-section" data-category="breakfast">
-      <h2 class="section-title">อาหารเช้า / Breakfast</h2>
-      <div class="menu-grid">
-
-        <div class="menu-card" data-tags="pasta">
-          <div class="card-img-wrap">
-            <img src="https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?w=400&q=70" alt="Pasta" loading="lazy" decoding="async" />
-            <span class="badge">Popular</span>
-          </div>
-          <div class="card-body">
-            <div class="card-header">
-              <h3>ช้าวต้ม</h3>
-              <span class="price">55 บาท</span>
-            </div>
-             Slow-braised beef &amp; pork ragù, fresh egg pasta, parmigiano reggiano. 
-          </div>
-        </div>
-
-        <div class="menu-card" data-tags="breakfast">
-          <div class="card-img-wrap">
-            <img src="https://images.unsplash.com/photo-1625944525533-473f1a3d54e7?w=400&q=70" alt="Risotto" loading="lazy" decoding="async" />
-            <span class="badge">Chef's Pick</span>
-          </div>
-          <div class="card-body">
-            <div class="card-header">
-              <h3>โจ็ก</h3>
-              <span class="price">50 บาท</span>
-            </div>
-             Arborio rice, mixed wild mushrooms, white wine, truffle oil, aged parmesan. 
-            <div class="tags"><span class="tag veg" data-en="Vegetarian" data-zh="素食">Vegetarian</span><span class="tag gf" data-en="Gluten-Free" data-zh="无麸质">Gluten-Free</span></div>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-  -->
+    
 
 
     <!-- Desserts -->
@@ -958,7 +754,7 @@
 
         <div class="menu-card" data-tags="desserts">
           <div class="card-img-wrap">
-            <img src="images\shogupan.jpg" alt="Tiramisu" loading="lazy" decoding="async" />
+            <img src="images/shogupan.jpg" alt="โทสต์ญี่ปุ่น โชกุปัง" loading="lazy" decoding="async" />
             <span class="badge" data-en="Recommended" data-zh="推荐">แนะนำ</span>
           </div>
           <div class="card-body">
@@ -973,7 +769,7 @@
 
         <div class="menu-card" data-tags="desserts">
           <div class="card-img-wrap">
-            <img src="images\teafood\honey taost.jpg" alt="Tiramisu" loading="lazy" decoding="async" />
+            <img src="images/teafood/honey taost.jpg" alt="ฮันนี่โทส์ต" loading="lazy" decoding="async" />
             <span class="badge" data-en="Best Seller" data-zh="热销">ขายดี</span>
           </div>
           <div class="card-body">
@@ -988,7 +784,7 @@
 
         <div class="menu-card" data-tags="desserts">
           <div class="card-img-wrap">
-            <img src="images\teafood\brwontoast.jpg" alt="Lava Cake" loading="lazy" decoding="async" />
+            <img src="images/teafood/brwontoast.jpg" alt="โทสต์เนยน้ำตาล" loading="lazy" decoding="async" />
             
           </div>
           <div class="card-body">
@@ -1003,7 +799,7 @@
 
         <div class="menu-card" data-tags="desserts">
           <div class="card-img-wrap">
-            <img src="images\food2\sangkaya.jpg" alt="Panna Cotta" loading="lazy" decoding="async" />
+            <img src="images/food2/sangkaya.jpg" alt="ขนมปังสังขยา" loading="lazy" decoding="async" />
             <span class="badge" data-en="Recommended" data-zh="推荐">แนะนำ</span>
           </div>
           <div class="card-body">
@@ -1018,7 +814,7 @@
 
         <div class="menu-card" data-tags="desserts">
           <div class="card-img-wrap">
-            <img src="images\food1\karaoke.jpg" alt="Panna Cotta" loading="lazy" decoding="async" />
+            <img src="images/food1/karaoke.jpg" alt="คาราเกะเฟรนช์ฟรายส์" loading="lazy" decoding="async" />
           </div>
           <div class="card-body">
             <div class="card-header">
@@ -1040,7 +836,7 @@
 
         <div class="menu-card" data-tags="coffee">
           <div class="card-img-wrap">
-            <img src="images\teacoffee\americano.jpg" alt="Coffee" loading="lazy" decoding="async" />
+            <img src="images/teacoffee/americano.jpg" alt="Coffee" loading="lazy" decoding="async" />
             <span class="badge" data-en="Recommended" data-zh="推荐">แนะนำ</span>
           </div>
           <div class="card-body">
@@ -1055,7 +851,7 @@
 
         <div class="menu-card" data-tags="coffee">
           <div class="card-img-wrap">
-            <img src="images\teacoffee\americano hot.jpg" alt="Coffee" loading="lazy" decoding="async" />
+            <img src="images/teacoffee/americano hot.jpg" alt="Coffee" loading="lazy" decoding="async" />
           </div>
           <div class="card-body">
             <div class="card-header">
@@ -1069,7 +865,7 @@
 
         <div class="menu-card" data-tags="coffee">
           <div class="card-img-wrap">
-            <img src="images\อเมริกาโน่ส้มเว็บ.jpg" alt="Coffee" loading="lazy" decoding="async" />
+            <img src="images/อเมริกาโน่ส้มเว็บ.jpg" alt="Coffee" loading="lazy" decoding="async" />
             <span class="badge" data-en="Recommended" data-zh="推荐">แนะนำ</span>
           </div>
           <div class="card-body">
@@ -1084,7 +880,7 @@
 
         <div class="menu-card" data-tags="coffee">
           <div class="card-img-wrap">
-            <img src="images\teacoffee\honey americano.jpg" alt="Cocktails" loading="lazy" decoding="async" />
+            <img src="images/teacoffee/honey americano.jpg" alt="อเมริกาโน่น้ำผึ้ง" loading="lazy" decoding="async" />
             
           </div>
           <div class="card-body">
@@ -1098,7 +894,7 @@
 
         <div class="menu-card" data-tags="coffee">
           <div class="card-img-wrap">
-            <img src="images\teacoffee\es.jpg" alt="Coffee" loading="lazy" decoding="async" />
+            <img src="images/teacoffee/es.jpg" alt="Coffee" loading="lazy" decoding="async" />
             <span class="badge" data-en="Best Seller" data-zh="热销">ขายดี</span>
           </div>
           <div class="card-body">
@@ -1113,7 +909,7 @@
 
         <div class="menu-card" data-tags="coffee">
           <div class="card-img-wrap">
-            <img src="images\teacoffee\es hot.jpg" alt="Wine" loading="lazy" decoding="async" />
+            <img src="images/teacoffee/es hot.jpg" alt="เอสเปรสโซ่ร้อน" loading="lazy" decoding="async" />
           </div>
           <div class="card-body">
             <div class="card-header">
@@ -1127,7 +923,7 @@
 
         <div class="menu-card" data-tags="coffee">
           <div class="card-img-wrap">
-            <img src="images\teacoffee\es oat.jpg" alt="Coffee" loading="lazy" decoding="async" />
+            <img src="images/teacoffee/es oat.jpg" alt="Coffee" loading="lazy" decoding="async" />
             <span class="badge" data-en="Recommended" data-zh="推荐">แนะนำ</span>
           </div>
           <div class="card-body">
@@ -1142,7 +938,7 @@
 
         <div class="menu-card" data-tags="coffee">
           <div class="card-img-wrap">
-            <img src="images\ชุดสปาขี้เมา (1448 x 950 px)\caramel macchiato (2).jpg" alt="Coffee" loading="lazy" decoding="async" />
+            <img src="images/ชุดสปาขี้เมา (1448 x 950 px)/caramel macchiato (2).jpg" alt="Coffee" loading="lazy" decoding="async" />
           </div>
           <div class="card-body">
             <div class="card-header">
@@ -1156,7 +952,7 @@
 
         <div class="menu-card" data-tags="coffee">
           <div class="card-img-wrap">
-            <img src="images\teafood\capu hot.jpg" alt="Coffee" loading="lazy" decoding="async" />
+            <img src="images/teafood/capu hot.jpg" alt="Coffee" loading="lazy" decoding="async" />
           </div>
           <div class="card-body">
             <div class="card-header">
@@ -1170,7 +966,7 @@
 
         <div class="menu-card" data-tags="coffee">
           <div class="card-img-wrap">
-            <img src="images\teacoffee\late.jpg" alt="Coffee" loading="lazy" decoding="async" />
+            <img src="images/teacoffee/late.jpg" alt="Coffee" loading="lazy" decoding="async" />
           </div>
           <div class="card-body">
             <div class="card-header">
@@ -1184,7 +980,7 @@
 
         <div class="menu-card" data-tags="coffee">
           <div class="card-img-wrap">
-            <img src="images\teafood\latte hot.jpg" alt="Coffee" loading="lazy" decoding="async" />
+            <img src="images/teafood/latte hot.jpg" alt="Coffee" loading="lazy" decoding="async" />
           </div>
           <div class="card-body">
             <div class="card-header">
@@ -1196,55 +992,11 @@
           </div>
         </div>
 
-        <!--
+        
 
         <div class="menu-card" data-tags="coffee">
           <div class="card-img-wrap">
-            <img src="images\อเมริกาโน่ส้มเว็บ.jpg" alt="Coffee" loading="lazy" decoding="async" />
-          </div>
-          <div class="card-body">
-            <div class="card-header">
-              <h3>มอคค่า</h3>
-              <span class="price">55 บาท</span>
-            </div>
-             Single-origin espresso, flat white, cold brew, oat/almond/full-cream milk options. 
-            <div class="tags"><span class="tag veg" data-en="Vegetarian" data-zh="素食">Vegetarian</span><span class="tag gf" data-en="Gluten-Free" data-zh="无麸质">Gluten-Free</span></div>
-          </div>
-        </div>
-
-        <div class="menu-card" data-tags="coffee">
-          <div class="card-img-wrap">
-            <img src="images\อเมริกาโน่ส้มเว็บ.jpg" alt="Coffee" loading="lazy" decoding="async" />
-          </div>
-          <div class="card-body">
-            <div class="card-header">
-              <h3>มอคค่าร้อน</h3>
-              <span class="price">50 บาท</span>
-            </div>
-            - Single-origin espresso, flat white, cold brew, oat/almond/full-cream milk options. 
-            <div class="tags"><span class="tag veg" data-en="Vegetarian" data-zh="素食">Vegetarian</span><span class="tag gf" data-en="Gluten-Free" data-zh="无麸质">Gluten-Free</span></div>
-          </div>
-        </div>
-
-        <div class="menu-card" data-tags="coffee">
-          <div class="card-img-wrap">
-            <img src="images\อเมริกาโน่ส้มเว็บ.jpg" alt="Coffee" loading="lazy" decoding="async" />
-          </div>
-          <div class="card-body">
-            <div class="card-header">
-              <h3>มอคค่านมโอ๊ต</h3>
-              <span class="price">55 บาท</span>
-            </div>
-             Single-origin espresso, flat white, cold brew, oat/almond/full-cream milk options. 
-            <div class="tags"><span class="tag veg" data-en="Vegetarian" data-zh="素食">Vegetarian</span><span class="tag gf" data-en="Gluten-Free" data-zh="无麸质">Gluten-Free</span></div>
-          </div>
-        </div>
-
-      -->
-
-        <div class="menu-card" data-tags="coffee">
-          <div class="card-img-wrap">
-            <img src="images\ชุดสปาขี้เมา (1448 x 950 px)\caramel macchiato.jpg" alt="Coffee" loading="lazy" decoding="async" />
+            <img src="images/ชุดสปาขี้เมา (1448 x 950 px)/caramel macchiato.jpg" alt="Coffee" loading="lazy" decoding="async" />
             <span class="badge" data-en="Recommended" data-zh="推荐">แนะนำ</span>
           </div>
           <div class="card-body">
@@ -1268,7 +1020,7 @@
 
         <div class="menu-card" data-tags="tea">
           <div class="card-img-wrap">
-            <img src="images\teacoffee\green tea.jpg" alt="Fries" loading="lazy" decoding="async" />
+            <img src="images/teacoffee/green tea.jpg" alt="ชาเขียวนม" loading="lazy" decoding="async" />
             <span class="badge" data-en="Best Seller" data-zh="热销">ขายดี</span>
           </div>
           <div class="card-body">
@@ -1282,7 +1034,7 @@
 
         <div class="menu-card" data-tags="tea">
           <div class="card-img-wrap">
-            <img src="images\teacoffee\matcha late.jpg" alt="Fries" loading="lazy" decoding="async" />
+            <img src="images/teacoffee/matcha late.jpg" alt="มัทฉะลาเต้" loading="lazy" decoding="async" />
           </div>
         <div class="card-body">
             <div class="card-header">
@@ -1295,7 +1047,7 @@
 
         <div class="menu-card" data-tags="tea">
           <div class="card-img-wrap">
-            <img src="images\teacoffee\pure matcha.jpg" alt="Fries" loading="lazy" decoding="async" />
+            <img src="images/teacoffee/pure matcha.jpg" alt="เพียวมัทฉะ" loading="lazy" decoding="async" />
           </div>
         <div class="card-body">
             <div class="card-header">
@@ -1308,7 +1060,7 @@
 
         <div class="menu-card" data-tags="tea">
           <div class="card-img-wrap">
-            <img src="images\teacoffee\thai tea.jpg" alt="Fries" loading="lazy" decoding="async" />
+            <img src="images/teacoffee/thai tea.jpg" alt="ชาไทย" loading="lazy" decoding="async" />
             <span class="badge" data-en="Best Seller" data-zh="热销">ขายดี</span>
           </div>
         <div class="card-body">
@@ -1322,7 +1074,7 @@
 
         <div class="menu-card" data-tags="tea">
           <div class="card-img-wrap">
-            <img src="images\teacoffee\lemon tea.jpg" alt="Fries" loading="lazy" decoding="async" />
+            <img src="images/teacoffee/lemon tea.jpg" alt="ชามะนาว" loading="lazy" decoding="async" />
           </div>
         <div class="card-body">
             <div class="card-header">
@@ -1335,7 +1087,7 @@
 
         <div class="menu-card" data-tags="tea">
           <div class="card-img-wrap">
-            <img src="images\teacoffee\malee ms.jpg" alt="Fries" loading="lazy" decoding="async" />
+            <img src="images/teacoffee/malee ms.jpg" alt="ชานมมะลิ" loading="lazy" decoding="async" />
           </div>
         <div class="card-body">
             <div class="card-header">
@@ -1348,7 +1100,7 @@
 
         <div class="menu-card" data-tags="tea">
           <div class="card-img-wrap">
-            <img src="images\teacoffee\peach ms.jpg" alt="Fries" loading="lazy" decoding="async" />
+            <img src="images/teacoffee/peach ms.jpg" alt="ชานมพีช" loading="lazy" decoding="async" />
           </div>
         <div class="card-body">
             <div class="card-header">
@@ -1361,7 +1113,7 @@
 
         <div class="menu-card" data-tags="tea">
           <div class="card-img-wrap">
-            <img src="images\teacoffee\tahong.jpg" alt="Fries" loading="lazy" decoding="async" />
+            <img src="images/teacoffee/tahong.jpg" alt="ชานมต้าหงเผา" loading="lazy" decoding="async" />
           </div>
         <div class="card-body">
             <div class="card-header">
@@ -1372,26 +1124,11 @@
           </div>
         </div>
 
-        <!--
+        
 
         <div class="menu-card" data-tags="tea">
           <div class="card-img-wrap">
-            <img src="your-image.jpg" alt="Fries" loading="lazy" decoding="async" />
-          </div>
-        <div class="card-body">
-            <div class="card-header">
-              <h3>ชานมมะลิสตอเบอร์รี่</h3>
-              <span class="price">60 บาท</span>
-            </div>
-             Crispy fries tossed in truffle oil and parmesan. 
-          </div>
-        </div>
-
-      -->
-
-        <div class="menu-card" data-tags="tea">
-          <div class="card-img-wrap">
-            <img src="images\teacoffee\lynchee tea.jpg" alt="Fries" loading="lazy" decoding="async" />
+            <img src="images/teacoffee/lynchee tea.jpg" alt="ชาลิ้นจี่ใส" loading="lazy" decoding="async" />
           </div>
         <div class="card-body">
             <div class="card-header">
@@ -1404,7 +1141,7 @@
 
         <div class="menu-card" data-tags="tea">
           <div class="card-img-wrap">
-            <img src="images\teacoffee\peach tea.jpg" alt="Fries" loading="lazy" decoding="async" />
+            <img src="images/teacoffee/peach tea.jpg" alt="ชาพีชใส" loading="lazy" decoding="async" />
             <span class="badge" data-en="Recommended" data-zh="推荐">แนะนำ</span>
           </div>
         <div class="card-body">
@@ -1418,7 +1155,7 @@
 
         <div class="menu-card" data-tags="tea">
           <div class="card-img-wrap">
-            <img src="images\teacoffee\malee tea.jpg" alt="Fries" loading="lazy" decoding="async" />
+            <img src="images/teacoffee/malee tea.jpg" alt="ชามะลิใส" loading="lazy" decoding="async" />
           </div>
         <div class="card-body">
             <div class="card-header">
@@ -1431,7 +1168,7 @@
 
         <div class="menu-card" data-tags="tea">
           <div class="card-img-wrap">
-            <img src="images\teacoffee\malee strawberry.jpg" alt="Fries" loading="lazy" decoding="async" />
+            <img src="images/teacoffee/malee strawberry.jpg" alt="ชามะลิสตอเบอรรี่" loading="lazy" decoding="async" />
           </div>
         <div class="card-body">
             <div class="card-header">
@@ -1452,7 +1189,7 @@
 
         <div class="menu-card" data-tags="frappes">
           <div class="card-img-wrap">
-            <img src="images\teafood\smoothie.jpg" alt="Fries" loading="lazy" decoding="async" />
+            <img src="images/teafood/smoothie.jpg" alt="สมูทตี้โยเกร์ต" loading="lazy" decoding="async" />
             <span class="badge" data-en="Best Seller" data-zh="热销">ขายดี</span>
           </div>
           <div class="card-body">
@@ -1466,7 +1203,7 @@
 
         <div class="menu-card" data-tags="frappes">
           <div class="card-img-wrap">
-            <img src="images\teacoffee\orio ms.jpg" alt="Fries" loading="lazy" decoding="async" />
+            <img src="images/teacoffee/orio ms.jpg" alt="โอริโอ้นมสดปั่น" loading="lazy" decoding="async" />
           </div>
           <div class="card-body">
             <div class="card-header">
@@ -1479,7 +1216,7 @@
 
         <div class="menu-card" data-tags="frappes">
           <div class="card-img-wrap">
-            <img src="images\teafood\green frappe.jpg" alt="Fries" loading="lazy" decoding="async" />
+            <img src="images/teafood/green frappe.jpg" alt="ชาเขียวปั่น" loading="lazy" decoding="async" />
             <span class="badge" data-en="Recommended" data-zh="推荐">แนะนำ</span>
           </div>
           <div class="card-body">
@@ -1491,52 +1228,11 @@
           </div>
         </div>
 
-        <!--
+        
 
         <div class="menu-card" data-tags="frappes">
           <div class="card-img-wrap">
-            <img src="your-image.jpg" alt="Fries" loading="lazy" decoding="async" />
-          </div>
-          <div class="card-body">
-            <div class="card-header">
-              <h3>คาปูชิโน่ปั้น</h3>
-              <span class="price">60 บาท</span>
-            </div>
-             Crispy fries tossed in truffle oil and parmesan. 
-          </div>
-        </div>
-
-        <div class="menu-card" data-tags="frappes">
-          <div class="card-img-wrap">
-            <img src="your-image.jpg" alt="Fries" loading="lazy" decoding="async" />
-          </div>
-          <div class="card-body">
-            <div class="card-header">
-              <h3>มอคค่าปั่น</h3>
-              <span class="price">60 บาท</span>
-            </div>
-             Crispy fries tossed in truffle oil and parmesan. 
-          </div>
-        </div>
-
-        <div class="menu-card" data-tags="frappes">
-          <div class="card-img-wrap">
-            <img src="your-image.jpg" alt="Fries" loading="lazy" decoding="async" />
-          </div>
-          <div class="card-body">
-            <div class="card-header">
-              <h3>ชาไทยปั่น</h3>
-              <span class="price">55 บาท</span>
-            </div>
-             Crispy fries tossed in truffle oil and parmesan. 
-          </div>
-        </div>
-
-      -->
-
-        <div class="menu-card" data-tags="frappes">
-          <div class="card-img-wrap">
-            <img src="images\teafood\lemon frappe.jpg" alt="Fries" loading="lazy" decoding="async" />
+            <img src="images/teafood/lemon frappe.jpg" alt="ชามะนาวปั่น" loading="lazy" decoding="async" />
           </div>
           <div class="card-body">
             <div class="card-header">
@@ -1556,7 +1252,7 @@
 
         <div class="menu-card" data-tags="others">
           <div class="card-img-wrap">
-            <img src="images\teacoffee\coco.jpg" alt="Fries" loading="lazy" decoding="async" />
+            <img src="images/teacoffee/coco.jpg" alt="โกโก้" loading="lazy" decoding="async" />
           </div>
           <div class="card-body">
             <div class="card-header">
@@ -1569,7 +1265,7 @@
 
         <div class="menu-card" data-tags="others">
           <div class="card-img-wrap">
-            <img src="images\teacoffee\pink milk.jpg" alt="Fries" loading="lazy" decoding="async" />
+            <img src="images/teacoffee/pink milk.jpg" alt="นมชมพู" loading="lazy" decoding="async" />
             <span class="badge" data-en="Best Seller" data-zh="热销">ขายดี</span>
           </div>
           <div class="card-body">
@@ -1583,7 +1279,7 @@
 
         <div class="menu-card" data-tags="others">
           <div class="card-img-wrap">
-            <img src="images\teacoffee\chocmint.jpg" alt="Fries" loading="lazy" decoding="async" />
+            <img src="images/teacoffee/chocmint.jpg" alt="โกโก้มิ้นต์" loading="lazy" decoding="async" />
           </div>
           <div class="card-body">
             <div class="card-header">
@@ -1607,7 +1303,7 @@
 
         <div class="menu-card" data-tags="soda">
           <div class="card-img-wrap">
-            <img src="images\final1\punch soda.jpg" alt="Fries" loading="lazy" decoding="async" />
+            <img src="images/final1/punch soda.jpg" alt="พั้นโซดา" loading="lazy" decoding="async" />
           </div>
           <div class="card-body">
             <div class="card-header">
@@ -1620,7 +1316,7 @@
 
         <div class="menu-card" data-tags="soda">
           <div class="card-img-wrap">
-            <img src="images\teacoffee\late (2).jpg" alt="Fries" loading="lazy" decoding="async" />
+            <img src="images/teacoffee/late (2).jpg" alt="บลูฮาวายโซดา" loading="lazy" decoding="async" />
           </div>
           <div class="card-body">
             <div class="card-header">
@@ -1633,7 +1329,7 @@
 
         <div class="menu-card" data-tags="soda">
           <div class="card-img-wrap">
-            <img src="images\teacoffee\straw soda.jpg" alt="Fries" loading="lazy" decoding="async" />
+            <img src="images/teacoffee/straw soda.jpg" alt="สตอเบอรรี่โซดา" loading="lazy" decoding="async" />
           </div>
           <div class="card-body">
             <div class="card-header">
@@ -1646,7 +1342,7 @@
 
         <div class="menu-card" data-tags="soda">
           <div class="card-img-wrap">
-            <img src="images\final1\mango soda.jpg" alt="Fries" loading="lazy" decoding="async" />
+            <img src="images/final1/mango soda.jpg" alt="มะม่วงโซดา" loading="lazy" decoding="async" />
           </div>
           <div class="card-body">
             <div class="card-header">
@@ -1659,7 +1355,7 @@
 
         <div class="menu-card" data-tags="soda">
           <div class="card-img-wrap">
-            <img src="images\final1\red soda.jpg" alt="Fries" loading="lazy" decoding="async" />
+            <img src="images/final1/red soda.jpg" alt="แดงมะนาวโซดา" loading="lazy" decoding="async" />
           </div>
           <div class="card-body">
             <div class="card-header">
@@ -1679,11 +1375,11 @@
   <!-- Footer -->
   <footer class="site-footer">
     <p class="footer-name">Iris Lé  Bian</p>
-    <!-- 123 Garden Lane, New York, NY 10001 -->
-    <!-- &#x260E; (212) 555-0198 &nbsp;·&nbsp; ✉ hello@irisrestaurant.com -->
     <p class="footer-note" data-en="Contact: 061-596-1992" data-zh="联系电话：061-596-1992">ติดต่อร้าน 061-596-1992</p>
     <p class="footer-note">Line ID: @122bplqx</p>
   </footer>
+
+  <button id="backToTop" aria-label="Back to top" title="Back to top">&#8679;</button>
 
   <script src="menu.js"></script>
 </body>

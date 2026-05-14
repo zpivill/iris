@@ -20,13 +20,38 @@ buttons.forEach(btn => {
   });
 });
 
-window.onload = function() {
-  document.getElementById("popup").style.display = "flex";
-};
+/* ===== Popup ===== */
+const popup   = document.getElementById('popup');
+const closeBtn = document.getElementById('closeBtn');
 
-document.getElementById("closeBtn").onclick = function() {
-  document.getElementById("popup").style.display = "none";
-};
+function openPopup() {
+  popup.removeAttribute('hidden');
+  closeBtn.focus();
+}
+
+function closePopup() {
+  popup.setAttribute('hidden', '');
+}
+
+window.addEventListener('load', openPopup);
+closeBtn.addEventListener('click', closePopup);
+
+document.addEventListener('keydown', function(e) {
+  if (e.key === 'Escape' && !popup.hasAttribute('hidden')) closePopup();
+});
+
+popup.addEventListener('click', function(e) {
+  if (e.target === popup) closePopup();
+});
+
+/* ===== Back to top ===== */
+const backToTop = document.getElementById('backToTop');
+window.addEventListener('scroll', function() {
+  backToTop.classList.toggle('visible', window.scrollY > 400);
+});
+backToTop.addEventListener('click', function() {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+});
 /* ===== Language switcher ===== */
 (function () {
   const LANGS = ["th", "en", "zh"];
