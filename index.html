@@ -24,33 +24,26 @@
   <div id="popup" class="popup">
     <div class="popup-content">
       <span id="closeBtn">&times;</span>
-      <h1>ยินดีต้อนรับ</h1>
-      <br />
-      
-      <p>
-        ยินดีต้อนรับเข้าสู่เว็บไซต์ของร้าน Iris Lé Bian ร้านกาแฟและอาหารตามสั่ง 
-      </p>
-      
+
+      <div class="popup-lang" data-lang="th"><h1>ยินดีต้อนรับ</h1>
+      <p>ยินดีต้อนรับเข้าสู่เว็บไซต์ของร้าน Iris Lé Bian ร้านกาแฟและอาหารตามสั่ง</p>
       <p>เว็บไซต์นี้จะให้ข้อมูลเกี่ยวกับเมนูอาหารและเครื่องดื่มของร้าน และจะมีการอัปเดตข้อมูลอย่างสม่ำเสมอ</p>
       <p>สำหรับลูกค้าที่เข้ามารับประทานอาหารที่ร้านสามารถสั่งอาหารและเครื่องดื่มได้จาก QR Code ที่อยู่บนโต๊ะของท่าน</p>
       <p>สำหรับลูกค้าที่ต้องการสั่งอาหารล่วงหน้า สามารถสั่งได้ผ่าน Line ID: @122bplqx หรือ สามารถโทร 061-596-1992</p>
-      <p>ร้านมีบริการผ่าน LINE MAN, Grab, Shoppee Food - Iris Le' Bian</p>
-      
-
-      <p>&nbsp;</p>
-      
-
-      <p>对于中文用户，请使用谷歌/Chrome或其他浏览器的自动翻译功能。部分信息可能不准确</p>
-      <p>餐厅接受微信和支付宝付款。</p>
-      <p>&nbsp;</p>
-      <p>欢迎访问 Iris Lé Bian 网站！我们的菜单现已上线，并将定期更新。
-
-        堂食顾客可使用餐桌上的二维码点餐。
-
-        如需提前预订，请通过 Line ID @122bplqx 或致电 061-596-1992 联系我们。
-
-       我们也提供外送服务；您可以通过 LINE MAN、Grab 和 Shopee FoodIris Le' Bian 订餐。
-      </p>
+      <p>ร้านมีบริการผ่าน LINE MAN, Grab, Shoppee Food - Iris Le' Bian</p>      </div>
+      <div class="popup-lang" data-lang="en"><h1>Welcome</h1>
+      <p>Welcome to the Iris Lé Bian website — a café and made-to-order kitchen.</p>
+      <p>You'll find our food and drink menu here, updated regularly.</p>
+      <p>Dining in? Just scan the QR code on your table to order.</p>
+      <p>To order ahead, contact us via Line ID <strong>@122bplqx</strong> or call <strong>061-596-1992</strong>.</p>
+      <p>Delivery is available through LINE MAN, Grab and Shopee Food — search for <strong>Iris Le' Bian</strong>.</p>      </div>
+      <div class="popup-lang" data-lang="zh"><h1>欢迎光临</h1>
+      <p>欢迎访问 Iris Lé Bian 网站！我们是一家咖啡馆与现点现做的小馆。</p>
+      <p>本网站提供我们的餐点与饮品菜单，并将定期更新。</p>
+      <p>堂食顾客可使用餐桌上的二维码点餐。</p>
+      <p>如需提前预订，请通过 Line ID <strong>@122bplqx</strong> 或致电 <strong>061-596-1992</strong> 联系我们。</p>
+      <p>我们也提供外送服务，可通过 LINE MAN、Grab 和 Shopee Food 搜索 <strong>Iris Le' Bian</strong> 订餐。</p>
+      <p>餐厅接受微信和支付宝付款。</p>      </div>
     </div>
   </div>
 
@@ -62,24 +55,30 @@
       <h1 class="hero-title">Iris Lé  Bian</h1>
       <p class="hero-sub">Est. 1996 </p>
       <p class="hero-sub">Open daily from 6:30 AM to 10:00 PM, closed Mondays</p>
-      <p class="hero-sub">เปิดทุกวันตั้งแต่ 6 โมงครึ่ง จนถึง 4 ทุ่ม, หยุดทุกวันจันทร์ </p>
+      <p class="hero-sub" data-en="Open daily 6:30 AM – 10:00 PM, closed Mondays" data-zh="营业时间：每日 6:30–22:00，周一休息">เปิดทุกวันตั้งแต่ 6 โมงครึ่ง จนถึง 4 ทุ่ม, หยุดทุกวันจันทร์ </p>
     </div>
   </header>
 
   <!-- Category Nav -->
   <nav class="category-nav" id="categoryNav">
-    <button class="cat-btn active" data-filter="all">รายการทั้งหมด</button>
+    <!-- Language switcher -->
+    <div class="lang-switcher" role="group" aria-label="Language">
+      <button class="lang-btn active" data-lang="th" aria-label="ภาษาไทย">🇹🇭</button>
+      <button class="lang-btn" data-lang="en" aria-label="English">🇬🇧</button>
+      <button class="lang-btn" data-lang="zh" aria-label="中文">🇨🇳</button>
+    </div>
+    <button class="cat-btn active" data-filter="all" data-en="All" data-zh="全部">รายการทั้งหมด</button>
     <!--<button class="cat-btn" data-filter="Placeholder">PLACEHOLDER</button>-->
-    <button class="cat-btn" data-filter="Set">ชุดอาหาร</button>
-    <button class="cat-btn" data-filter="mains">อาหารจานหลัก</button>
+    <button class="cat-btn" data-filter="Set" data-en="Set Meals" data-zh="套餐">ชุดอาหาร</button>
+    <button class="cat-btn" data-filter="mains" data-en="Main Courses" data-zh="主菜">อาหารจานหลัก</button>
     <!--<button class="cat-btn" data-filter="breakfast">อาหารเช้า</button>-->
-    <button class="cat-btn" data-filter="side">แกง / กับข้าว</button>
-    <button class="cat-btn" data-filter="desserts">เบเกอรี่และอาหารทานเล่น</button>
-    <button class="cat-btn" data-filter="coffee">กาแฟ</button>
-    <button class="cat-btn" data-filter="tea">ชา</button>
-    <button class="cat-btn" data-filter="frappes">เครื่องดื่มปั่น</button>
-    <button class="cat-btn" data-filter="others">เครื่องดื่มชง / นม</button>
-    <button class="cat-btn" data-filter="soda">โซดา</button>
+    <button class="cat-btn" data-filter="side" data-en="Soups &amp; Sides" data-zh="汤品与配菜">แกง / กับข้าว</button>
+    <button class="cat-btn" data-filter="desserts" data-en="Bakery &amp; Snacks" data-zh="烘焙与小吃">เบเกอรี่และอาหารทานเล่น</button>
+    <button class="cat-btn" data-filter="coffee" data-en="Coffee" data-zh="咖啡">กาแฟ</button>
+    <button class="cat-btn" data-filter="tea" data-en="Tea" data-zh="茶">ชา</button>
+    <button class="cat-btn" data-filter="frappes" data-en="Frappes" data-zh="冰沙饮品">เครื่องดื่มปั่น</button>
+    <button class="cat-btn" data-filter="others" data-en="Drinks &amp; Milk" data-zh="调饮与牛奶">เครื่องดื่มชง / นม</button>
+    <button class="cat-btn" data-filter="soda" data-en="Soda" data-zh="苏打饮料">โซดา</button>
 
   </nav>
 
@@ -116,7 +115,7 @@
               <span class="price">50 บาท</span>
             </div>
             Arborio rice, mixed wild mushrooms, white wine, truffle oil, aged parmesan. 
-            <div class="tags"><span class="tag veg">Vegetarian</span><span class="tag gf">Gluten-Free</span></div>
+            <div class="tags"><span class="tag veg" data-en="Vegetarian" data-zh="素食">Vegetarian</span><span class="tag gf" data-en="Gluten-Free" data-zh="无麸质">Gluten-Free</span></div>
           </div>
         </div>
 
@@ -125,28 +124,28 @@
 
     <!-- Set -->
     <section class="menu-section" data-category="Set">
-      <h2 class="section-title">ชุดอาหาร / Set meal</h2>
+      <h2 class="section-title" data-en="Set Meals" data-zh="套餐">ชุดอาหาร / Set meal</h2>
       <div class="menu-grid">
 
         <div class="menu-card" data-tags="Set">
           <div class="card-img-wrap">
             <img src="images\ชุดกระเพรา2.jpg" alt="Calamari" loading="lazy" decoding="async" />
-            <span class="badge">ขายดี</span>
+            <span class="badge" data-en="Best Seller" data-zh="热销">ขายดี</span>
           </div>
           <div class="card-body">
             <div class="card-header">
-              <h3>ชุดกระเพราราดข้าว + ชา/กาแฟ</h3>
+              <h3 data-en="Krapao on Rice Set + Tea/Coffee" data-zh="罗勒叶炒饭套餐 + 茶/咖啡">ชุดกระเพราราดข้าว + ชา/กาแฟ</h3>
               <span class="price">89 บาท</span>
               
             </div>
-            <p class="dish-desc">กะเพราผัดราดข้าวสวยร้อนๆ เสิร์ฟพร้อมชาหรือกาแฟ</p>
+            <p class="dish-desc" data-en="Stir-fried Thai basil over hot jasmine rice, served with tea or coffee." data-zh="罗勒叶炒肉配香软白饭，附赠茶或咖啡。">กะเพราผัดราดข้าวสวยร้อนๆ เสิร์ฟพร้อมชาหรือกาแฟ</p>
             <div class="tags">
-              <span class="tag mp">หมูสับ</span>
-              <span class="tag pork">หมูชิ้น</span>
-              <span class="tag chicken">ไก่</span>
-              <span class="tag crispypork">หมูกรอบ</span>
-              <span class="tag shrimp">กุ้ง</span>
-              <span class="tag squid">หมึก</span>
+              <span class="tag mp" data-en="Minced Pork" data-zh="猪肉末">หมูสับ</span>
+              <span class="tag pork" data-en="Sliced Pork" data-zh="猪肉片">หมูชิ้น</span>
+              <span class="tag chicken" data-en="Chicken" data-zh="鸡肉">ไก่</span>
+              <span class="tag crispypork" data-en="Crispy Pork" data-zh="脆皮猪肉">หมูกรอบ</span>
+              <span class="tag shrimp" data-en="Shrimp" data-zh="鲜虾">กุ้ง</span>
+              <span class="tag squid" data-en="Squid" data-zh="鱿鱼">หมึก</span>
               
             </div>
           </div>
@@ -158,17 +157,17 @@
           </div>
           <div class="card-body">
             <div class="card-header">
-              <h3>ชุดผัดพริกแกงราดข้าว + ชา/กาแฟ</h3>
+              <h3 data-en="Red Curry Stir-Fry on Rice Set + Tea/Coffee" data-zh="红咖喱炒饭套餐 + 茶/咖啡">ชุดผัดพริกแกงราดข้าว + ชา/กาแฟ</h3>
               <span class="price">89 บาท</span>
             </div>
-            <p class="dish-desc">ผัดพริกแกงรสเข้มข้นราดข้าวสวย พร้อมเครื่องดื่มชาหรือกาแฟ</p>
+            <p class="dish-desc" data-en="Rich red curry stir-fry over rice, served with tea or coffee." data-zh="浓郁红咖喱炒菜配白饭，附赠茶或咖啡。">ผัดพริกแกงรสเข้มข้นราดข้าวสวย พร้อมเครื่องดื่มชาหรือกาแฟ</p>
             <div class="tags">
-              <span class="tag mp">หมูสับ</span>
-              <span class="tag pork">หมูชิ้น</span>
-              <span class="tag chicken">ไก่</span>
-              <span class="tag crispypork">หมูกรอบ</span>
-              <span class="tag shrimp">กุ้ง</span>
-              <span class="tag squid">หมึก</span>
+              <span class="tag mp" data-en="Minced Pork" data-zh="猪肉末">หมูสับ</span>
+              <span class="tag pork" data-en="Sliced Pork" data-zh="猪肉片">หมูชิ้น</span>
+              <span class="tag chicken" data-en="Chicken" data-zh="鸡肉">ไก่</span>
+              <span class="tag crispypork" data-en="Crispy Pork" data-zh="脆皮猪肉">หมูกรอบ</span>
+              <span class="tag shrimp" data-en="Shrimp" data-zh="鲜虾">กุ้ง</span>
+              <span class="tag squid" data-en="Squid" data-zh="鱿鱼">หมึก</span>
             </div>
           </div>
         </div>
@@ -179,17 +178,17 @@
           </div>
           <div class="card-body">
             <div class="card-header">
-              <h3>ชุดข้าวผัด + ชา/กาแฟ</h3>
+              <h3 data-en="Fried Rice Set + Tea/Coffee" data-zh="炒饭套餐 + 茶/咖啡">ชุดข้าวผัด + ชา/กาแฟ</h3>
               <span class="price">89 บาท</span>
             </div>
-            <p class="dish-desc">ข้าวผัดหอมกระทะ เสิร์ฟพร้อมชาหรือกาแฟ</p>
+            <p class="dish-desc" data-en="Wok-fragrant fried rice, served with tea or coffee." data-zh="镬气十足的炒饭，附赠茶或咖啡。">ข้าวผัดหอมกระทะ เสิร์ฟพร้อมชาหรือกาแฟ</p>
             <div class="tags">
-              <span class="tag mp">หมูสับ</span>
-              <span class="tag pork">หมูชิ้น</span>
-              <span class="tag chicken">ไก่</span>
-              <span class="tag crispypork">หมูกรอบ</span>
-              <span class="tag shrimp">กุ้ง</span>
-              <span class="tag squid">หมึก</span>
+              <span class="tag mp" data-en="Minced Pork" data-zh="猪肉末">หมูสับ</span>
+              <span class="tag pork" data-en="Sliced Pork" data-zh="猪肉片">หมูชิ้น</span>
+              <span class="tag chicken" data-en="Chicken" data-zh="鸡肉">ไก่</span>
+              <span class="tag crispypork" data-en="Crispy Pork" data-zh="脆皮猪肉">หมูกรอบ</span>
+              <span class="tag shrimp" data-en="Shrimp" data-zh="鲜虾">กุ้ง</span>
+              <span class="tag squid" data-en="Squid" data-zh="鱿鱼">หมึก</span>
               
             </div>
           </div>
@@ -202,19 +201,19 @@
           </div>
           <div class="card-body">
             <div class="card-header">
-              <h3>ชุดสปาเกตตี้ขี้เมา + ชา/กาแฟ</h3>
+              <h3 data-en="Drunken Spaghetti Set + Tea/Coffee" data-zh="醉面意大利面套餐 + 茶/咖啡">ชุดสปาเกตตี้ขี้เมา + ชา/กาแฟ</h3>
               <span class="price">105 บาท</span>
             </div>
-            <p class="dish-desc">สปาเกตตีขี้เมารสจัดจ้าน พร้อมเครื่องดื่มชาหรือกาแฟ</p>
+            <p class="dish-desc" data-en="Spicy Thai drunken spaghetti, served with tea or coffee." data-zh="香辣泰式醉面，附赠茶或咖啡。">สปาเกตตีขี้เมารสจัดจ้าน พร้อมเครื่องดื่มชาหรือกาแฟ</p>
             <div class="tags">
-              <span class="tag mp">หมูสับ</span>
-              <span class="tag pork">หมูชิ้น</span>
-              <span class="tag chicken">ไก่</span>
-              <span class="tag crispypork">หมูกรอบ</span>
-              <span class="tag shrimp">กุ้ง</span>
-              <span class="tag squid">หมึก</span>
-              <span class="tag bacon">เบคอน</span>
-              <span class="tag gs">ไส้กรอกเยอรมัน</span>
+              <span class="tag mp" data-en="Minced Pork" data-zh="猪肉末">หมูสับ</span>
+              <span class="tag pork" data-en="Sliced Pork" data-zh="猪肉片">หมูชิ้น</span>
+              <span class="tag chicken" data-en="Chicken" data-zh="鸡肉">ไก่</span>
+              <span class="tag crispypork" data-en="Crispy Pork" data-zh="脆皮猪肉">หมูกรอบ</span>
+              <span class="tag shrimp" data-en="Shrimp" data-zh="鲜虾">กุ้ง</span>
+              <span class="tag squid" data-en="Squid" data-zh="鱿鱼">หมึก</span>
+              <span class="tag bacon" data-en="Bacon" data-zh="培根">เบคอน</span>
+              <span class="tag gs" data-en="German Sausage" data-zh="德国香肠">ไส้กรอกเยอรมัน</span>
             </div>
           </div>
         </div>
@@ -225,10 +224,10 @@
           </div>
           <div class="card-body">
             <div class="card-header">
-              <h3>ชุดสปาเกตตี้คาโบนาร่า + ชา/กาแฟ</h3>
+              <h3 data-en="Carbonara Spaghetti Set + Tea/Coffee" data-zh="卡邦尼意大利面套餐 + 茶/咖啡">ชุดสปาเกตตี้คาโบนาร่า + ชา/กาแฟ</h3>
               <span class="price">89 บาท</span>
             </div>
-            <p class="dish-desc">สปาเกตตีคาโบนาร่าซอสครีมเข้มข้น พร้อมชาหรือกาแฟ</p>
+            <p class="dish-desc" data-en="Creamy carbonara spaghetti, served with tea or coffee." data-zh="浓郁奶油卡邦尼意面，附赠茶或咖啡。">สปาเกตตีคาโบนาร่าซอสครีมเข้มข้น พร้อมชาหรือกาแฟ</p>
             <div class="tags">
               
               
@@ -242,10 +241,10 @@
           </div>
           <div class="card-body">
             <div class="card-header">
-              <h3>ชุดก๋วยจั๊บญวน + ชา/กาแฟ</h3>
+              <h3 data-en="Vietnamese Kuay Jub Set + Tea/Coffee" data-zh="越南粿汁套餐 + 茶/咖啡">ชุดก๋วยจั๊บญวน + ชา/กาแฟ</h3>
               <span class="price">85 บาท</span>
             </div>
-            <p class="dish-desc">ก๋วยจั๊บญวนน้ำใสกลมกล่อม พร้อมชาหรือกาแฟ</p>
+            <p class="dish-desc" data-en="Vietnamese kuay jub in a clear, savoury broth, served with tea or coffee." data-zh="清澈鲜美的越南粿汁，附赠茶或咖啡。">ก๋วยจั๊บญวนน้ำใสกลมกล่อม พร้อมชาหรือกาแฟ</p>
           </div>
         </div>
 
@@ -262,7 +261,7 @@
               <span class="price">99 บาท</span>
             </div>
              Cured meats, artisan cheeses, honeycomb, seasonal fruit, house-made crackers. 
-            <div class="tags"><span class="tag gf">Gluten-Free</span></div>
+            <div class="tags"><span class="tag gf" data-en="Gluten-Free" data-zh="无麸质">Gluten-Free</span></div>
           </div>
         </div>
 
@@ -273,27 +272,27 @@
 
     <!-- Mains -->
     <section class="menu-section" data-category="mains">
-      <h2 class="section-title">อาหารจานหลัก / Main Courses</h2>
+      <h2 class="section-title" data-en="Main Courses" data-zh="主菜">อาหารจานหลัก / Main Courses</h2>
       <div class="menu-grid">
 
         <div class="menu-card" data-tags="mains">
           <div class="card-img-wrap">
             <img src="images\food1\kaprao.jpg" alt="Salmon" loading="lazy" decoding="async" />
-            <span class="badge">ขายดี</span>
+            <span class="badge" data-en="Best Seller" data-zh="热销">ขายดี</span>
           </div>
           <div class="card-body">
             <div class="card-header">
-              <h3>กะเพราเนื้อราดข้าว</h3>
+              <h3 data-en="Beef Krapao on Rice" data-zh="罗勒叶炒牛肉饭">กะเพราเนื้อราดข้าว</h3>
               <span class="price">65 บาท</span>
             </div>
-            <p class="dish-desc">เนื้อผัดใบกะเพรา พริก กระเทียม ราดบนข้าวสวยร้อนๆ</p>
+            <p class="dish-desc" data-en="Beef stir-fried with Thai holy basil, chili and garlic, over hot rice." data-zh="罗勒叶辣椒蒜爆牛肉，配香软白饭。">เนื้อผัดใบกะเพรา พริก กระเทียม ราดบนข้าวสวยร้อนๆ</p>
             <div class="tags">
-              <span class="tag mp">หมูสับ</span>
-              <span class="tag pork">หมูชิ้น</span>
-              <span class="tag chicken">ไก่</span>
-              <span class="tag crispypork">หมูกรอบ</span>
-              <span class="tag shrimp">กุ้ง</span>
-              <span class="tag squid">หมึก</span>
+              <span class="tag mp" data-en="Minced Pork" data-zh="猪肉末">หมูสับ</span>
+              <span class="tag pork" data-en="Sliced Pork" data-zh="猪肉片">หมูชิ้น</span>
+              <span class="tag chicken" data-en="Chicken" data-zh="鸡肉">ไก่</span>
+              <span class="tag crispypork" data-en="Crispy Pork" data-zh="脆皮猪肉">หมูกรอบ</span>
+              <span class="tag shrimp" data-en="Shrimp" data-zh="鲜虾">กุ้ง</span>
+              <span class="tag squid" data-en="Squid" data-zh="鱿鱼">หมึก</span>
             </div>
           </div>
         </div>
@@ -311,7 +310,7 @@
               <span class="price">80 บาท</span>
             </div>
              Atlantic salmon fillet, lemon butter sauce, asparagus, wild rice. 
-            <div class="tags"><span class="tag gf">Gluten-Free</span></div>
+            <div class="tags"><span class="tag gf" data-en="Gluten-Free" data-zh="无麸质">Gluten-Free</span></div>
           </div>
         </div>
 
@@ -326,7 +325,7 @@
               <span class="price">75 บาท</span>
             </div>
              Atlantic salmon fillet, lemon butter sauce, asparagus, wild rice. 
-            <div class="tags"><span class="tag gf">Gluten-Free</span></div>
+            <div class="tags"><span class="tag gf" data-en="Gluten-Free" data-zh="无麸质">Gluten-Free</span></div>
           </div>
         </div>
 
@@ -341,7 +340,7 @@
               <span class="price">75 บาท</span>
             </div>
              Atlantic salmon fillet, lemon butter sauce, asparagus, wild rice. 
-            <div class="tags"><span class="tag gf">Gluten-Free</span></div>
+            <div class="tags"><span class="tag gf" data-en="Gluten-Free" data-zh="无麸质">Gluten-Free</span></div>
           </div>
         </div>
 
@@ -354,17 +353,17 @@
           </div>
           <div class="card-body">
             <div class="card-header">
-              <h3>ข้าวผัด</h3>
+              <h3 data-en="Fried Rice" data-zh="招牌炒饭">ข้าวผัด</h3>
               <span class="price">65 บาท</span>
             </div>
-            <p class="dish-desc">ข้าวผัดหอมกระทะ ใส่ไข่และผักสด</p>
+            <p class="dish-desc" data-en="Wok-fragrant fried rice with egg and fresh vegetables." data-zh="镬气炒饭，加入鸡蛋与新鲜蔬菜。">ข้าวผัดหอมกระทะ ใส่ไข่และผักสด</p>
             <div class="tags">
-              <span class="tag mp">หมูสับ</span>
-              <span class="tag pork">หมูชิ้น</span>
-              <span class="tag chicken">ไก่</span>
-              <span class="tag crispypork">หมูกรอบ</span>
-              <span class="tag shrimp">กุ้ง</span>
-              <span class="tag squid">หมึก</span>
+              <span class="tag mp" data-en="Minced Pork" data-zh="猪肉末">หมูสับ</span>
+              <span class="tag pork" data-en="Sliced Pork" data-zh="猪肉片">หมูชิ้น</span>
+              <span class="tag chicken" data-en="Chicken" data-zh="鸡肉">ไก่</span>
+              <span class="tag crispypork" data-en="Crispy Pork" data-zh="脆皮猪肉">หมูกรอบ</span>
+              <span class="tag shrimp" data-en="Shrimp" data-zh="鲜虾">กุ้ง</span>
+              <span class="tag squid" data-en="Squid" data-zh="鱿鱼">หมึก</span>
             </div>
           </div>
         </div>
@@ -375,10 +374,10 @@
           </div>
           <div class="card-body">
             <div class="card-header">
-              <h3>ข้าวผัดปลาสลิด</h3>
+              <h3 data-en="Fried Rice with Crispy Gourami" data-zh="酥炸塔米鱼炒饭">ข้าวผัดปลาสลิด</h3>
               <span class="price">75 บาท</span>
             </div>
-            <p class="dish-desc">ข้าวผัดเสิร์ฟพร้อมปลาสลิดทอดกรอบและมะม่วงเปรี้ยว</p>
+            <p class="dish-desc" data-en="Fried rice served with crispy gourami fish and sour mango." data-zh="炒饭配酥脆塔米鱼与酸芒果丝。">ข้าวผัดเสิร์ฟพร้อมปลาสลิดทอดกรอบและมะม่วงเปรี้ยว</p>
 
           </div>
         </div>
@@ -389,10 +388,10 @@
           </div>
           <div class="card-body">
             <div class="card-header">
-              <h3>ข้าวผัดอเมริกัน</h3>
+              <h3 data-en="American Fried Rice" data-zh="美式炒饭">ข้าวผัดอเมริกัน</h3>
               <span class="price">85 บาท</span>
             </div>
-            <p class="dish-desc">ข้าวผัดซอสมะเขือเทศ เสิร์ฟพร้อมไส้กรอก ไข่ดาว และไก่ทอด</p>
+            <p class="dish-desc" data-en="Tomato-sauce fried rice with sausage, fried egg and fried chicken." data-zh="番茄汁炒饭配香肠、煎蛋与炸鸡。">ข้าวผัดซอสมะเขือเทศ เสิร์ฟพร้อมไส้กรอก ไข่ดาว และไก่ทอด</p>
 
           </div>
         </div>
@@ -403,10 +402,10 @@
           </div>
           <div class="card-body">
             <div class="card-header">
-              <h3>ข้าวผัดไข่</h3>
+              <h3 data-en="Egg Fried Rice" data-zh="蛋炒饭">ข้าวผัดไข่</h3>
               <span class="price">55 บาท</span>
             </div>
-            <p class="dish-desc">ข้าวผัดไข่หอมๆ คลุกเคล้าให้เข้ากันทุกเม็ด</p>
+            <p class="dish-desc" data-en="Fragrant egg fried rice, with every grain perfectly coated." data-zh="蛋香四溢的炒饭，粒粒分明。">ข้าวผัดไข่หอมๆ คลุกเคล้าให้เข้ากันทุกเม็ด</p>
 
           </div>
         </div>
@@ -417,10 +416,10 @@
           </div>
           <div class="card-body">
             <div class="card-header">
-              <h3>ข้าวผัดไส้กรอกเยอรมัน</h3>
+              <h3 data-en="Fried Rice with German Sausage" data-zh="德式香肠炒饭">ข้าวผัดไส้กรอกเยอรมัน</h3>
               <span class="price">75 บาท</span>
             </div>
-            <p class="dish-desc">ข้าวผัดใส่ไส้กรอกเยอรมันชิ้นใหญ่ หอมเครื่องเทศ</p>
+            <p class="dish-desc" data-en="Fried rice with chunky German sausage and aromatic spices." data-zh="炒饭加入大块德式香肠与香料。">ข้าวผัดใส่ไส้กรอกเยอรมันชิ้นใหญ่ หอมเครื่องเทศ</p>
 
           </div>
         </div>
@@ -431,10 +430,10 @@
           </div>
           <div class="card-body">
             <div class="card-header">
-              <h3>ข้าวผัดแหนม</h3>
+              <h3 data-en="Fried Rice with Naem (Sour Pork)" data-zh="酸肉炒饭">ข้าวผัดแหนม</h3>
               <span class="price">75 บาท</span>
             </div>
-            <p class="dish-desc">ข้าวผัดแหนมรสเปรี้ยวกลมกล่อม เสิร์ฟพร้อมเครื่องเคียง</p>
+            <p class="dish-desc" data-en="Tangy naem (sour pork) fried rice served with condiments." data-zh="酸甜适中的酸肉炒饭，附配菜。">ข้าวผัดแหนมรสเปรี้ยวกลมกล่อม เสิร์ฟพร้อมเครื่องเคียง</p>
 
           </div>
         </div>
@@ -442,21 +441,21 @@
         <div class="menu-card" data-tags="mains">
           <div class="card-img-wrap">
             <img src="images\food1\curry.jpg" alt="Chicken" loading="lazy" decoding="async" />
-            <span class="badge">แนะนำ</span>
+            <span class="badge" data-en="Recommended" data-zh="推荐">แนะนำ</span>
           </div>
           <div class="card-body">
             <div class="card-header">
-              <h3>ผัดผงกะหรี่ราดข้าว</h3>
+              <h3 data-en="Curry Powder Stir-Fry on Rice" data-zh="咖喱粉炒饭">ผัดผงกะหรี่ราดข้าว</h3>
               <span class="price">65 บาท</span>
             </div>
-            <p class="dish-desc">ผัดผงกะหรี่หอมเครื่องเทศ ราดบนข้าวสวยร้อนๆ</p>
+            <p class="dish-desc" data-en="Aromatic curry-powder stir-fry over hot rice." data-zh="香料浓郁的咖喱粉炒菜配白饭。">ผัดผงกะหรี่หอมเครื่องเทศ ราดบนข้าวสวยร้อนๆ</p>
             <div class="tags">
-              <span class="tag mp">หมูสับ</span>
-              <span class="tag pork">หมูชิ้น</span>
-              <span class="tag chicken">ไก่</span>
-              <span class="tag crispypork">หมูกรอบ</span>
-              <span class="tag shrimp">กุ้ง</span>
-              <span class="tag squid">หมึก</span>
+              <span class="tag mp" data-en="Minced Pork" data-zh="猪肉末">หมูสับ</span>
+              <span class="tag pork" data-en="Sliced Pork" data-zh="猪肉片">หมูชิ้น</span>
+              <span class="tag chicken" data-en="Chicken" data-zh="鸡肉">ไก่</span>
+              <span class="tag crispypork" data-en="Crispy Pork" data-zh="脆皮猪肉">หมูกรอบ</span>
+              <span class="tag shrimp" data-en="Shrimp" data-zh="鲜虾">กุ้ง</span>
+              <span class="tag squid" data-en="Squid" data-zh="鱿鱼">หมึก</span>
             </div>
           </div>
         </div>
@@ -467,17 +466,17 @@
           </div>
           <div class="card-body">
             <div class="card-header">
-              <h3>ผัดพริกแกงราดข้าว</h3>
+              <h3 data-en="Red Curry Paste Stir-Fry on Rice" data-zh="红咖喱酱炒饭">ผัดพริกแกงราดข้าว</h3>
               <span class="price">65 บาท</span>
             </div>
-            <p class="dish-desc">ผัดพริกแกงรสเข้มข้น ราดบนข้าวสวยร้อนๆ</p>
+            <p class="dish-desc" data-en="Bold red curry stir-fry over hot rice." data-zh="浓郁红咖喱炒菜配香软白饭。">ผัดพริกแกงรสเข้มข้น ราดบนข้าวสวยร้อนๆ</p>
             <div class="tags">
-              <span class="tag mp">หมูสับ</span>
-              <span class="tag pork">หมูชิ้น</span>
-              <span class="tag chicken">ไก่</span>
-              <span class="tag crispypork">หมูกรอบ</span>
-              <span class="tag shrimp">กุ้ง</span>
-              <span class="tag squid">หมึก</span>
+              <span class="tag mp" data-en="Minced Pork" data-zh="猪肉末">หมูสับ</span>
+              <span class="tag pork" data-en="Sliced Pork" data-zh="猪肉片">หมูชิ้น</span>
+              <span class="tag chicken" data-en="Chicken" data-zh="鸡肉">ไก่</span>
+              <span class="tag crispypork" data-en="Crispy Pork" data-zh="脆皮猪肉">หมูกรอบ</span>
+              <span class="tag shrimp" data-en="Shrimp" data-zh="鲜虾">กุ้ง</span>
+              <span class="tag squid" data-en="Squid" data-zh="鱿鱼">หมึก</span>
             </div>
           </div>
         </div>
@@ -485,21 +484,21 @@
         <div class="menu-card" data-tags="mains">
           <div class="card-img-wrap">
             <img src="images\food1\kuapigkua.jpg" alt="Chicken" loading="lazy" decoding="async" />
-            <span class="badge">แนะนำ</span>
+            <span class="badge" data-en="Recommended" data-zh="推荐">แนะนำ</span>
           </div>
           <div class="card-body">
             <div class="card-header">
-              <h3>คั่วพริกเกลือ</h3>
+              <h3 data-en="Salt &amp; Pepper Stir-Fry" data-zh="椒盐爆炒">คั่วพริกเกลือ</h3>
               <span class="price">65 บาท</span>
             </div>
-            <p class="dish-desc">ผัดคั่วพริกเกลือรสจัดจ้าน หอมเครื่องเทศ</p>
+            <p class="dish-desc" data-en="Bold salt-and-pepper stir-fry, deeply aromatic." data-zh="椒盐爆炒，香料浓郁。">ผัดคั่วพริกเกลือรสจัดจ้าน หอมเครื่องเทศ</p>
             <div class="tags">
-              <span class="tag mp">หมูสับ</span>
-              <span class="tag pork">หมูชิ้น</span>
-              <span class="tag chicken">ไก่</span>
-              <span class="tag crispypork">หมูกรอบ</span>
-              <span class="tag shrimp">กุ้ง</span>
-              <span class="tag squid">หมึก</span>
+              <span class="tag mp" data-en="Minced Pork" data-zh="猪肉末">หมูสับ</span>
+              <span class="tag pork" data-en="Sliced Pork" data-zh="猪肉片">หมูชิ้น</span>
+              <span class="tag chicken" data-en="Chicken" data-zh="鸡肉">ไก่</span>
+              <span class="tag crispypork" data-en="Crispy Pork" data-zh="脆皮猪肉">หมูกรอบ</span>
+              <span class="tag shrimp" data-en="Shrimp" data-zh="鲜虾">กุ้ง</span>
+              <span class="tag squid" data-en="Squid" data-zh="鱿鱼">หมึก</span>
             </div>
           </div>
         </div>
@@ -510,17 +509,17 @@
           </div>
           <div class="card-body">
             <div class="card-header">
-              <h3>ข้าวกระเทียม</h3>
+              <h3 data-en="Garlic Pork on Rice" data-zh="蒜蓉猪肉饭">ข้าวกระเทียม</h3>
               <span class="price">65 บาท</span>
             </div>
-            <p class="dish-desc">หมูคลุกเครื่องเทศทอด เสิร์ฟบนข้าวกระเทียมหอม</p>
+            <p class="dish-desc" data-en="Fried spiced pork served over fragrant garlic rice." data-zh="香料炸猪肉配蒜香饭。">หมูคลุกเครื่องเทศทอด เสิร์ฟบนข้าวกระเทียมหอม</p>
             <div class="tags">
-              <span class="tag mp">หมูสับ</span>
-              <span class="tag pork">หมูชิ้น</span>
-              <span class="tag chicken">ไก่</span>
-              <span class="tag crispypork">หมูกรอบ</span>
-              <span class="tag shrimp">กุ้ง</span>
-              <span class="tag squid">หมึก</span>
+              <span class="tag mp" data-en="Minced Pork" data-zh="猪肉末">หมูสับ</span>
+              <span class="tag pork" data-en="Sliced Pork" data-zh="猪肉片">หมูชิ้น</span>
+              <span class="tag chicken" data-en="Chicken" data-zh="鸡肉">ไก่</span>
+              <span class="tag crispypork" data-en="Crispy Pork" data-zh="脆皮猪肉">หมูกรอบ</span>
+              <span class="tag shrimp" data-en="Shrimp" data-zh="鲜虾">กุ้ง</span>
+              <span class="tag squid" data-en="Squid" data-zh="鱿鱼">หมึก</span>
             </div>
           </div>
         </div>
@@ -531,10 +530,10 @@
           </div>
           <div class="card-body">
             <div class="card-header">
-              <h3>ข้าวไข่เจียวฟู</h3>
+              <h3 data-en="Fluffy Omelette on Rice" data-zh="蓬松煎蛋饭">ข้าวไข่เจียวฟู</h3>
               <span class="price">45 บาท</span>
             </div>
-            <p class="dish-desc">ไข่เจียวฟูนุ่ม ราดบนข้าวสวยร้อนๆ</p>
+            <p class="dish-desc" data-en="Fluffy soft Thai omelette over hot rice." data-zh="蓬松柔软的泰式煎蛋配白饭。">ไข่เจียวฟูนุ่ม ราดบนข้าวสวยร้อนๆ</p>
 
           </div>
         </div>
@@ -545,10 +544,10 @@
           </div>
           <div class="card-body">
             <div class="card-header">
-              <h3>ข้าวไข่เจียวหมูสับ</h3>
+              <h3 data-en="Pork Omelette on Rice" data-zh="猪肉末煎蛋饭">ข้าวไข่เจียวหมูสับ</h3>
               <span class="price">59 บาท</span>
             </div>
-            <p class="dish-desc">ไข่เจียวหมูสับ ราดบนข้าวสวย เสิร์ฟพร้อมซอสพริก</p>
+            <p class="dish-desc" data-en="Pork omelette over rice with chili sauce." data-zh="猪肉末煎蛋配饭与辣椒酱。">ไข่เจียวหมูสับ ราดบนข้าวสวย เสิร์ฟพร้อมซอสพริก</p>
 
           </div>
         </div>
@@ -559,10 +558,10 @@
           </div>
           <div class="card-body">
             <div class="card-header">
-              <h3>ข้าวไข่เจียวกุ้งสับ</h3>
+              <h3 data-en="Shrimp Omelette on Rice" data-zh="鲜虾煎蛋饭">ข้าวไข่เจียวกุ้งสับ</h3>
               <span class="price">65 บาท</span>
             </div>
-            <p class="dish-desc">ไข่เจียวกุ้งสับเนื้อแน่น ราดบนข้าวสวยร้อนๆ</p>
+            <p class="dish-desc" data-en="Hearty shrimp omelette over hot rice." data-zh="饱满的虾肉煎蛋配白饭。">ไข่เจียวกุ้งสับเนื้อแน่น ราดบนข้าวสวยร้อนๆ</p>
 
           </div>
         </div>
@@ -579,7 +578,7 @@
               <span class="price">55 บาท</span>
             </div>
              Free-range half chicken, rosemary jus, crushed potatoes, seasonal greens. 
-            <div class="tags"><span class="tag gf">Gluten-Free</span></div>
+            <div class="tags"><span class="tag gf" data-en="Gluten-Free" data-zh="无麸质">Gluten-Free</span></div>
           </div>
         </div>
 
@@ -591,10 +590,10 @@
           </div>
           <div class="card-body">
             <div class="card-header">
-              <h3>ข้าวมันไก่</h3>
+              <h3 data-en="Hainanese Chicken Rice" data-zh="海南鸡饭">ข้าวมันไก่</h3>
               <span class="price">55 บาท</span>
             </div>
-            <p class="dish-desc">ไก่ต้มเนื้อนุ่ม เสิร์ฟพร้อมข้าวมันและน้ำจิ้มเต้าเจี้ยว</p>
+            <p class="dish-desc" data-en="Tender poached chicken with seasoned rice and soybean dip." data-zh="嫩滑白切鸡配油饭与豆瓣酱。">ไก่ต้มเนื้อนุ่ม เสิร์ฟพร้อมข้าวมันและน้ำจิ้มเต้าเจี้ยว</p>
 
           </div>
         </div>
@@ -611,7 +610,7 @@
               <span class="price">65 บาท</span>
             </div>
              Free-range half chicken, rosemary jus, crushed potatoes, seasonal greens. 
-            <div class="tags"><span class="tag gf">Gluten-Free</span></div>
+            <div class="tags"><span class="tag gf" data-en="Gluten-Free" data-zh="无麸质">Gluten-Free</span></div>
           </div>
         </div>
 
@@ -623,10 +622,10 @@
           </div>
           <div class="card-body">
             <div class="card-header">
-              <h3>บะหมี่ขาหมู</h3>
+              <h3 data-en="Egg Noodles with Stewed Pork Leg" data-zh="蛋面配卤猪脚">บะหมี่ขาหมู</h3>
               <span class="price">65 บาท</span>
             </div>
-            <p class="dish-desc">บะหมี่เหลืองกับขาหมูตุ๋นเปื่อยนุ่ม น้ำซุปกลมกล่อม</p>
+            <p class="dish-desc" data-en="Egg noodles with slow-stewed tender pork leg in savoury broth." data-zh="蛋面配酥软卤猪脚，汤头鲜美。">บะหมี่เหลืองกับขาหมูตุ๋นเปื่อยนุ่ม น้ำซุปกลมกล่อม</p>
 
           </div>
         </div>
@@ -637,10 +636,10 @@
           </div>
           <div class="card-body">
             <div class="card-header">
-              <h3>สปาเกตตีคาโบนาร่า</h3>
+              <h3 data-en="Spaghetti Carbonara" data-zh="卡邦尼意大利面">สปาเกตตีคาโบนาร่า</h3>
               <span class="price">65 บาท</span>
             </div>
-            <p class="dish-desc">สปาเกตตีซอสครีมไข่แดง โรยเบคอนและพริกไทยดำ</p>
+            <p class="dish-desc" data-en="Spaghetti in egg-yolk cream sauce, topped with bacon and black pepper." data-zh="蛋黄奶油酱意面，配培根与黑胡椒。">สปาเกตตีซอสครีมไข่แดง โรยเบคอนและพริกไทยดำ</p>
 
           </div>
         </div>
@@ -651,10 +650,10 @@
           </div>
           <div class="card-body">
             <div class="card-header">
-              <h3>สปาเกตตีคาโบนาร่ากุ้ง</h3>
+              <h3 data-en="Carbonara with Shrimp" data-zh="鲜虾卡邦尼意大利面">สปาเกตตีคาโบนาร่ากุ้ง</h3>
               <span class="price">75 บาท</span>
             </div>
-            <p class="dish-desc">สปาเกตตีคาโบนาร่าซอสครีมเข้มข้น เสิร์ฟพร้อมกุ้งตัวโต</p>
+            <p class="dish-desc" data-en="Rich creamy carbonara spaghetti, topped with large shrimp." data-zh="浓郁奶油卡邦尼意面，配大虾。">สปาเกตตีคาโบนาร่าซอสครีมเข้มข้น เสิร์ฟพร้อมกุ้งตัวโต</p>
 
           </div>
         </div>
@@ -662,21 +661,21 @@
         <div class="menu-card" data-tags="mains">
           <div class="card-img-wrap">
             <img src="images\final1\drunkspa.jpg" alt="Chicken" loading="lazy" decoding="async" />
-            <span class="badge">ขายดี</span>
+            <span class="badge" data-en="Best Seller" data-zh="热销">ขายดี</span>
           </div>
           <div class="card-body">
             <div class="card-header">
-              <h3>สปาเกตตีขี้เมา</h3>
+              <h3 data-en="Drunken Spaghetti" data-zh="泰式醉面">สปาเกตตีขี้เมา</h3>
               <span class="price">65 บาท</span>
             </div>
-            <p class="dish-desc">สปาเกตตีผัดเผ็ดกะเพรา รสจัดจ้านสไตล์ขี้เมา</p>
+            <p class="dish-desc" data-en="Spicy basil drunken-style stir-fried spaghetti." data-zh="香辣罗勒叶醉面式意大利面。">สปาเกตตีผัดเผ็ดกะเพรา รสจัดจ้านสไตล์ขี้เมา</p>
             <div class="tags">
-              <span class="tag mp">หมูสับ</span>
-              <span class="tag pork">หมูชิ้น</span>
-              <span class="tag chicken">ไก่</span>
-              <span class="tag crispypork">หมูกรอบ</span>
-              <span class="tag shrimp">กุ้ง</span>
-              <span class="tag squid">หมึก</span>
+              <span class="tag mp" data-en="Minced Pork" data-zh="猪肉末">หมูสับ</span>
+              <span class="tag pork" data-en="Sliced Pork" data-zh="猪肉片">หมูชิ้น</span>
+              <span class="tag chicken" data-en="Chicken" data-zh="鸡肉">ไก่</span>
+              <span class="tag crispypork" data-en="Crispy Pork" data-zh="脆皮猪肉">หมูกรอบ</span>
+              <span class="tag shrimp" data-en="Shrimp" data-zh="鲜虾">กุ้ง</span>
+              <span class="tag squid" data-en="Squid" data-zh="鱿鱼">หมึก</span>
             </div>
           </div>
         </div>
@@ -687,10 +686,10 @@
           </div>
           <div class="card-body">
             <div class="card-header">
-              <h3>สปาเกตตีไส้กรอกขี้เมา</h3>
+              <h3 data-en="Drunken Spaghetti with Sausage" data-zh="香肠醉面">สปาเกตตีไส้กรอกขี้เมา</h3>
               <span class="price">75 บาท</span>
             </div>
-            <p class="dish-desc">สปาเกตตีผัดเผ็ดใส่ไส้กรอก รสจัดจ้านสไตล์ขี้เมา</p>
+            <p class="dish-desc" data-en="Spicy drunken-style stir-fried spaghetti with sausage." data-zh="香辣醉面式意大利面加香肠。">สปาเกตตีผัดเผ็ดใส่ไส้กรอก รสจัดจ้านสไตล์ขี้เมา</p>
 
           </div>
         </div>
@@ -701,18 +700,18 @@
           </div>
           <div class="card-body">
             <div class="card-header">
-              <h3>มาม่าผัดขี้เมา</h3>
+              <h3 data-en="Drunken Stir-Fried Instant Noodles" data-zh="泰式醉味方便面">มาม่าผัดขี้เมา</h3>
               <span class="price">65 บาท</span>
             </div>
-            <p class="dish-desc">มาม่าผัดเผ็ดกะเพรา รสจัดจ้าน เสิร์ฟร้อนๆ</p>
+            <p class="dish-desc" data-en="Spicy basil stir-fried instant noodles, served hot." data-zh="香辣罗勒叶炒方便面，热腾腾上桌。">มาม่าผัดเผ็ดกะเพรา รสจัดจ้าน เสิร์ฟร้อนๆ</p>
             <div class="tags">
-              <span class="tag mp">หมูสับ</span>
-              <span class="tag pork">หมูชิ้น</span>
-              <span class="tag chicken">ไก่</span>
-              <span class="tag crispypork">หมูกรอบ</span>
-              <span class="tag shrimp">กุ้ง</span>
-              <span class="tag squid">หมึก</span>
-              <span class="tag bacon">เบคอน</span>
+              <span class="tag mp" data-en="Minced Pork" data-zh="猪肉末">หมูสับ</span>
+              <span class="tag pork" data-en="Sliced Pork" data-zh="猪肉片">หมูชิ้น</span>
+              <span class="tag chicken" data-en="Chicken" data-zh="鸡肉">ไก่</span>
+              <span class="tag crispypork" data-en="Crispy Pork" data-zh="脆皮猪肉">หมูกรอบ</span>
+              <span class="tag shrimp" data-en="Shrimp" data-zh="鲜虾">กุ้ง</span>
+              <span class="tag squid" data-en="Squid" data-zh="鱿鱼">หมึก</span>
+              <span class="tag bacon" data-en="Bacon" data-zh="培根">เบคอน</span>
             </div>
           </div>
         </div>
@@ -720,14 +719,14 @@
         <div class="menu-card" data-tags="mains">
           <div class="card-img-wrap">
             <img src="images\food1\noodles.jpg" alt="Chicken" loading="lazy" decoding="async" />
-            <span class="badge">ขายดี</span>
+            <span class="badge" data-en="Best Seller" data-zh="热销">ขายดี</span>
           </div>
           <div class="card-body">
             <div class="card-header">
-              <h3>ก๋วยจั๊บญวน</h3>
+              <h3 data-en="Vietnamese Kuay Jub (Rice Noodle Soup)" data-zh="越南粿汁汤">ก๋วยจั๊บญวน</h3>
               <span class="price">65 บาท</span>
             </div>
-            <p class="dish-desc">ก๋วยจั๊บเส้นกลมในน้ำซุปใส เสิร์ฟพร้อมหมูยอและไข่</p>
+            <p class="dish-desc" data-en="Round rice noodles in clear broth with Vietnamese pork sausage and egg." data-zh="圆粿条配清汤、越南猪肉肠与鸡蛋。">ก๋วยจั๊บเส้นกลมในน้ำซุปใส เสิร์ฟพร้อมหมูยอและไข่</p>
 
           </div>
         </div>
@@ -738,17 +737,17 @@
           </div>
           <div class="card-body">
             <div class="card-header">
-              <h3>สุกี้น้ำ</h3>
+              <h3 data-en="Suki Soup" data-zh="泰式酸辣火锅汤">สุกี้น้ำ</h3>
               <span class="price">65 บาท</span>
             </div>
-            <p class="dish-desc">สุกี้น้ำซุปใส รวมเนื้อสัตว์ ผัก และวุ้นเส้น</p>
+            <p class="dish-desc" data-en="Thai suki in clear broth, with mixed meats, vegetables and glass noodles." data-zh="泰式清汤酸辣火锅，配什锦肉类、蔬菜与粉丝。">สุกี้น้ำซุปใส รวมเนื้อสัตว์ ผัก และวุ้นเส้น</p>
             <div class="tags">
-              <span class="tag mp">หมูสับ</span>
-              <span class="tag pork">หมูชิ้น</span>
-              <span class="tag chicken">ไก่</span>
-              <span class="tag crispypork">หมูกรอบ</span>
-              <span class="tag shrimp">กุ้ง</span>
-              <span class="tag squid">หมึก</span>
+              <span class="tag mp" data-en="Minced Pork" data-zh="猪肉末">หมูสับ</span>
+              <span class="tag pork" data-en="Sliced Pork" data-zh="猪肉片">หมูชิ้น</span>
+              <span class="tag chicken" data-en="Chicken" data-zh="鸡肉">ไก่</span>
+              <span class="tag crispypork" data-en="Crispy Pork" data-zh="脆皮猪肉">หมูกรอบ</span>
+              <span class="tag shrimp" data-en="Shrimp" data-zh="鲜虾">กุ้ง</span>
+              <span class="tag squid" data-en="Squid" data-zh="鱿鱼">หมึก</span>
             </div>
           </div>
         </div>
@@ -756,21 +755,21 @@
         <div class="menu-card" data-tags="mains">
           <div class="card-img-wrap">
             <img src="images\final1\mk2.jpg" alt="Chicken" loading="lazy" decoding="async" />
-            <span class="badge">แนะนำ</span> 
+            <span class="badge" data-en="Recommended" data-zh="推荐">แนะนำ</span> 
           </div>
           <div class="card-body">
             <div class="card-header">
-              <h3>สุกี้แห้ง</h3>
+              <h3 data-en="Dry Suki" data-zh="干炒泰式酸辣火锅">สุกี้แห้ง</h3>
               <span class="price">65 บาท</span>
             </div>
-            <p class="dish-desc">สุกี้ผัดแห้งซอสเข้มข้น คลุกเคล้ากับวุ้นเส้นและผัก</p>
+            <p class="dish-desc" data-en="Dry stir-fried suki with rich sauce, glass noodles and vegetables." data-zh="干炒酸辣火锅，配粉丝、蔬菜与浓郁酱汁。">สุกี้ผัดแห้งซอสเข้มข้น คลุกเคล้ากับวุ้นเส้นและผัก</p>
             <div class="tags">
-              <span class="tag mp">หมูสับ</span>
-              <span class="tag pork">หมูชิ้น</span>
-              <span class="tag chicken">ไก่</span>
-              <span class="tag crispypork">หมูกรอบ</span>
-              <span class="tag shrimp">กุ้ง</span>
-              <span class="tag squid">หมึก</span>
+              <span class="tag mp" data-en="Minced Pork" data-zh="猪肉末">หมูสับ</span>
+              <span class="tag pork" data-en="Sliced Pork" data-zh="猪肉片">หมูชิ้น</span>
+              <span class="tag chicken" data-en="Chicken" data-zh="鸡肉">ไก่</span>
+              <span class="tag crispypork" data-en="Crispy Pork" data-zh="脆皮猪肉">หมูกรอบ</span>
+              <span class="tag shrimp" data-en="Shrimp" data-zh="鲜虾">กุ้ง</span>
+              <span class="tag squid" data-en="Squid" data-zh="鱿鱼">หมึก</span>
             </div>
           </div>
         </div>
@@ -780,20 +779,20 @@
 
     <!-- Newest Additions -->
     <section class="menu-section" data-category="side">
-      <h2 class="section-title">แกงและกับข้าว / Soup & Dishes</h2>
+      <h2 class="section-title" data-en="Soups &amp; Sides" data-zh="汤品与配菜">แกงและกับข้าว / Soup & Dishes</h2>
       <div class="menu-grid">
 
         <div class="menu-card" data-tags="pasta">
           <div class="card-img-wrap">
             <img src="images\teafood\kaengjud.jpg" alt="Pasta" loading="lazy" decoding="async" />
-            <span class="badge">แนะนำ</span>
+            <span class="badge" data-en="Recommended" data-zh="推荐">แนะนำ</span>
           </div>
           <div class="card-body">
             <div class="card-header">
-              <h3>แกงจืดเต้าหู้หมูสับ + สาหร่าย</h3>
+              <h3 data-en="Tofu, Pork &amp; Seaweed Clear Soup" data-zh="豆腐猪肉末紫菜清汤">แกงจืดเต้าหู้หมูสับ + สาหร่าย</h3>
               <span class="price">65 บาท</span>
             </div>
-            <p class="dish-desc">แกงจืดน้ำซุปใส เต้าหู้ หมูสับ และสาหร่ายแผ่น</p>
+            <p class="dish-desc" data-en="Clear soup with tofu, minced pork and seaweed." data-zh="清汤豆腐配猪肉末与紫菜。">แกงจืดน้ำซุปใส เต้าหู้ หมูสับ และสาหร่ายแผ่น</p>
           </div>
         </div>
 
@@ -804,24 +803,24 @@
           </div>
           <div class="card-body">
             <div class="card-header">
-              <h3>แกงจืดไข่น้ำเต้าหู้หมูสับสาหร่าย</h3>
+              <h3 data-en="Egg Tofu, Pork &amp; Seaweed Clear Soup" data-zh="蛋豆腐猪肉末紫菜清汤">แกงจืดไข่น้ำเต้าหู้หมูสับสาหร่าย</h3>
               <span class="price">80 บาท</span>
             </div>
-            <p class="dish-desc">แกงจืดไข่น้ำเต้าหู้นุ่ม หมูสับและสาหร่าย น้ำซุปใส</p>
+            <p class="dish-desc" data-en="Clear soup with silky egg tofu, minced pork and seaweed." data-zh="清汤滑嫩蛋豆腐配猪肉末与紫菜。">แกงจืดไข่น้ำเต้าหู้นุ่ม หมูสับและสาหร่าย น้ำซุปใส</p>
           </div>
         </div>
 
         <div class="menu-card" data-tags="breakfast">
           <div class="card-img-wrap">
             <img src="images\food2\tyk.jpg" alt="Risotto" loading="lazy" decoding="async" />
-            <span class="badge">ขายดี</span>
+            <span class="badge" data-en="Best Seller" data-zh="热销">ขายดี</span>
           </div>
           <div class="card-body">
             <div class="card-header">
-              <h3>ต้มยำกุ้ง</h3>
+              <h3 data-en="Tom Yum Shrimp Soup" data-zh="冬阴功虾汤">ต้มยำกุ้ง</h3>
               <span class="price">105 บาท</span>
             </div>
-            <p class="dish-desc">ต้มยำกุ้งน้ำใสรสจัดจ้าน เปรี้ยว เผ็ด และหอมสมุนไพร</p>
+            <p class="dish-desc" data-en="Bold clear tom yum with shrimp — sour, spicy and herbaceous." data-zh="酸辣鲜香的清汤冬阴功虾汤。">ต้มยำกุ้งน้ำใสรสจัดจ้าน เปรี้ยว เผ็ด และหอมสมุนไพร</p>
 
           </div>
         </div>
@@ -833,10 +832,10 @@
           </div>
           <div class="card-body">
             <div class="card-header">
-              <h3>ต้มยำรวมมิตร</h3>
+              <h3 data-en="Tom Yum Mixed Soup" data-zh="什锦冬阴功汤">ต้มยำรวมมิตร</h3>
               <span class="price">105 บาท</span>
             </div>
-            <p class="dish-desc">ต้มยำรวมเนื้อสัตว์หลายชนิด รสเปรี้ยวเผ็ดถึงเครื่อง</p>
+            <p class="dish-desc" data-en="Mixed-meat tom yum, bright with chili and herbs." data-zh="什锦冬阴功汤，酸辣浓郁。">ต้มยำรวมเนื้อสัตว์หลายชนิด รสเปรี้ยวเผ็ดถึงเครื่อง</p>
 
           </div>
         </div>
@@ -854,7 +853,7 @@
               <span class="price">105 บาท</span>
             </div>
              Arborio rice, mixed wild mushrooms, white wine, truffle oil, aged parmesan. 
-            <div class="tags"><span class="tag veg">Vegetarian</span><span class="tag gf">Gluten-Free</span></div>
+            <div class="tags"><span class="tag veg" data-en="Vegetarian" data-zh="素食">Vegetarian</span><span class="tag gf" data-en="Gluten-Free" data-zh="无麸质">Gluten-Free</span></div>
           </div>
         </div>
 
@@ -869,7 +868,7 @@
               <span class="price">105 บาท</span>
             </div>
              Arborio rice, mixed wild mushrooms, white wine, truffle oil, aged parmesan. 
-            <div class="tags"><span class="tag veg">Vegetarian</span><span class="tag gf">Gluten-Free</span></div>
+            <div class="tags"><span class="tag veg" data-en="Vegetarian" data-zh="素食">Vegetarian</span><span class="tag gf" data-en="Gluten-Free" data-zh="无麸质">Gluten-Free</span></div>
           </div>
         </div>
 
@@ -884,7 +883,7 @@
               <span class="price">105 บาท</span>
             </div>
             - Arborio rice, mixed wild mushrooms, white wine, truffle oil, aged parmesan. 
-            <div class="tags"><span class="tag veg">Vegetarian</span><span class="tag gf">Gluten-Free</span></div>
+            <div class="tags"><span class="tag veg" data-en="Vegetarian" data-zh="素食">Vegetarian</span><span class="tag gf" data-en="Gluten-Free" data-zh="无麸质">Gluten-Free</span></div>
           </div>
         </div>
 
@@ -899,7 +898,7 @@
               <span class="price">105 บาท</span>
             </div>
              Arborio rice, mixed wild mushrooms, white wine, truffle oil, aged parmesan. 
-            <div class="tags"><span class="tag veg">Vegetarian</span><span class="tag gf">Gluten-Free</span></div>
+            <div class="tags"><span class="tag veg" data-en="Vegetarian" data-zh="素食">Vegetarian</span><span class="tag gf" data-en="Gluten-Free" data-zh="无麸质">Gluten-Free</span></div>
           </div>
         </div>
 
@@ -941,7 +940,7 @@
               <span class="price">50 บาท</span>
             </div>
              Arborio rice, mixed wild mushrooms, white wine, truffle oil, aged parmesan. 
-            <div class="tags"><span class="tag veg">Vegetarian</span><span class="tag gf">Gluten-Free</span></div>
+            <div class="tags"><span class="tag veg" data-en="Vegetarian" data-zh="素食">Vegetarian</span><span class="tag gf" data-en="Gluten-Free" data-zh="无麸质">Gluten-Free</span></div>
           </div>
         </div>
 
@@ -953,20 +952,20 @@
 
     <!-- Desserts -->
     <section class="menu-section" data-category="desserts">
-      <h2 class="section-title">เบเกอรี่และอาหารทานเล่น / Bakery & Desserts</h2>
+      <h2 class="section-title" data-en="Bakery &amp; Snacks" data-zh="烘焙与小吃">เบเกอรี่และอาหารทานเล่น / Bakery & Desserts</h2>
       <div class="menu-grid">
 
         <div class="menu-card" data-tags="desserts">
           <div class="card-img-wrap">
             <img src="images\shogupan.jpg" alt="Tiramisu" loading="lazy" decoding="async" />
-            <span class="badge">แนะนำ</span>
+            <span class="badge" data-en="Recommended" data-zh="推荐">แนะนำ</span>
           </div>
           <div class="card-body">
             <div class="card-header">
-              <h3>โทสต์ญี่ปุ่น โชกุปัง</h3>
+              <h3 data-en="Japanese Shokupan Toast" data-zh="日式生吐司">โทสต์ญี่ปุ่น โชกุปัง</h3>
               <span class="price">69 บาท</span>
             </div>
-            <p class="dish-desc">ขนมปังโชกุปังเนื้อนุ่มฟู ปิ้งหอมเนยและน้ำตาล</p>
+            <p class="dish-desc" data-en="Soft Japanese shokupan toasted with butter and sugar." data-zh="蓬松柔软的日式生吐司，烤至牛油与糖香四溢。">ขนมปังโชกุปังเนื้อนุ่มฟู ปิ้งหอมเนยและน้ำตาล</p>
 
           </div>
         </div>
@@ -974,14 +973,14 @@
         <div class="menu-card" data-tags="desserts">
           <div class="card-img-wrap">
             <img src="images\teafood\honey taost.jpg" alt="Tiramisu" loading="lazy" decoding="async" />
-            <span class="badge">ขายดี</span>
+            <span class="badge" data-en="Best Seller" data-zh="热销">ขายดี</span>
           </div>
           <div class="card-body">
             <div class="card-header">
-              <h3>ฮันนี่โทส์ต</h3>
+              <h3 data-en="Honey Toast" data-zh="蜂蜜吐司">ฮันนี่โทส์ต</h3>
               <span class="price">59 บาท</span>
             </div>
-            <p class="dish-desc">ขนมปังปิ้งหนาราดน้ำผึ้ง เสิร์ฟร้อนพร้อมเนยสด</p>
+            <p class="dish-desc" data-en="Thick toast drizzled with honey, served hot with fresh butter." data-zh="厚切吐司淋蜂蜜，热食配新鲜牛油。">ขนมปังปิ้งหนาราดน้ำผึ้ง เสิร์ฟร้อนพร้อมเนยสด</p>
 
           </div>
         </div>
@@ -993,10 +992,10 @@
           </div>
           <div class="card-body">
             <div class="card-header">
-              <h3>โทสต์เนยน้ำตาล</h3>
+              <h3 data-en="Butter Sugar Toast" data-zh="牛油糖吐司">โทสต์เนยน้ำตาล</h3>
               <span class="price">59 บาท</span>
             </div>
-            <p class="dish-desc">ขนมปังปิ้งทาเนย โรยน้ำตาลทรายหอมหวาน</p>
+            <p class="dish-desc" data-en="Butter-spread toast sprinkled with sugar." data-zh="牛油吐司撒上香甜砂糖。">ขนมปังปิ้งทาเนย โรยน้ำตาลทรายหอมหวาน</p>
 
           </div>
         </div>
@@ -1004,14 +1003,14 @@
         <div class="menu-card" data-tags="desserts">
           <div class="card-img-wrap">
             <img src="images\food2\sangkaya.jpg" alt="Panna Cotta" loading="lazy" decoding="async" />
-            <span class="badge">แนะนำ</span>
+            <span class="badge" data-en="Recommended" data-zh="推荐">แนะนำ</span>
           </div>
           <div class="card-body">
             <div class="card-header">
-              <h3>ขนมปังสังขยา</h3>
+              <h3 data-en="Toast with Pandan Custard" data-zh="斑斓蛋酱吐司">ขนมปังสังขยา</h3>
               <span class="price">45 บาท</span>
             </div>
-            <p class="dish-desc">ขนมปังนุ่ม เสิร์ฟพร้อมสังขยาใบเตยหอมๆ</p>
+            <p class="dish-desc" data-en="Soft bread served with fragrant pandan custard." data-zh="柔软面包配香气十足的斑斓蛋酱。">ขนมปังนุ่ม เสิร์ฟพร้อมสังขยาใบเตยหอมๆ</p>
 
           </div>
         </div>
@@ -1022,10 +1021,10 @@
           </div>
           <div class="card-body">
             <div class="card-header">
-              <h3>คาราเกะเฟรนช์ฟรายส์</h3>
+              <h3 data-en="Karaage Chicken with Fries" data-zh="唐扬鸡配薯条">คาราเกะเฟรนช์ฟรายส์</h3>
               <span class="price">65 บาท</span>
             </div>
-            <p class="dish-desc">ไก่คาราเกะทอดกรอบ เสิร์ฟพร้อมเฟรนช์ฟรายส์ร้อนๆ</p>
+            <p class="dish-desc" data-en="Crispy karaage chicken served with hot fries." data-zh="酥脆唐扬鸡配热薯条。">ไก่คาราเกะทอดกรอบ เสิร์ฟพร้อมเฟรนช์ฟรายส์ร้อนๆ</p>
 
           </div>
         </div>
@@ -1035,20 +1034,20 @@
 
     <!-- Coffee -->
     <section class="menu-section" data-category="coffee">
-      <h2 class="section-title">กาแฟ / Coffee</h2>
+      <h2 class="section-title" data-en="Coffee" data-zh="咖啡">กาแฟ / Coffee</h2>
       <div class="menu-grid">
 
         <div class="menu-card" data-tags="coffee">
           <div class="card-img-wrap">
             <img src="images\teacoffee\americano.jpg" alt="Coffee" loading="lazy" decoding="async" />
-            <span class="badge">แนะนำ</span>
+            <span class="badge" data-en="Recommended" data-zh="推荐">แนะนำ</span>
           </div>
           <div class="card-body">
             <div class="card-header">
-              <h3>อะเมริกาโน่</h3>
+              <h3 data-en="Iced Americano" data-zh="冰美式咖啡">อะเมริกาโน่</h3>
               <span class="price">50 บาท</span>
             </div>
-            <p class="dish-desc">เอสเปรสโซ่ผสมน้ำเย็น รสกลมกล่อม กลิ่นกาแฟชัด</p>
+            <p class="dish-desc" data-en="Espresso over cold water — smooth, with bold coffee aroma." data-zh="浓缩咖啡兑冷水，口感顺滑，咖啡香浓郁。">เอสเปรสโซ่ผสมน้ำเย็น รสกลมกล่อม กลิ่นกาแฟชัด</p>
 
           </div>
         </div>
@@ -1059,10 +1058,10 @@
           </div>
           <div class="card-body">
             <div class="card-header">
-              <h3>อะเมริกาโน่ร้อน</h3>
+              <h3 data-en="Hot Americano" data-zh="热美式咖啡">อะเมริกาโน่ร้อน</h3>
               <span class="price">45 บาท</span>
             </div>
-            <p class="dish-desc">เอสเปรสโซ่ผสมน้ำร้อน หอมเข้มเสิร์ฟอุ่นๆ</p>
+            <p class="dish-desc" data-en="Espresso with hot water, served warm and richly aromatic." data-zh="浓缩咖啡兑热水，温暖浓香。">เอสเปรสโซ่ผสมน้ำร้อน หอมเข้มเสิร์ฟอุ่นๆ</p>
 
           </div>
         </div>
@@ -1070,14 +1069,14 @@
         <div class="menu-card" data-tags="coffee">
           <div class="card-img-wrap">
             <img src="images\อเมริกาโน่ส้มเว็บ.jpg" alt="Coffee" loading="lazy" decoding="async" />
-            <span class="badge">แนะนำ</span>
+            <span class="badge" data-en="Recommended" data-zh="推荐">แนะนำ</span>
           </div>
           <div class="card-body">
             <div class="card-header">
-              <h3>อะเมริกาโน่ส้ม</h3>
+              <h3 data-en="Orange Americano" data-zh="香橙美式咖啡">อะเมริกาโน่ส้ม</h3>
               <span class="price">55 บาท</span>
             </div>
-            <p class="dish-desc">อะเมริกาโน่เย็นผสมน้ำส้มสด หอมเปรี้ยวสดชื่น</p>
+            <p class="dish-desc" data-en="Iced americano with fresh orange juice — bright and refreshing." data-zh="冰美式咖啡兑鲜橙汁，清新酸香。">อะเมริกาโน่เย็นผสมน้ำส้มสด หอมเปรี้ยวสดชื่น</p>
 
           </div>
         </div>
@@ -1089,24 +1088,24 @@
           </div>
           <div class="card-body">
             <div class="card-header">
-              <h3>อเมริกาโน่น้ำผึ้ง</h3>
+              <h3 data-en="Honey Americano" data-zh="蜂蜜美式咖啡">อเมริกาโน่น้ำผึ้ง</h3>
               <span class="price">60 บาท</span>
             </div>
-            <p class="dish-desc">อะเมริกาโน่เย็นปรุงรสด้วยน้ำผึ้งแท้ หอมหวานละมุน</p>
+            <p class="dish-desc" data-en="Iced americano sweetened with pure honey — softly aromatic." data-zh="冰美式咖啡配纯蜂蜜，香甜柔和。">อะเมริกาโน่เย็นปรุงรสด้วยน้ำผึ้งแท้ หอมหวานละมุน</p>
           </div>
         </div>
 
         <div class="menu-card" data-tags="coffee">
           <div class="card-img-wrap">
             <img src="images\teacoffee\es.jpg" alt="Coffee" loading="lazy" decoding="async" />
-            <span class="badge">ขายดี</span>
+            <span class="badge" data-en="Best Seller" data-zh="热销">ขายดี</span>
           </div>
           <div class="card-body">
             <div class="card-header">
-              <h3>เอสเปรสโซ่</h3>
+              <h3 data-en="Iced Espresso" data-zh="冰浓缩咖啡">เอสเปรสโซ่</h3>
               <span class="price">55 บาท</span>
             </div>
-            <p class="dish-desc">ช็อตเอสเปรสโซ่กลิ่นเข้มจัด เสิร์ฟพร้อมน้ำแข็ง</p>
+            <p class="dish-desc" data-en="A bold shot of espresso served over ice." data-zh="浓郁浓缩咖啡，配冰块上桌。">ช็อตเอสเปรสโซ่กลิ่นเข้มจัด เสิร์ฟพร้อมน้ำแข็ง</p>
 
           </div>
         </div>
@@ -1117,10 +1116,10 @@
           </div>
           <div class="card-body">
             <div class="card-header">
-              <h3>เอสเปรสโซ่ร้อน</h3>
+              <h3 data-en="Hot Espresso" data-zh="热浓缩咖啡">เอสเปรสโซ่ร้อน</h3>
               <span class="price">50 บาท</span>
             </div>
-            <p class="dish-desc">ช็อตเอสเปรสโซ่ร้อนกลิ่นหอมจัด รสเข้มถึงใจ</p>
+            <p class="dish-desc" data-en="Hot espresso shot with rich aroma and full-bodied flavour." data-zh="热浓缩咖啡，香气浓郁，口感醇厚。">ช็อตเอสเปรสโซ่ร้อนกลิ่นหอมจัด รสเข้มถึงใจ</p>
 
           </div>
         </div>
@@ -1128,14 +1127,14 @@
         <div class="menu-card" data-tags="coffee">
           <div class="card-img-wrap">
             <img src="images\teacoffee\es oat.jpg" alt="Coffee" loading="lazy" decoding="async" />
-            <span class="badge">แนะนำ</span>
+            <span class="badge" data-en="Recommended" data-zh="推荐">แนะนำ</span>
           </div>
           <div class="card-body">
             <div class="card-header">
-              <h3>เอสเปรสโซ่นมโอ๊ต</h3>
+              <h3 data-en="Espresso with Oat Milk" data-zh="燕麦奶浓缩咖啡">เอสเปรสโซ่นมโอ๊ต</h3>
               <span class="price">55 บาท</span>
             </div>
-            <p class="dish-desc">เอสเปรสโซ่ผสมนมโอ๊ตหอมมัน รสนุ่มลงตัว</p>
+            <p class="dish-desc" data-en="Espresso with creamy oat milk — smooth and balanced." data-zh="浓缩咖啡兑香浓燕麦奶，口感顺滑。">เอสเปรสโซ่ผสมนมโอ๊ตหอมมัน รสนุ่มลงตัว</p>
 
           </div>
         </div>
@@ -1146,10 +1145,10 @@
           </div>
           <div class="card-body">
             <div class="card-header">
-              <h3>คาปูชิโน่</h3>
+              <h3 data-en="Iced Cappuccino" data-zh="冰卡布奇诺">คาปูชิโน่</h3>
               <span class="price">55 บาท</span>
             </div>
-            <p class="dish-desc">เอสเปรสโซ่ผสมนมและฟองนมหนานุ่ม เสิร์ฟเย็น</p>
+            <p class="dish-desc" data-en="Iced espresso with milk and thick velvety foam." data-zh="冰浓缩咖啡配牛奶与厚实奶泡。">เอสเปรสโซ่ผสมนมและฟองนมหนานุ่ม เสิร์ฟเย็น</p>
 
           </div>
         </div>
@@ -1160,10 +1159,10 @@
           </div>
           <div class="card-body">
             <div class="card-header">
-              <h3>คาปูชิโน่ร้อน</h3>
+              <h3 data-en="Hot Cappuccino" data-zh="热卡布奇诺">คาปูชิโน่ร้อน</h3>
               <span class="price">50 บาท</span>
             </div>
-            <p class="dish-desc">เอสเปรสโซ่ร้อนกับนมและฟองนมหนานุ่มหอมกรุ่น</p>
+            <p class="dish-desc" data-en="Hot espresso with milk and rich, aromatic foam." data-zh="热浓缩咖啡配牛奶与香浓奶泡。">เอสเปรสโซ่ร้อนกับนมและฟองนมหนานุ่มหอมกรุ่น</p>
 
           </div>
         </div>
@@ -1174,10 +1173,10 @@
           </div>
           <div class="card-body">
             <div class="card-header">
-              <h3>ลาเต้</h3>
+              <h3 data-en="Iced Latte" data-zh="冰拿铁">ลาเต้</h3>
               <span class="price">55 บาท</span>
             </div>
-            <p class="dish-desc">เอสเปรสโซ่ผสมนมสดเย็น รสนุ่มกลมกล่อม</p>
+            <p class="dish-desc" data-en="Espresso with cold fresh milk — smooth and well-rounded." data-zh="浓缩咖啡兑冰鲜奶，口感顺滑圆润。">เอสเปรสโซ่ผสมนมสดเย็น รสนุ่มกลมกล่อม</p>
 
           </div>
         </div>
@@ -1188,10 +1187,10 @@
           </div>
           <div class="card-body">
             <div class="card-header">
-              <h3>ลาเต้ร้อน</h3>
+              <h3 data-en="Hot Latte" data-zh="热拿铁">ลาเต้ร้อน</h3>
               <span class="price">50 บาท</span>
             </div>
-            <p class="dish-desc">เอสเปรสโซ่ร้อนผสมนมสด รสนุ่มหอมละมุน</p>
+            <p class="dish-desc" data-en="Hot espresso with fresh milk — smooth and gently aromatic." data-zh="热浓缩咖啡兑鲜奶，柔和香醇。">เอสเปรสโซ่ร้อนผสมนมสด รสนุ่มหอมละมุน</p>
 
           </div>
         </div>
@@ -1208,7 +1207,7 @@
               <span class="price">55 บาท</span>
             </div>
              Single-origin espresso, flat white, cold brew, oat/almond/full-cream milk options. 
-            <div class="tags"><span class="tag veg">Vegetarian</span><span class="tag gf">Gluten-Free</span></div>
+            <div class="tags"><span class="tag veg" data-en="Vegetarian" data-zh="素食">Vegetarian</span><span class="tag gf" data-en="Gluten-Free" data-zh="无麸质">Gluten-Free</span></div>
           </div>
         </div>
 
@@ -1222,7 +1221,7 @@
               <span class="price">50 บาท</span>
             </div>
             - Single-origin espresso, flat white, cold brew, oat/almond/full-cream milk options. 
-            <div class="tags"><span class="tag veg">Vegetarian</span><span class="tag gf">Gluten-Free</span></div>
+            <div class="tags"><span class="tag veg" data-en="Vegetarian" data-zh="素食">Vegetarian</span><span class="tag gf" data-en="Gluten-Free" data-zh="无麸质">Gluten-Free</span></div>
           </div>
         </div>
 
@@ -1236,7 +1235,7 @@
               <span class="price">55 บาท</span>
             </div>
              Single-origin espresso, flat white, cold brew, oat/almond/full-cream milk options. 
-            <div class="tags"><span class="tag veg">Vegetarian</span><span class="tag gf">Gluten-Free</span></div>
+            <div class="tags"><span class="tag veg" data-en="Vegetarian" data-zh="素食">Vegetarian</span><span class="tag gf" data-en="Gluten-Free" data-zh="无麸质">Gluten-Free</span></div>
           </div>
         </div>
 
@@ -1245,14 +1244,14 @@
         <div class="menu-card" data-tags="coffee">
           <div class="card-img-wrap">
             <img src="images\ชุดสปาขี้เมา (1448 x 950 px)\caramel macchiato.jpg" alt="Coffee" loading="lazy" decoding="async" />
-            <span class="badge">แนะนำ</span>
+            <span class="badge" data-en="Recommended" data-zh="推荐">แนะนำ</span>
           </div>
           <div class="card-body">
             <div class="card-header">
-              <h3>คาราเมล แมคคิอาโต</h3>
+              <h3 data-en="Caramel Macchiato" data-zh="焦糖玛奇朵">คาราเมล แมคคิอาโต</h3>
               <span class="price">60 บาท</span>
             </div>
-            <p class="dish-desc">ลาเต้ราดคาราเมลหวานหอม รสเข้มลงตัว</p>
+            <p class="dish-desc" data-en="Latte with sweet, aromatic caramel — beautifully balanced." data-zh="拿铁淋上香甜焦糖，浓郁均衡。">ลาเต้ราดคาราเมลหวานหอม รสเข้มลงตัว</p>
 
           </div>
         </div>
@@ -1263,20 +1262,20 @@
 
     <!-- Tea -->
     <section class="menu-section" data-category="tea">
-      <h2 class="section-title">ชา / Tea</h2>
+      <h2 class="section-title" data-en="Tea" data-zh="茶">ชา / Tea</h2>
       <div class="menu-grid">
 
         <div class="menu-card" data-tags="tea">
           <div class="card-img-wrap">
             <img src="images\teacoffee\green tea.jpg" alt="Fries" loading="lazy" decoding="async" />
-            <span class="badge">ขายดี</span>
+            <span class="badge" data-en="Best Seller" data-zh="热销">ขายดี</span>
           </div>
           <div class="card-body">
             <div class="card-header">
-              <h3>ชาเขียวนม</h3>
+              <h3 data-en="Green Milk Tea" data-zh="绿奶茶">ชาเขียวนม</h3>
               <span class="price">55 บาท</span>
             </div>
-            <p class="dish-desc">ชาเขียวผสมนมสดเย็น รสกลมกล่อมหอมใบชา</p>
+            <p class="dish-desc" data-en="Green tea with cold fresh milk — balanced, with tea-leaf aroma." data-zh="绿茶兑冰鲜奶，茶香浓郁均衡。">ชาเขียวผสมนมสดเย็น รสกลมกล่อมหอมใบชา</p>
           </div>
         </div>
 
@@ -1286,10 +1285,10 @@
           </div>
         <div class="card-body">
             <div class="card-header">
-              <h3>มัทฉะลาเต้</h3>
+              <h3 data-en="Matcha Latte" data-zh="抹茶拿铁">มัทฉะลาเต้</h3>
               <span class="price">65 บาท</span>
             </div>
-            <p class="dish-desc">ผงมัทฉะแท้ผสมนมสด รสกลมกล่อมหอมเข้ม</p>
+            <p class="dish-desc" data-en="Pure matcha powder with fresh milk — rich and rounded." data-zh="纯抹茶粉兑鲜奶，香浓醇厚。">ผงมัทฉะแท้ผสมนมสด รสกลมกล่อมหอมเข้ม</p>
           </div>
         </div>
 
@@ -1299,24 +1298,24 @@
           </div>
         <div class="card-body">
             <div class="card-header">
-              <h3>เพียวมัทฉะ</h3>
+              <h3 data-en="Pure Matcha" data-zh="纯抹茶">เพียวมัทฉะ</h3>
               <span class="price">65 บาท</span>
             </div>
-            <p class="dish-desc">มัทฉะแท้เข้มข้น ไม่ผสมนม รสชาเขียวแท้</p>
+            <p class="dish-desc" data-en="Pure matcha — no milk, full green-tea character." data-zh="纯抹茶，不加奶，原汁原味。">มัทฉะแท้เข้มข้น ไม่ผสมนม รสชาเขียวแท้</p>
           </div>
         </div>
 
         <div class="menu-card" data-tags="tea">
           <div class="card-img-wrap">
             <img src="images\teacoffee\thai tea.jpg" alt="Fries" loading="lazy" decoding="async" />
-            <span class="badge">ขายดี</span>
+            <span class="badge" data-en="Best Seller" data-zh="热销">ขายดี</span>
           </div>
         <div class="card-body">
             <div class="card-header">
-              <h3>ชาไทย</h3>
+              <h3 data-en="Thai Iced Tea" data-zh="泰式奶茶">ชาไทย</h3>
               <span class="price">55 บาท</span>
             </div>
-            <p class="dish-desc">ชาไทยสีส้มเข้ม หอมหวานเสิร์ฟเย็นแบบดั้งเดิม</p>
+            <p class="dish-desc" data-en="Classic deep-orange Thai iced tea, fragrant and sweet." data-zh="经典橘色泰式冰茶，香甜浓郁。">ชาไทยสีส้มเข้ม หอมหวานเสิร์ฟเย็นแบบดั้งเดิม</p>
           </div>
         </div>
 
@@ -1326,10 +1325,10 @@
           </div>
         <div class="card-body">
             <div class="card-header">
-              <h3>ชามะนาว</h3>
+              <h3 data-en="Lemon Tea" data-zh="柠檬茶">ชามะนาว</h3>
               <span class="price">55 บาท</span>
             </div>
-            <p class="dish-desc">ชาเข้มเย็นผสมน้ำมะนาวสด รสเปรี้ยวซ่าสดชื่น</p>
+            <p class="dish-desc" data-en="Strong iced tea with fresh lime — bright and refreshing." data-zh="浓茶兑鲜柠檬汁，清新爽口。">ชาเข้มเย็นผสมน้ำมะนาวสด รสเปรี้ยวซ่าสดชื่น</p>
           </div>
         </div>
 
@@ -1339,10 +1338,10 @@
           </div>
         <div class="card-body">
             <div class="card-header">
-              <h3>ชานมมะลิ</h3>
+              <h3 data-en="Jasmine Milk Tea" data-zh="茉莉奶茶">ชานมมะลิ</h3>
               <span class="price">55 บาท</span>
             </div>
-            <p class="dish-desc">ชามะลิหอมๆ ผสมนมสด รสนุ่มลงตัว</p>
+            <p class="dish-desc" data-en="Fragrant jasmine tea with fresh milk — soft and balanced." data-zh="香浓茉莉茶兑鲜奶，柔和均衡。">ชามะลิหอมๆ ผสมนมสด รสนุ่มลงตัว</p>
           </div>
         </div>
 
@@ -1352,10 +1351,10 @@
           </div>
         <div class="card-body">
             <div class="card-header">
-              <h3>ชานมพีช</h3>
+              <h3 data-en="Peach Milk Tea" data-zh="蜜桃奶茶">ชานมพีช</h3>
               <span class="price">55 บาท</span>
             </div>
-            <p class="dish-desc">ชานมกลิ่นพีชหอมหวาน รสกลมกล่อมเย็นชื่นใจ</p>
+            <p class="dish-desc" data-en="Peach-scented milk tea — sweet, fragrant and refreshing." data-zh="蜜桃香浓郁的奶茶，清新香甜。">ชานมกลิ่นพีชหอมหวาน รสกลมกล่อมเย็นชื่นใจ</p>
           </div>
         </div>
 
@@ -1365,10 +1364,10 @@
           </div>
         <div class="card-body">
             <div class="card-header">
-              <h3>ชานมต้าหงเผา</h3>
+              <h3 data-en="Da Hong Pao Milk Tea" data-zh="大红袍奶茶">ชานมต้าหงเผา</h3>
               <span class="price">55 บาท</span>
             </div>
-            <p class="dish-desc">ชาต้าหงเผาหอมเข้ม ผสมนมสด รสนุ่มมีคาแรกเตอร์</p>
+            <p class="dish-desc" data-en="Aromatic Da Hong Pao tea with fresh milk — distinctive and smooth." data-zh="香气浓郁的大红袍奶茶，风味独特顺滑。">ชาต้าหงเผาหอมเข้ม ผสมนมสด รสนุ่มมีคาแรกเตอร์</p>
           </div>
         </div>
 
@@ -1395,24 +1394,24 @@
           </div>
         <div class="card-body">
             <div class="card-header">
-              <h3>ชาลิ้นจี่ใส</h3>
+              <h3 data-en="Clear Lychee Tea" data-zh="荔枝清茶">ชาลิ้นจี่ใส</h3>
               <span class="price">50 บาท</span>
             </div>
-            <p class="dish-desc">ชาดำใสกลิ่นลิ้นจี่ รสหวานหอมสดชื่น</p>
+            <p class="dish-desc" data-en="Clear black tea with lychee — sweet, fragrant and refreshing." data-zh="清爽红茶配荔枝香，香甜怡人。">ชาดำใสกลิ่นลิ้นจี่ รสหวานหอมสดชื่น</p>
           </div>
         </div>
 
         <div class="menu-card" data-tags="tea">
           <div class="card-img-wrap">
             <img src="images\teacoffee\peach tea.jpg" alt="Fries" loading="lazy" decoding="async" />
-            <span class="badge">แนะนำ</span>
+            <span class="badge" data-en="Recommended" data-zh="推荐">แนะนำ</span>
           </div>
         <div class="card-body">
             <div class="card-header">
-              <h3>ชาพีชใส</h3>
+              <h3 data-en="Clear Peach Tea" data-zh="蜜桃清茶">ชาพีชใส</h3>
               <span class="price">50 บาท</span>
             </div>
-            <p class="dish-desc">ชาดำใสกลิ่นพีช หอมเปรี้ยวอมหวาน</p>
+            <p class="dish-desc" data-en="Clear black tea with peach — fragrant, sweet-tart." data-zh="清爽红茶配蜜桃香，酸甜可口。">ชาดำใสกลิ่นพีช หอมเปรี้ยวอมหวาน</p>
           </div>
         </div>
 
@@ -1422,10 +1421,10 @@
           </div>
         <div class="card-body">
             <div class="card-header">
-              <h3>ชามะลิใส</h3>
+              <h3 data-en="Clear Jasmine Tea" data-zh="茉莉清茶">ชามะลิใส</h3>
               <span class="price">50 บาท</span>
             </div>
-            <p class="dish-desc">ชาดำใสกลิ่นมะลิหอมละมุน รสเบาสบาย</p>
+            <p class="dish-desc" data-en="Clear black tea with delicate jasmine aroma, light and easy." data-zh="清爽红茶配淡雅茉莉香，口感清爽。">ชาดำใสกลิ่นมะลิหอมละมุน รสเบาสบาย</p>
           </div>
         </div>
 
@@ -1435,10 +1434,10 @@
           </div>
         <div class="card-body">
             <div class="card-header">
-              <h3>ชามะลิใสสตอเบอรรี่ใส</h3>
+              <h3 data-en="Clear Jasmine Strawberry Tea" data-zh="茉莉草莓清茶">ชามะลิใสสตอเบอรรี่ใส</h3>
               <span class="price">55 บาท</span>
             </div>
-            <p class="dish-desc">ชามะลิผสมกลิ่นสตรอเบอรี่ หอมหวานสดชื่น</p>
+            <p class="dish-desc" data-en="Jasmine tea with strawberry — sweet, floral and refreshing." data-zh="茉莉茶配草莓香，清新香甜。">ชามะลิผสมกลิ่นสตรอเบอรี่ หอมหวานสดชื่น</p>
           </div>
         </div>
         
@@ -1447,20 +1446,20 @@
     </section>
 
     <section class="menu-section" data-category="frappes">
-      <h2 class="section-title">เครื่องดื่มปั่น / Frappes</h2>
+      <h2 class="section-title" data-en="Frappes" data-zh="冰沙饮品">เครื่องดื่มปั่น / Frappes</h2>
       <div class="menu-grid">
 
         <div class="menu-card" data-tags="frappes">
           <div class="card-img-wrap">
             <img src="images\teafood\smoothie.jpg" alt="Fries" loading="lazy" decoding="async" />
-            <span class="badge">ขายดี</span>
+            <span class="badge" data-en="Best Seller" data-zh="热销">ขายดี</span>
           </div>
           <div class="card-body">
             <div class="card-header">
-              <h3>สมูทตี้โยเกร์ต</h3>
+              <h3 data-en="Yogurt Smoothie" data-zh="酸奶冰沙">สมูทตี้โยเกร์ต</h3>
               <span class="price">65 บาท</span>
             </div>
-            <p class="dish-desc">สมูทตี้โยเกิร์ตข้นนุ่ม รสเปรี้ยวอมหวาน</p>
+            <p class="dish-desc" data-en="Thick, creamy yogurt smoothie — sweet-tart and smooth." data-zh="浓郁酸奶冰沙，酸甜顺滑。">สมูทตี้โยเกิร์ตข้นนุ่ม รสเปรี้ยวอมหวาน</p>
           </div>
         </div>
 
@@ -1470,24 +1469,24 @@
           </div>
           <div class="card-body">
             <div class="card-header">
-              <h3>โอริโอ้นมสดปั่น</h3>
+              <h3 data-en="Oreo Milk Frappe" data-zh="奥利奥牛奶冰沙">โอริโอ้นมสดปั่น</h3>
               <span class="price">60 บาท</span>
             </div>
-            <p class="dish-desc">นมสดปั่นผสมคุกกี้โอริโอ้ หอมหวานเข้มข้น</p>
+            <p class="dish-desc" data-en="Blended fresh milk with Oreo cookies — rich and sweet." data-zh="鲜奶冰沙配奥利奥饼干，香甜浓郁。">นมสดปั่นผสมคุกกี้โอริโอ้ หอมหวานเข้มข้น</p>
           </div>
         </div>
 
         <div class="menu-card" data-tags="frappes">
           <div class="card-img-wrap">
             <img src="images\teafood\green frappe.jpg" alt="Fries" loading="lazy" decoding="async" />
-            <span class="badge">แนะนำ</span>
+            <span class="badge" data-en="Recommended" data-zh="推荐">แนะนำ</span>
           </div>
           <div class="card-body">
             <div class="card-header">
-              <h3>ชาเขียวปั่น</h3>
+              <h3 data-en="Green Tea Frappe" data-zh="绿茶冰沙">ชาเขียวปั่น</h3>
               <span class="price">60 บาท</span>
             </div>
-            <p class="dish-desc">ชาเขียวปั่นเย็นเจี๊ยบ รสกลมกล่อมหอมใบชา</p>
+            <p class="dish-desc" data-en="Icy green tea frappe, balanced and tea-fragrant." data-zh="冰凉绿茶冰沙，茶香均衡。">ชาเขียวปั่นเย็นเจี๊ยบ รสกลมกล่อมหอมใบชา</p>
           </div>
         </div>
 
@@ -1540,10 +1539,10 @@
           </div>
           <div class="card-body">
             <div class="card-header">
-              <h3>ชามะนาวปั่น</h3>
+              <h3 data-en="Lemon Tea Frappe" data-zh="柠檬茶冰沙">ชามะนาวปั่น</h3>
               <span class="price">60 บาท</span>
             </div>
-            <p class="dish-desc">ชามะนาวปั่นเย็น รสเปรี้ยวซ่าสดชื่น</p>
+            <p class="dish-desc" data-en="Icy lime tea frappe — bright and refreshing." data-zh="冰凉柠檬茶冰沙，清新爽口。">ชามะนาวปั่นเย็น รสเปรี้ยวซ่าสดชื่น</p>
           </div>
         </div>
 
@@ -1551,7 +1550,7 @@
     </section>
 
     <section class="menu-section" data-category="others">
-      <h2 class="section-title">เครื่องดื่มชงและนม / Mixed Drinks & Milk</h2>
+      <h2 class="section-title" data-en="Mixed Drinks &amp; Milk" data-zh="调饮与牛奶">เครื่องดื่มชงและนม / Mixed Drinks & Milk</h2>
       <div class="menu-grid">
 
         <div class="menu-card" data-tags="others">
@@ -1560,24 +1559,24 @@
           </div>
           <div class="card-body">
             <div class="card-header">
-              <h3>โกโก้</h3>
+              <h3 data-en="Iced Cocoa" data-zh="冰可可">โกโก้</h3>
               <span class="price">55 บาท</span>
             </div>
-            <p class="dish-desc">โกโก้เย็นผสมนมสด หอมหวานเข้มข้น</p>
+            <p class="dish-desc" data-en="Iced cocoa with fresh milk — rich and chocolatey." data-zh="冰可可兑鲜奶，香甜浓郁。">โกโก้เย็นผสมนมสด หอมหวานเข้มข้น</p>
           </div>
         </div>
 
         <div class="menu-card" data-tags="others">
           <div class="card-img-wrap">
             <img src="images\teacoffee\pink milk.jpg" alt="Fries" loading="lazy" decoding="async" />
-            <span class="badge">ขายดี</span>
+            <span class="badge" data-en="Best Seller" data-zh="热销">ขายดี</span>
           </div>
           <div class="card-body">
             <div class="card-header">
-              <h3>นมชมพู</h3>
+              <h3 data-en="Pink Milk (Sala)" data-zh="粉红牛奶">นมชมพู</h3>
               <span class="price">50 บาท</span>
             </div>
-            <p class="dish-desc">นมเย็นรสซากุระสีชมพู หอมหวานละมุน</p>
+            <p class="dish-desc" data-en="Iced pink sala-flavoured milk — softly sweet and floral." data-zh="粉红莎拉风味冰牛奶，香甜柔和。">นมเย็นรสซากุระสีชมพู หอมหวานละมุน</p>
           </div>
         </div>
 
@@ -1587,10 +1586,10 @@
           </div>
           <div class="card-body">
             <div class="card-header">
-              <h3>โกโก้มิ้นต์</h3>
+              <h3 data-en="Mint Cocoa" data-zh="薄荷可可">โกโก้มิ้นต์</h3>
               <span class="price">60 บาท</span>
             </div>
-            <p class="dish-desc">โกโก้เย็นผสมรสมิ้นต์ หอมหวานสดชื่น</p>
+            <p class="dish-desc" data-en="Iced cocoa with mint — sweet and refreshing." data-zh="冰可可配薄荷，清爽香甜。">โกโก้เย็นผสมรสมิ้นต์ หอมหวานสดชื่น</p>
           </div>
         </div>
 
@@ -1602,7 +1601,7 @@
 
 
     <section class="menu-section" data-category="soda">
-      <h2 class="section-title">โซดา / Soda</h2>
+      <h2 class="section-title" data-en="Soda" data-zh="苏打饮料">โซดา / Soda</h2>
       <div class="menu-grid">
 
         <div class="menu-card" data-tags="soda">
@@ -1611,10 +1610,10 @@
           </div>
           <div class="card-body">
             <div class="card-header">
-              <h3>พั้นโซดา</h3>
+              <h3 data-en="Punch Soda" data-zh="潘趣汽水">พั้นโซดา</h3>
               <span class="price">45 บาท</span>
             </div>
-            <p class="dish-desc">โซดาเย็นผสมน้ำผลไม้รวม รสเปรี้ยวหวานสดชื่น</p>
+            <p class="dish-desc" data-en="Iced soda with mixed fruit juice — bright and refreshing." data-zh="冰苏打水配什锦果汁，清新酸甜。">โซดาเย็นผสมน้ำผลไม้รวม รสเปรี้ยวหวานสดชื่น</p>
           </div>
         </div>
 
@@ -1624,10 +1623,10 @@
           </div>
           <div class="card-body">
             <div class="card-header">
-              <h3>บลูฮาวายโซดา</h3>
+              <h3 data-en="Blue Hawaii Soda" data-zh="蓝色夏威夷汽水">บลูฮาวายโซดา</h3>
               <span class="price">45 บาท</span>
             </div>
-            <p class="dish-desc">โซดาสีฟ้ารสบลูฮาวาย หอมหวานสดชื่น</p>
+            <p class="dish-desc" data-en="Blue Hawaii soda — bright, sweet, refreshing." data-zh="蓝色夏威夷风味苏打水，清新香甜。">โซดาสีฟ้ารสบลูฮาวาย หอมหวานสดชื่น</p>
           </div>
         </div>
 
@@ -1637,10 +1636,10 @@
           </div>
           <div class="card-body">
             <div class="card-header">
-              <h3>สตอเบอรรี่โซดา</h3>
+              <h3 data-en="Strawberry Soda" data-zh="草莓汽水">สตอเบอรรี่โซดา</h3>
               <span class="price">45 บาท</span>
             </div>
-            <p class="dish-desc">โซดาผสมไซรัปสตรอเบอรี่ หอมหวานเย็นชื่นใจ</p>
+            <p class="dish-desc" data-en="Soda with strawberry syrup — sweet, fragrant and chilled." data-zh="苏打水配草莓糖浆，香甜冰爽。">โซดาผสมไซรัปสตรอเบอรี่ หอมหวานเย็นชื่นใจ</p>
           </div>
         </div>
 
@@ -1650,10 +1649,10 @@
           </div>
           <div class="card-body">
             <div class="card-header">
-              <h3>มะม่วงโซดา</h3>
+              <h3 data-en="Mango Soda" data-zh="芒果汽水">มะม่วงโซดา</h3>
               <span class="price">45 บาท</span>
             </div>
-            <p class="dish-desc">โซดาผสมไซรัปมะม่วง รสหวานหอมเปรี้ยวกลมกล่อม</p>
+            <p class="dish-desc" data-en="Soda with mango syrup — sweet and tangy." data-zh="苏打水配芒果糖浆，酸甜适中。">โซดาผสมไซรัปมะม่วง รสหวานหอมเปรี้ยวกลมกล่อม</p>
           </div>
         </div>
 
@@ -1663,10 +1662,10 @@
           </div>
           <div class="card-body">
             <div class="card-header">
-              <h3>แดงมะนาวโซดา</h3>
+              <h3 data-en="Red Lemon Soda" data-zh="红柠汽水">แดงมะนาวโซดา</h3>
               <span class="price">45 บาท</span>
             </div>
-            <p class="dish-desc">โซดาแดงผสมน้ำมะนาวสด รสเปรี้ยวซ่าสดชื่น</p>
+            <p class="dish-desc" data-en="Red soda with fresh lime juice — tart and refreshing." data-zh="红色苏打水配鲜柠檬汁，清爽酸甜。">โซดาแดงผสมน้ำมะนาวสด รสเปรี้ยวซ่าสดชื่น</p>
           </div>
         </div>
 
@@ -1681,7 +1680,7 @@
     <p class="footer-name">Iris Lé  Bian</p>
     <!-- 123 Garden Lane, New York, NY 10001 -->
     <!-- &#x260E; (212) 555-0198 &nbsp;·&nbsp; ✉ hello@irisrestaurant.com -->
-    <p class="footer-note">ติดต่อร้าน 061-596-1992</p>
+    <p class="footer-note" data-en="Contact: 061-596-1992" data-zh="联系电话：061-596-1992">ติดต่อร้าน 061-596-1992</p>
     <p class="footer-note">Line ID: @122bplqx</p>
   </footer>
 
